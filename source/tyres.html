@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Spares shop</title>
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+    <header class="header">
+			<div class="header__top">
+				<ul class="header__top-list">
+					<li>Магазины</li>
+					<li>Акции</li>
+					<li>Доставка и оплата</li>
+				</ul>
+				<a class="header__top-logo" alt="логотип">Логотип</a>
+				<div class="header__top-adress">
+					<span>Санкт-Петербург, ул Большая Конюшенная, д 19</span>
+				</div>
+			</div>
+			<nav class="main__nav">
+				<ul class="header__nav-list">
+					<li><a href="#">Каталог запчастей</a></li>
+					<li><a href="#">Каталог ТО</a></li>
+					<li><a href="#">Шины</a></li>
+					<li><a href="#">Диски</a></li>
+					<li><a href="#">Аккумуляторы</a></li>
+					<li><a href="#">Автомасла</a></li>
+					<li><a href="#">Автолампы</a></li>
+					<li><a href="#">Аксессуары</a></li>
+				</ul>
+			</nav>
+    </header>
+    <main>
+      <ul class="breadcrumbs">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="">Шины</a></li>
+        <li>Шины зимние</li>
+	  </ul>
+	  <div class="sort">
+      <label for="filter">Нешипованные шины</label>
+		  <div class="sort__categories">
+			  <button>Полноприводные</button>
+			  <button>от 5000</button>
+			  <button>Nokian</button>
+			  <button>от 5000</button>
+			  <button>еще</button>
+      </div>
+      <div class="sort__select">
+        <select name="filter">
+          <option value="1">По полулярности</option>
+          <option value="2">Есть в наличии</option>
+        </select>
+      </div>
+    </div>
+    <div class="search">
+      <form class="search__filter">
+        <div class="search__filter-main">
+          <button>Параметры</button>
+          <button>по марке</button>
+        </div>
+        <div class="search__filter-season">
+          <label>
+            <input class="search__season-checkbox" type="checkbox" checked>
+            Сезонность
+          </label>
+          <label>
+            <input class="search__checkbox-opened search__filter-checkbox-opened--winter" type="checkbox">
+            Зимние
+          </label>
+          <label>
+            <input class="search__checkbox-opened search__filter-checkbox-opened--summer" type="checkbox">
+            Летние
+          </label>
+        </div>
+        <div class="search__filter-type">
+          <h3>Тип шин</h3>
+          <label>
+            <input class="search__type-checkbox" type="checkbox" checked>
+            Все
+          </label>
+          <label>
+            <input class="search__type-checkbox" type="checkbox">
+            Шипованные
+          </label>
+          <label>
+            <input class="search__type-checkbox" type="checkbox">
+            Нешипованные
+          </label>
+        </div>
+        <div class="search__price">          
+          <label>
+            <input class="search__price-checkbox" type="checkbox" checked>
+            Цена
+          </label>
+          <label>
+            от
+            <input class="search__price-input search__price-input--min" type="text">
+          </label>
+          <label>
+            до
+            <input class="search__price-input search__price-input--max" type="text">
+          </label>
+        </div>
+        <div class="search__filter-diameter">
+          <h3>Диаметр</h3>
+          <select name="radius">
+            <option value="1">10</option>
+            <option value="2">12</option>
+            <option value="3">12C</option>
+            <option value="4">14</option>
+            <option value="5">14C</option>
+            <option value="6">15</option>
+            <option value="7">15C</option>
+            <option value="8">16</option>
+            <option value="9">16C</option>
+            <option value="10">17</option>
+            <option value="11">17C</option>
+            <option value="12">18</option>
+            <option value="13">18C</option>
+            <option value="14">19</option>
+            <option value="15">20</option>
+            <option value="16">21</option>
+            <option value="17">22</option>
+            <option value="18">23</option>
+            <option value="19">24</option>
+            <option value="20">25</option>
+            <option value="21">8</option>
+          </select>
+        </div>
+        <div class="search__filter-profile">
+          <h3>Профиль</h3>
+          <select name="profile">
+            <option value="1">55</option>
+            <option value="2">60</option>
+            <option value="2">80</option>
+          </select>
+        </div>
+        <div class="search__filter-width">
+          <h3>Ширина</h3>
+          <select name="width">
+            <option value="1">205</option>
+            <option value="2">255</option>
+          </select>
+        </div>
+        <div class="search__filter-brand">          
+          <label>
+            <input class="search__brand-checkbox" type="checkbox" checked>
+            Бренд
+          </label>
+          <input type="text" placeholder="Введите бренд шины">
+          <label>
+            <input class="search__brand-checkbox-opened" type="checkbox" checked>
+            B Gudrich
+          </label>
+          <label>
+            <input class="search__brand-checkbox-opened" type="checkbox" checked>
+            Wridrestone
+          </label>
+          <label>
+            <input class="search__brand-checkbox-opened" type="checkbox">
+            Rarym
+          </label>
+          <label>
+            <input class="search__brand-checkbox-opened" type="checkbox">
+            BF hide
+          </label>
+          <a href="#">Показать еще</a>
+        </div>
+        <div class="search__filter-model">          
+          <label>
+            <input class="search__model-checkbox" type="checkbox" checked>
+            Модель
+          </label>
+          <input type="text" placeholder="Введите модель шины">
+          <label>
+            <input class="search__model-checkbox-opened" type="checkbox" checked>
+            ALINA
+          </label>
+          <label>
+            <input class="search__model-checkbox-opened" type="checkbox" checked>
+            BLIWWAS
+          </label>
+          <label>
+            <input class="search__model-checkbox-opened" type="checkbox">
+            FORCE Moode
+          </label>
+          <label>
+            <input class="search__model-checkbox-opened" type="checkbox">
+            ICE Gide
+          </label>
+          <a href="#">Показать еще</a>
+        </div>
+        <div class="search__filter-techology">
+          <h3>Технология</h3>
+          <label>
+            <input class="search__techology-checkbox" type="radio">
+            Да
+          </label>
+          <label>
+            <input class="search__techology-checkbox" type="radio">
+            нет
+          </label>
+        </div>
+        <div class="search__filter-promo">
+          <h3>Акции</h3>
+          <label>
+            <input class="search__promo-checkbox search__promo-checkbox--sale" type="checkbox" checked>
+            sale
+          </label>
+          <label>
+            <input class="search__promo-checkbox search__promo-checkbox--new" type="checkbox">
+            new
+          </label>
+          <label>
+            <input class="search__promo-checkbox search__promo-checkbox--hit" type="checkbox">
+            hit
+          </label>
+          <label>
+            <input class="search__promo-checkbox search__promo-checkbox--gift" type="checkbox" checked>
+            подарок
+          </label>
+        </div>
+        <div class="search__filter-country">          
+          <label>
+            <input class="search__country-checkbox" type="checkbox" checked>
+            Страны
+          </label>
+          <label>
+            <input class="search__country-checkbox-opened" type="checkbox" checked>
+            Россия
+          </label>
+          <label>
+            <input class="search__model-checkbox-opened" type="checkbox" checked>
+            Германия
+          </label>
+          <label>
+            <input class="search__model-checkbox-opened" type="checkbox">
+            Россия
+          </label>
+          <label>
+            <input class="search__model-checkbox-opened" type="checkbox">
+            Германия
+          </label>
+          <a href="#">Показать еще</a>
+        </div>
+        <input type="submit" value="подобрать">
+        <select class="search__filter-additional" name="" id="">
+          <option value="1">Дополнительные параметры</option>
+        </select>
+        <button type="reset">Сбросить фильтр</button>
+      </form>
+      <div class="search__result"></div>
+    </div>
+    </main>
+  </body>
+</html>
