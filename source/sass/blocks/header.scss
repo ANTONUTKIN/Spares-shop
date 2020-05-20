@@ -1,0 +1,150 @@
+.header__top {
+    display: flex;
+    flex-direction: row;
+    margin-top: 17px;
+    margin-bottom: 6px;
+}
+
+.header__top-list {
+    display: flex;
+    text-align: center;
+    list-style: none;
+    overflow: hidden;
+    width: 475px;
+    padding: 0;
+    margin-left: 0;
+    margin-top: 18px;
+    margin-right: 60px;
+}
+
+.header__top-list li {
+    display: block;
+    padding: 21px;
+}
+
+.header__top-list li:first-child {
+    padding-left: 0;
+}
+
+.header__top-list li:last-child {
+    padding-right: 0;
+}
+
+.header__top-list li a {
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 20px;
+    color: #48494D;
+    font-weight: bold;
+}
+
+.header__top-logo {
+    margin: 17px 103px 17px 0;
+}
+
+.header__top-address {
+    position: relative;
+    display: block;
+    width: 300px;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 0.6px;
+    color: #48494D;
+    margin: 40px 12px 0 0;
+}
+
+.header__top-address address {
+    font-style: normal;
+}
+
+.header__top-address::before {
+    display: block;
+    position: absolute;
+    content: "";
+    top: -7px;
+    left: -40px;
+    background-image: url("data:image/svg+xml,%3Csvg width='35' height='35' viewBox='0 0 35 35' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M13.6561 23.7113L12.8073 24.24L13.6561 23.7113C13.372 23.2552 12.9164 22.9327 12.392 22.8163L12.1752 23.7925L12.3919 22.8163L1.49747 20.3979L23.9518 7.82864L19.5566 33.1835L13.6561 23.7113Z' stroke='%23A8A8A8' stroke-width='2'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 35px;
+    height: 32px;
+}
+
+.header__top-icons {
+    display: flex;
+    width: 115px;
+    height: 35px;
+    margin-top: 40px;
+}
+
+.header__icon {
+    display: block;
+    padding: 0 12px;
+}
+
+.header__icon--like {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-image: url("data:image/svg+xml,%3Csvg width='27' height='25' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath clip-rule='evenodd' d='M7.37 1.2C3.47 1.2.39 4.78 1.1 9.9c.62 4.43 11.22 13.3 12.4 13.3 1.18 0 11.78-8.87 12.4-13.3.7-5.13-2.38-8.7-6.27-8.7a7.09 7.09 0 00-6.13 3.28A7.09 7.09 0 007.37 1.2z' stroke='%23A8A8A8' stroke-width='2'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+}
+
+.header__icon--profile {
+    display: block;
+    width: 30px;
+    height: 30px;
+    padding-left: 2px;
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='26' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 15c2.75 0 5.5-2.21 5.5-6.38 0-4.16-1.83-6.66-5.5-6.66S6.5 5.33 6.5 8.62C6.5 12.8 9.25 15 12 15zm0 0c5.5 0 11 4.39 11 9.45H1c0-4.5 5.5-9.46 11-9.46z' stroke='%23A8A8A8' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+}
+
+.header__icon--profile {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='26' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 15c2.75 0 5.5-2.21 5.5-6.38 0-4.16-1.83-6.66-5.5-6.66S6.5 5.33 6.5 8.62C6.5 12.8 9.25 15 12 15zm0 0c5.5 0 11 4.39 11 9.45H1c0-4.5 5.5-9.46 11-9.46z' stroke='%23A8A8A8' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+}
+
+.header__icon--buy {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-image: url("data:image/svg+xml,%3Csvg width='30' height='28' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 1.94h3.88a1 1 0 01.97.72l4.22 14.9a1 1 0 00.97.73h14.72a1 1 0 00.96-.74l2.93-10.72a1 1 0 00-.96-1.26H5.67M15 23.91a2.54 2.54 0 01-2.5 2.58 2.54 2.54 0 01-2.5-2.58 2.54 2.54 0 012.5-2.57c1.36 0 2.5 1.13 2.5 2.57zM24 23.91a2.54 2.54 0 01-2.5 2.58 2.54 2.54 0 01-2.5-2.58 2.54 2.54 0 012.5-2.57c1.36 0 2.5 1.13 2.5 2.57z' stroke='%23A8A8A8' stroke-width='2'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+}
+
+.header__nav {
+    display: block;
+    height: 52px;
+    border-top: 2px solid #F0F0F4;
+    border-bottom: 2px solid #F0F0F4;
+}
+
+.header__nav-list {
+    list-style: none;
+    padding: 0;
+}
+
+.header__nav-list li {
+    float: left;
+    text-align: center;
+    margin-right: 45px;
+}
+
+.header__nav-list li:last-child {
+    margin-right: 0;
+}
+
+.header__nav-list li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #48494D;
+}
+
+.header__nav-list li a:hover {
+    font-weight: bold;
+    border-bottom: 4px solid #FF7931;
+    padding-bottom: 15px;
+}
