@@ -1,0 +1,17 @@
+@font-face {
+	font-family: "Barlow";
+  src: local("Barlow"),
+      url('../fonts/barlow-regular.woff') format('woff'),
+      url('../fonts/barlow-regular.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Barlow";
+  src: local("Barlow"),
+      url('../fonts/barlow-bold.woff') format('woff'), 
+      url('../fonts/barlow-bold.woff2') format('woff2');
+	font-weight: 700;
+	font-style: normal;
+}

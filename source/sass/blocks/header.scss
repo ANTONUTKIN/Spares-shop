@@ -123,18 +123,24 @@
 }
 
 .header__nav-list {
+    display: flex;
     list-style: none;
     padding: 0;
 }
 
 .header__nav-list li {
-    float: left;
+    font-family: "Barlow","Arial", sans-serif;
+    display: block;
     text-align: center;
-    margin-right: 45px;
+    padding: 0 20px;    
+}
+
+.header__nav-list li:first-child {
+    padding-left: 0;
 }
 
 .header__nav-list li:last-child {
-    margin-right: 0;
+    padding-right: 0;
 }
 
 .header__nav-list li a {
