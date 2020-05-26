@@ -1,5 +1,41 @@
 .slider {
-    position: relative;
+	display: flex;
+	position: relative;
+	width: 870px;
+	overflow: hidden;
+	margin-left: -9px;
+	margin-right: 40px;
+}
+
+.slider__controls {
+	display: flex;
+	position: absolute;
+	bottom: 14px;
+	left: 382px;
+}
+
+.slider__radio {
+	position: relative;
+	display: block;
+}
+
+.slider__input {
+	margin: 0 8px 0 9px;
+}
+.slider__button {
+	position: absolute;
+	display: block;
+	width: 9px;
+	height: 9px;
+	bottom: 4px;
+	left: 10px;
+	border-radius: 100%;
+	background-color: transparent;
+	border: 1px solid #fff;
+}
+
+.slider__input:checked + .slider__button {
+	background-color: #fff;
 }
 
 .slider__photos {

@@ -1,3 +1,7 @@
+.header {
+    margin-bottom: 57px;
+}
+
 .header__top {
     display: flex;
     flex-direction: row;
@@ -132,15 +136,18 @@
     font-family: "Barlow","Arial", sans-serif;
     display: block;
     text-align: center;
-    padding: 0 20px;    
+    padding: 0 10px;
+    margin: 0 10px;
 }
 
 .header__nav-list li:first-child {
     padding-left: 0;
+    margin-left: 0;
 }
 
 .header__nav-list li:last-child {
     padding-right: 0;
+    margin-right: 0;
 }
 
 .header__nav-list li a {
@@ -149,8 +156,8 @@
     color: #48494D;
 }
 
-.header__nav-list li a:hover {
+.header__nav-list li:hover {
     font-weight: bold;
     border-bottom: 4px solid #FF7931;
-    padding-bottom: 15px;
+    padding-bottom: 12px;
 }
