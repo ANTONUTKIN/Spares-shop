@@ -43,46 +43,28 @@
     </header>
     <main class="main">
       <section class="banners container">
-        <h2 class="visually-hidden">Фото баннеров</h2>
-        <section class="slider">
-          <h2 class="visually-hidden">Слайдер магазин автозапчастей</h2>
-          <div class="slider__controls">
-            <ul class="slider__buttons-list">
-              <li><a href=""></a></li>
-              <li><a href=""></a></li>
-              <li><a href=""></a></li>
-              <li><a href=""></a></li>
-              <li><a href=""></a></li>
-            </ul>
-            <label for="radio-1" class="slider__radio slider__radio--1">
-              <input type="radio" class="slider__input"  name="radio-1" checked>
-              <span class="slider__button"></span>
-            </label>
-            <label for="radio-1" class="slider__radio slider__radio--2">
-              <input type="radio" class="slider__input" name="radio-2">
-              <span class="slider__button"></span>
-            </label>
-            <label for="radio-1" class="slider__radio slider__radio--3">
-              <input type="radio" class="slider__input" name="radio-3">
-              <span class="slider__button"></span>
-            </label>
-            <label for="radio-1" class="slider__radio slider__radio--4">
-              <input type="radio" class="slider__input" name="radio-4">
-              <span class="slider__button"></span>
-            </label>
-            <label for="radio-1" class="slider__radio slider__radio--5">
-              <input type="radio" class="slider__input" name="radio-5">
-              <span class="slider__button"></span>
-            </label>
-          </div>
-          <div class="slider__photos">
-            <div class="slider__photos-1">
-              <img src="../img/image-banner.jpg" alt="" width="870" height="395">
+        <div class="slider-wrapper">
+          <div class="slider">
+            <div class="slider__item">
+              <img src="../img/image-banner.jpg" alt="">
+            </div>
+            <div class="slider__item">
+              <img src="../img/image-banner.jpg" alt="">
+            </div>
+            <div class="slider__item">
+              <img src="../img/image-banner.jpg" alt="">
+            </div>
+            <div class="slider__item">
+              <img src="../img/image-banner.jpg" alt="">
+            </div>
+            <div class="slider__item">
+              <img src="../img/image-banner.jpg" alt="">
+            </div>
+            <div class="slider__item">
+              <img src="../img/image-banner.jpg" alt="">
             </div>
           </div>
-          <label class="slider__control slider__control--right"></label>
-          <label class="slider__control slider__control--left"></label>
-        </section>
+        </div>
         <div class="banner">
           <div class="banner__top">
             <img class="banner__image" src="img/image15.jpg" alt="фото" height="190" width="150">
@@ -263,5 +245,8 @@
         </div>
       </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>

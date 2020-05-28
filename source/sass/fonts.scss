@@ -1,8 +1,8 @@
 @font-face {
 	font-family: "Barlow";
   src: local("Barlow"),
-      url('../fonts/barlow-regular.woff') format('woff'),
-      url('../fonts/barlow-regular.woff2') format('woff2');
+      url("../fonts/barlow-regular.woff2") format("woff2"),
+      url("../fonts/barlow-regular.woff") format("woff");
 	font-weight: normal;
 	font-style: normal;
 }
@@ -10,8 +10,26 @@
 @font-face {
 	font-family: "Barlow";
   src: local("Barlow"),
-      url('../fonts/barlow-bold.woff') format('woff'), 
-      url('../fonts/barlow-bold.woff2') format('woff2');
-	font-weight: 700;
+      url("../fonts/barlowbold.woff2") format('woff2'), 
+      url("../fonts/barlowbold.woff") format('woff');
+	font-weight: bold;
 	font-style: normal;
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src:  local("Proxima Nova"),
+    url("../fonts/proxima-nova-regular.woff2") format("woff2"),
+    url("../fonts/proxima-nova-regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src:  local("Proxima Nova"),
+    url("../fonts/proxima-nova-Bold.woff2") format("woff2"),
+    url("../fonts/proxima-nova-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
 }
