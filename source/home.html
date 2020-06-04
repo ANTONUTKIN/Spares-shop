@@ -111,20 +111,56 @@
           <input class="search__submit-button" type="submit" name="search" value="Искать">
         </form>
       </section>
-      <section class="categories">
+      <section class="categories container">
         <h2 class="visually-hidden">Категории товаров</h2>
         <nav class="categories__nav">
           <ul class="categories__nav-list">
-            <li><a href="#">Автохимия</a></li>
-            <li><a href="#">Шины и диски</a></li>
-            <li><a href="#">Инструменты</a></li>
-            <li><a href="#">Запчасти на ТО</a></li>
-            <li><a href="#">Автоэлектроника</a></li>
-            <li><a href="#">Аксессуары и другое</a></li>
+            <li>
+              <div class="categories__list-item">
+                <span class="categories__item-text">Автохимия</span>
+                <div class="categories__item-image categories__item-image--autochemical"></div>
+                <a href="#" class="categories__item-link">Перейти ></a>
+              </div>
+            </li>
+            <li>
+              <div class="categories__list-item">
+                <span class="categories__item-text">Шины и диски</span>
+                <div class="categories__item-image categories__item-image--wheels"></div>
+                <a href="#" class="categories__item-link">Перейти ></a>
+              </div>
+            </li>
+            <li>
+              <div class="categories__list-item">
+                <span class="categories__item-text">Инструменты</span>
+                <div class="categories__item-image categories__item-image--instruments"></div>
+                <a href="#" class="categories__item-link">Перейти ></a>
+              </div>
+            </li>
+            <li>
+              <div class="categories__list-item">
+                <span class="categories__item-text">Запчасти на ТО</span>
+                <div class="categories__item-image categories__item-image--parts"></div>
+                <a href="#" class="categories__item-link">Перейти ></a>
+              </div>
+            </li>
+            <li>
+              <div class="categories__list-item">
+                <span class="categories__item-text">Автоэлектроника</span>
+                <div class="categories__item-image categories__item-image--electronic"></div>
+                <a href="#" class="categories__item-link">Перейти ></a>
+              </div>
+            </li>
+            <li>
+              <div class="categories__list-item">
+                <span class="categories__item-text">Аксессуары <br> и другое</span>
+                <div class="categories__item-image categories__item-image--accessories"></div>
+                <a href="#" class="categories__item-link">Перейти ></a>
+              </div>
+            </li>
           </ul>
         </nav>
       </section>
-      <section class="popular">
+      <section class="popular container">
         <h2>Популярные товары</h2>
         <ul class="popular__categories-list">
           <li>
@@ -149,15 +185,66 @@
           </li>
           <li>
             <label>
+              <input class="popular__categories-button" type="button" value="инструменты">
+            </label>
+          </li>
+          <li>
+            <label>
               <input class="popular__categories-button" type="button" value="аксессуары и другое">
             </label>
           </li>
         </ul>
         <div class="popular__products">
-          <div class="popular__products-card popular__products-card--1">Ремень</div>
-          <div class="popular__products-card popular__products-card--2">Шина 205/80 R16 104Q Misha RF Power Grum</div>
-          <div class="popular__products-card popular__products-card--3">Фара Nokian 2025</div>
-          <div class="popular__products-card popular__products-card--4">Шина 245/60 R18 105T Contyther Crosh Conta...</div>
+          <div class="popular__products-card popular__products-card--1">
+            <img class="popular__products-photo" src="img/belt.png" width="230" height="215" alt="product-photo">
+            <span class="popular__products-name">Ремень</span>
+            <span class="popular__products-price">440 ₽</span>
+            <svg class="popular__products-like" width="27" height="25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path clip-rule="evenodd" d="M7.37 1.2C3.47 1.2.39 4.78 1.1 9.9c.62 4.43 11.22 13.3 12.4 13.3 1.18 0 11.78-8.87 12.4-13.3.7-5.13-2.38-8.7-6.27-8.7a7.09 7.09 0 00-6.13 3.28A7.09 7.09 0 007.37 1.2z" stroke="#A8A8A8" stroke-width="2"/>
+            </svg>
+            <div class="popular__products-buy">
+              <img src="img/svg/icon-bag.svg" alt="">
+            </div>
+          </div>
+          <div class="popular__products-card popular__products-card--2">
+            <img class="popular__products-photo popular__products-photo--2" src="img/wheel1.png" width="151" height="181" alt="product-photo">
+            <span class="popular__products-name popular__products-name--2">Шина 205/80 R16 104Q Misha RF Power Grum</span>
+            <span class="popular__products-price popular__products-price--2">11 680 ₽</span>
+            <svg class="popular__products-like popular__products-like--2" width="27" height="25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path clip-rule="evenodd" d="M7.37 1.2C3.47 1.2.39 4.78 1.1 9.9c.62 4.43 11.22 13.3 12.4 13.3 1.18 0 11.78-8.87 12.4-13.3.7-5.13-2.38-8.7-6.27-8.7a7.09 7.09 0 00-6.13 3.28A7.09 7.09 0 007.37 1.2z" stroke="#A8A8A8" stroke-width="2"/>
+            </svg>
+            <svg class="popular__products-snow" width="28" height="31" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M27.37 19.09l-.54-2.04-5.53 1.46-2.44-1.46v-3.38l2.62-1.53 5.66 1.5.54-2.04-3.61-.96 3.6-2.1-1.05-1.82-3.57 2.07.93-3.54-2.04-.54-1.47 5.58-2.67 1.55-2.92-1.69V7.14l4.13-4.1-1.48-1.5-2.65 2.62V0h-2.1v4.13l-2.6-2.6-1.5 1.5 4.1 4.09v3.03l-2.93 1.69-2.6-1.51L5.75 4.7l-2.04.54.95 3.59-3.61-2.08L0 8.59l3.59 2.07-3.57.94.54 2.04 5.62-1.48 2.62 1.5v3.45l-2.64 1.53-5.6-1.48-.54 2.04 3.56.94L0 22.22l1.06 1.83 3.61-2.1-.95 3.6 2.04.54 1.5-5.64 2.66-1.55 2.85 1.65v3.13l-4.09 4.1 1.5 1.48 2.6-2.59v4.13h2.1v-4.16l2.65 2.63 1.49-1.5-4.14-4.1v-3.12l2.91-1.68 2.67 1.6 1.16 5.46 2.06-.44-.75-3.54 3.36 2.01 1.09-1.8-3.55-2.14 3.54-.93zm-10.62-2.05l-2.92 1.68-2.92-1.68v-3.37l2.92-1.69 2.92 1.69v3.37z" fill="#6CA7FF"/>
+            </svg>
+            <img class="popular__products-sale" src="img/sale.jpg" width="25" height="63" alt="sale">      
+            <div class="popular__products-buy">
+              <img src="img/svg/icon-bag.svg" alt="">
+            </div>
+          </div>
+          <div class="popular__products-card popular__products-card--3">
+            <img class="popular__products-photo popular__products-photo--3" src="img/headlamp.png" width="232" height="174" alt="product-photo">
+            <span class="popular__products-name">Фара Nokian 2025</span>
+            <span class="popular__products-price">680 ₽</span>
+            <svg class="popular__products-like" width="27" height="25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path clip-rule="evenodd" d="M7.37 1.2C3.47 1.2.39 4.78 1.1 9.9c.62 4.43 11.22 13.3 12.4 13.3 1.18 0 11.78-8.87 12.4-13.3.7-5.13-2.38-8.7-6.27-8.7a7.09 7.09 0 00-6.13 3.28A7.09 7.09 0 007.37 1.2z" stroke="#A8A8A8" stroke-width="2"/>
+            </svg>
+            <div class="popular__products-buy">
+              <img src="img/svg/icon-bag.svg" alt="">
+            </div>
+          </div>
+          <div class="popular__products-card popular__products-card--4">
+            <img class="popular__products-photo popular__products-photo--4" src="img/wheel2.png" width="151" height="181" alt="product-photo">
+            <span class="popular__products-name popular__products-name--4">Шина 245/60 R18 105T Contyther Crosh Conta...</span>
+            <span class="popular__products-null">нет в наличии</span>
+            <svg class="popular__products-like popular__products-like--2" width="27" height="25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path clip-rule="evenodd" d="M7.37 1.2C3.47 1.2.39 4.78 1.1 9.9c.62 4.43 11.22 13.3 12.4 13.3 1.18 0 11.78-8.87 12.4-13.3.7-5.13-2.38-8.7-6.27-8.7a7.09 7.09 0 00-6.13 3.28A7.09 7.09 0 007.37 1.2z" stroke="#A8A8A8" stroke-width="2"/>
+            </svg>
+            <svg class="popular__products-snow" width="31" height="31" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6.52 8.52a1.4 1.4 0 102-2L6.53 4.55a1.41 1.41 0 10-1.99 2l1.97 1.97zM29.58 14.1h-2.8a1.4 1.4 0 100 2.82h2.8a1.4 1.4 0 100-2.83zM5.63 15.5c0-.78-.62-1.4-1.42-1.4H1.42a1.41 1.41 0 100 2.8h2.8c.78 0 1.41-.62 1.41-1.4zM15.5 7.04a8.45 8.45 0 100 16.91 8.45 8.45 0 000-16.9zm0 14.1a5.64 5.64 0 110-11.28 5.64 5.64 0 010 11.27zM6.52 22.49l-1.97 1.97a1.41 1.41 0 102 1.99l1.96-1.97a1.41 1.41 0 10-1.99-2zM24.48 8.52l1.97-1.98a1.4 1.4 0 10-2-2L22.5 6.53a1.41 1.41 0 101.99 2zM15.5 25.37c-.78 0-1.4.62-1.4 1.42v2.79a1.41 1.41 0 102.8 0v-2.8c0-.78-.62-1.41-1.4-1.41zM24.48 22.49a1.41 1.41 0 10-2 1.99l1.98 1.97a1.4 1.4 0 102-2l-1.98-1.96zM15.5 5.63c.78 0 1.4-.62 1.4-1.42V1.42a1.41 1.41 0 10-2.8 0v2.8c0 .78.62 1.41 1.4 1.41z" fill="#FF7931"/>
+            </svg>
+            <img class="popular__products-sale" src="img/sale.jpg" width="25" height="63" alt="sale">
+            <a class="popular__products-spam" href="#">Сообщить о поступлении</a>
+          </div>
         </div>
         <a href="#">смотреть еще</a>
       </section>

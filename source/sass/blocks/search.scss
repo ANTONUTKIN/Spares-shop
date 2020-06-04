@@ -1,3 +1,7 @@
+.search {
+  margin-bottom: 80px;
+}
+
 .search__list {
   display: flex;
   padding: 0;
@@ -36,15 +40,15 @@
 }
 
 .search__input-textarea {
-  padding: 0;
   margin: 0;
-  width: 100%;
+  width: 950px;
   height: 100%;
   font-size: 16px;
   line-height: 19px;
   letter-spacing: 0.5px;
   color: #656464;
   padding-left: 20px;
+  padding-right: 65px;
   background: #F0F0F4;
   border: none;
   border-radius: 3px;
