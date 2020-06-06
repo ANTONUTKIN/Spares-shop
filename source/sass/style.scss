@@ -1,6 +1,7 @@
-@import "global.scss";
 @import "fonts.scss";
+@import "global.scss";
 @import "container.scss";
+@import "mixins.scss";
 @import "blocks/header.scss";
 @import "blocks/slider.scss";
 @import "blocks/banners.scss";
@@ -8,3 +9,6 @@
 @import "blocks/search.scss";
 @import "blocks/categories.scss";
 @import "blocks/popular.scss";
+@import "blocks/card.scss";
+@import "blocks/advertise-banner.scss";
+@import "blocks/additive.scss";
