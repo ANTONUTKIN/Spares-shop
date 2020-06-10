@@ -1,12 +1,16 @@
 .header {
-    margin-bottom: 57px;
+  margin-bottom: 57px;
+
+  &--tyres {
+    margin-bottom: 45px;
+  }
 }
 
 .header__top {
-    display: flex;
-    flex-direction: row;
-    margin-top: 17px;
-    margin-bottom: 6px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 17px;
+  margin-bottom: 6px;
 }
 
 .header__top-list {
@@ -138,6 +142,7 @@
     text-align: center;
     padding: 0 10px;
     margin: 0 10px;
+    box-sizing: border-box;
 }
 
 .header__nav-list li:first-child {
@@ -157,7 +162,7 @@
 }
 
 .header__nav-list li:hover {
-    font-weight: bold;
+    text-shadow: 1px 0 0 #48494D;
     border-bottom: 4px solid #FF7931;
     padding-bottom: 12px;
 }

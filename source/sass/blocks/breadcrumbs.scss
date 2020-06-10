@@ -1,0 +1,20 @@
+.breadcrumbs {
+  display: flex;
+  list-style: none;
+  margin: 0 0 40px 0;
+  padding: 0;
+}
+
+.breadcrumbs li:not(:last-of-type)::after {
+  content: ">";
+  margin: 0 10px;
+  color: #CDCDCD;
+}
+
+.breadcrumbs li a {
+  text-decoration: none;
+  font-family: "Proxima Nova", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 18px;
+  color: #CDCDCD;
+}
