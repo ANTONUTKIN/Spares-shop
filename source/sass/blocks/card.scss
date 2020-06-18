@@ -11,6 +11,10 @@
 	}
 }
 
+.card:hover .card__popular-hover {
+  display: block;
+}
+
 .card__photo {
 	position: absolute;
   left: 18px;

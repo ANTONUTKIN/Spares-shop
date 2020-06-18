@@ -75,63 +75,76 @@
       </div>
       <div class="search">
         <form class="search__filter">
-          <div class="search__filter-main">
-            <button>Параметры</button>
-            <button>по марке</button>
+          <div class="search__filter-header">
+            <div class="search__header-wrapper">
+              <input class="search__header-input" type="radio" name="filter-toggle" id="sort__header-input1" checked>
+              <label class="search__header-label" for="sort__header-input1">Параметры</label>
+            </div>
+            <div class="search__header-wrapper">
+              <input class="search__header-input" type="radio" name="filter-toggle" id="sort__header-input2">
+              <label class="search__header-label" for="sort__header-input2">по марке</label>
+            </div>
           </div>
           <div class="search__filter-season">
-            <label>
+            <label class="search__season-label">
               <input class="search__season-checkbox" type="checkbox" checked>
-              Сезонность
-            </label>
-            <label>
-              <input class="search__checkbox-opened search__filter-checkbox-opened--winter" type="checkbox">
-              Зимние
-            </label>
-            <label>
-              <input class="search__checkbox-opened search__filter-checkbox-opened--summer" type="checkbox">
-              Летние
+                Сезонность
+                <div class="search__season-wrapper">
+                  <label  class="search__season-checkbox-opened search__season-checkbox-opened--winter">
+                    <input class="search__season-radio-1" name="season-radio" type="radio">Зимние
+                    <span class="search__custom-checkbox"></span>
+                    <span class="search__info">?</span>
+                  </label>
+                  <label  class="search__season-checkbox-opened search__season-checkbox-opened--summer">
+                    <input class="search__season-radio-1" name="season-radio" type="radio">Летние
+                    <span class="search__custom-checkbox"></span>
+                  </label>
+                </div>
+                <div class="search__season-arrow"></div>
             </label>
           </div>
           <div class="search__filter-type">
             <h3>Тип шин</h3>
-            <label>
-              <input class="search__type-checkbox" type="checkbox" checked>
-              Все
+            <label class="search__type-checkbox search__type-checkbox--all">
+              <input  class="search__type-radio-1" name="search-type" type="radio" checked>Все
+              <span class="search__custom-checkbox"></span>
             </label>
-            <label>
-              <input class="search__type-checkbox" type="checkbox">
-              Шипованные
+            <label class="search__type-checkbox search__type-checkbox--studded">
+              <input class="search__type-radio-1" name="search-type" type="radio">Шипованные
+              <span class="search__custom-checkbox"></span>
+              <span class="search__info search__info--type1">?</span>
             </label>
-            <label>
-              <input class="search__type-checkbox" type="checkbox">
-              Нешипованные
+            <label class="search__type-checkbox search__type-checkbox--unstudded">
+              <input class="search__type-radio-1" name="search-type" type="radio">Нешипованные
+              <span class="search__custom-checkbox"></span>
+              <span class="search__info search__info--type2">?</span>
             </label>
           </div>
           <div class="search__price">          
-            <label>
-              <input class="search__price-checkbox" type="checkbox" checked>
+            <label class="search__filter-price">
+              <input type="checkbox" checked>
               Цена
-            </label>
-            <label>
-              от
-              <input class="search__price-input search__price-input--min" type="text">
-            </label>
-            <label>
-              до
-              <input class="search__price-input search__price-input--max" type="text">
+              <fieldset class="search__price-fieldset">
+                <div class="search__price-rangebar">
+                  <div class="search__pin search__pin--min"></div>
+                  <div class="search__pin search__pin--max"></div>
+                  <div class="search__priceline"></div>
+                </div>
+                <div class="search__price-value search__price-value--min">
+                  <span>от</span>
+                  <input type="number" name="min-price" value="2000">
+                </div>
+                <div class="search__price-value search__price-value--max">
+                  <span>до</span>
+                  <input type="number" name="min-price" value="12000">
+                </div>
+              </fieldset>
             </label>
           </div>
           <div class="search__filter-diameter">
             <h3>Диаметр</h3>
-            <select name="radius">
-              <option value="1">10</option>
-              <option value="2">12</option>
-              <option value="3">12C</option>
-              <option value="4">14</option>
-              <option value="5">14C</option>
-              <option value="6">15</option>
-              <option value="7">15C</option>
+            <span class="search__info search__info--diameter">?</span>
+            <select class="search__filter-select" name="radius">
               <option value="8">16</option>
               <option value="9">16C</option>
               <option value="10">17</option>
@@ -150,7 +163,8 @@
           </div>
           <div class="search__filter-profile">
             <h3>Профиль</h3>
-            <select name="profile">
+            <span class="search__info search__info--diameter">?</span>
+            <select class="search__filter-select search__filter-select--profile" name="profile">
               <option value="1">55</option>
               <option value="2">60</option>
               <option value="2">80</option>
@@ -158,117 +172,135 @@
           </div>
           <div class="search__filter-width">
             <h3>Ширина</h3>
-            <select name="width">
+            <span class="search__info search__info--width">?</span>
+            <select class="search__filter-select search__filter-select--width" name="width">
               <option value="1">205</option>
               <option value="2">255</option>
             </select>
           </div>
           <div class="search__filter-brand">          
-            <label>
-              <input class="search__brand-checkbox" type="checkbox" checked>
-              Бренд
+            <label class="search__brand-checkbox">
+              <input class="search__filter-brand-input" type="checkbox" checked>Бренд
+              <div class="search__brand-wrapper">
+                <div class="search__textarea-wrapper">
+                  <input class="search__brand-textarea" type="text" placeholder="Введите бренд шины">
+                </div>
+                <div class="search__brand-checkbox-wrapper">
+                  <label class="search__label">
+                    <input class="search__brand" type="checkbox" checked>B Gudrich
+                    <span class="search__custom-checkbox search__custom-checkbox--2"></span>
+                  </label>
+                  <label class="search__label">
+                    <input class="search__brand" type="checkbox" checked>Wridrestone
+                    <span class="search__custom-checkbox search__custom-checkbox--2"></span>
+                  </label>
+                  <label class="search__label">
+                    <input class="search__brand" type="checkbox">Rarym
+                    <span class="search__custom-checkbox search__custom-checkbox--2"></span>
+                  </label>
+                  <label class="search__label">
+                    <input class="search__brand" type="checkbox">BF hide
+                    <span class="search__custom-checkbox search__custom-checkbox--2"></span>
+                  </label>
+                </div>
+                <a href="#">Показать еще</a>
+              </div>
             </label>
-            <input type="text" placeholder="Введите бренд шины">
-            <label>
-              <input class="search__brand-checkbox-opened" type="checkbox" checked>
-              B Gudrich
-            </label>
-            <label>
-              <input class="search__brand-checkbox-opened" type="checkbox" checked>
-              Wridrestone
-            </label>
-            <label>
-              <input class="search__brand-checkbox-opened" type="checkbox">
-              Rarym
-            </label>
-            <label>
-              <input class="search__brand-checkbox-opened" type="checkbox">
-              BF hide
-            </label>
-            <a href="#">Показать еще</a>
           </div>
-          <div class="search__filter-model">          
-            <label>
+          <div class="search__filter-model">
+            <label class="search__model-label">
               <input class="search__model-checkbox" type="checkbox" checked>
               Модель
+              <div class="search__model-wrapper">
+                <div  class="search__textarea-wrapper">
+                  <input class="search__brand-textarea" type="text" placeholder="Введите модель шины">
+                </div>
+                <div class="search__model-label-wrapper">               
+                  <label class="search__label">
+                    <input class="search__model" type="checkbox" checked>ALINA
+                    <span class="search__custom-checkbox search__custom-checkbox--2"></span>
+                  </label>
+                  <label class="search__label">
+                    <input class="search__model" type="checkbox" checked>BLIWWAS
+                    <span class="search__custom-checkbox search__custom-checkbox--2"></span>
+                  </label>
+                  <label class="search__label">
+                    <input class="search__model" type="checkbox">FORCE Moode
+                    <span class="search__custom-checkbox search__custom-checkbox--2"></span>
+                  </label>
+                  <label class="search__label">
+                    <input class="search__model" type="checkbox">ICE Gide
+                    <span class="search__custom-checkbox search__custom-checkbox--2"></span>
+                  </label>
+                </div> 
+                <a href="#">Показать еще</a>
+              </div>
             </label>
-            <input type="text" placeholder="Введите модель шины">
-            <label>
-              <input class="search__model-checkbox-opened" type="checkbox" checked>
-              ALINA
-            </label>
-            <label>
-              <input class="search__model-checkbox-opened" type="checkbox" checked>
-              BLIWWAS
-            </label>
-            <label>
-              <input class="search__model-checkbox-opened" type="checkbox">
-              FORCE Moode
-            </label>
-            <label>
-              <input class="search__model-checkbox-opened" type="checkbox">
-              ICE Gide
-            </label>
-            <a href="#">Показать еще</a>
           </div>
           <div class="search__filter-techology">
             <h3>Технология</h3>
-            <label>
-              <input class="search__techology-checkbox" type="radio">
-              Да
+            <span class="search__info search__info--technology">?</span>
+            <label class="search__techology-label">
+              <input class="search__techology-checkbox" name="technology" type="radio">Да
+              <span class="search__custom-checkbox search__custom-checkbox--2"></span>
             </label>
-            <label>
-              <input class="search__techology-checkbox" type="radio">
-              нет
+            <label class="search__techology-label search__techology-label--no">
+              <input class="search__techology-checkbox" name="technology" type="radio">Нет
+              <span class="search__custom-checkbox search__custom-checkbox--2"></span>
             </label>
           </div>
           <div class="search__filter-promo">
             <h3>Акции</h3>
-            <label>
-              <input class="search__promo-checkbox search__promo-checkbox--sale" type="checkbox" checked>
-              sale
-            </label>
-            <label>
-              <input class="search__promo-checkbox search__promo-checkbox--new" type="checkbox">
-              new
-            </label>
-            <label>
-              <input class="search__promo-checkbox search__promo-checkbox--hit" type="checkbox">
-              hit
-            </label>
-            <label>
-              <input class="search__promo-checkbox search__promo-checkbox--gift" type="checkbox" checked>
-              подарок
-            </label>
+            <div class="search__promo-wrapper">
+              <label>
+                <input class="search__promo-checkbox" type="checkbox" checked>
+                <span class="search__promo">sale</span>
+              </label>
+              <label>
+                <input class="search__promo-checkbox search__promo-checkbox--new" type="checkbox">
+                <span class="search__promo">new</span>
+              </label>
+              <label>
+                <input class="search__promo-checkbox search__promo-checkbox--hit" type="checkbox">
+                <span class="search__promo">hit</span>
+              </label>
+              <label>
+                <input class="search__promo-checkbox search__promo-checkbox--gift" type="checkbox" checked>
+                <span class="search__promo">подарок</span>
+              </label>
+            </div>
           </div>
           <div class="search__filter-country">          
-            <label>
+            <label class="search__country-label">
               <input class="search__country-checkbox" type="checkbox" checked>
               Страны
             </label>
-            <label>
-              <input class="search__country-checkbox-opened" type="checkbox" checked>
-              Россия
-            </label>
-            <label>
-              <input class="search__model-checkbox-opened" type="checkbox" checked>
-              Германия
-            </label>
-            <label>
-              <input class="search__model-checkbox-opened" type="checkbox">
-              Россия
-            </label>
-            <label>
-              <input class="search__model-checkbox-opened" type="checkbox">
-              Германия
-            </label>
+            <div class="search__country-wrapper">
+              <label class="search__label search__label--country">
+                <input class="search__brand" type="checkbox" checked>Россия
+                <span class="search__custom-checkbox search__custom-checkbox--2"></span>
+              </label>
+              <label class="search__label search__label--country">
+                <input class="search__brand" type="checkbox" checked>Германия
+                <span class="search__custom-checkbox search__custom-checkbox--2"></span>
+              </label>
+              <label class="search__label search__label--country">
+                <input class="search__brand" type="checkbox">Россия
+                <span class="search__custom-checkbox search__custom-checkbox--2"></span>
+              </label>
+              <label class="search__label search__label--country">
+                <input class="search__brand" type="checkbox">Германия
+                <span class="search__custom-checkbox search__custom-checkbox--2"></span>
+              </label>
+            </div>
             <a href="#">Показать еще</a>
           </div>
-          <input type="submit" value="подобрать">
+          <input class="search__submit" type="submit" value="подобрать">
           <select class="search__filter-additional" name="additional">
             <option value="1">Дополнительные параметры</option>
+            <option value="2">Сюда не больше не жми</option>
           </select>
-          <button type="reset">Сбросить фильтр</button>
+          <button class="search__reset" type="reset">Сбросить фильтр</button>
         </form>
       <div class="search__result">
         <div class="card">
@@ -431,7 +463,6 @@
           <img class="card__banner-sale" src="img/sale.jpg" width="25" height="63" alt="sale">
           <a class="card__link" href="#">Сообщить о поступлении</a>
         </div>
-      </div>
         <ul class="search__result-list">
           <li><a>1</a></li>
           <li><a href="#">2</a></li>
@@ -439,7 +470,8 @@
           <li><a href="#">4</a></li>
           <li><a href="#">5</a></li>
           <li><a href="#">11</a></li>
-        </ul>     
+        </ul>    
+      </div>
     </div>
     </main>
     <footer class="footer">
