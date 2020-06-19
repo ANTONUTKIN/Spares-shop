@@ -20,17 +20,43 @@
   justify-content: space-between;
   width: 875px;
   height: 1705px;
-  overflow: hidden;
+  margin-bottom: 205px;
 }
 
-.search__result div {
+.search__result .card {
   margin-bottom: 30px;
 }
 
 .search__result-list {
   display: flex;
-  position: absolute;
-  top: 1750px;
+  justify-content: space-between;
+  margin: 40px auto 0 223px;
+  list-style: none;
+}
+
+.search__list-link {
+  display: block;
+  padding: 7px 15px;
+  font-size: 18px;
+  line-height: 22px;
+  color: #A8A8A8;
+  text-decoration: none;
+  text-align: center;
+  margin: 0 6px;
+
+  &--active {
+    border: 2px solid #FF7931;
+    box-sizing: border-box;
+    color: #FF7931;
+    font-weight: bold;
+    margin-right: 22px;
+  }
+
+    &--dots {
+      margin: 0;
+      padding-left: 5px;
+      padding-right: 5px;
+  }
 }
 
 .search__filter-header {
@@ -90,7 +116,6 @@
   width: 12px;
   height: 8px;
   background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M10.6 0L6 4.6 1.4 0 0 1.4l6 6 6-6L10.6 0z' fill='%23D7D9DF'/%3E%3C/svg%3E%0A");
-  transform: rotate(180deg);
 }
 
 .search__season-checkbox {
@@ -127,6 +152,30 @@
 
 .search__season-wrapper {
   display: none;
+}
+
+.search__season-wrapper::before,
+.search__price-fieldset::before,
+.search__brand-wrapper::before,
+.search__model-wrapper::before,
+.search__country-wrapper::before {
+  position: absolute;
+  display: block;
+  content: "";
+  top: 5px;
+  left: -20px;
+  width: 12px;
+  height: 8px;
+  background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M10.6 0L6 4.6 1.4 0 0 1.4l6 6 6-6L10.6 0z' fill='%23D7D9DF'/%3E%3C/svg%3E%0A");
+  transform: rotate(180deg);
+  background-color: #fff;
+  z-index: 2;
+}
+
+.search__brand-wrapper::before,
+.search__model-wrapper::before,
+.search__country-wrapper::before {
+  left: 0;
 }
 
 .search__season-checkbox:checked + .search__season-wrapper {
@@ -236,7 +285,7 @@
 }
 
 .search__price {
-  margin-bottom: 80px;
+  margin-bottom: 40px;
 }
 
 .search__filter-price {
@@ -254,9 +303,13 @@
 }
 
 .search__price-fieldset {
-  display: block;
+  display: none;
   border: none;
+  margin-bottom: 40px;
+}
 
+.search__price-checkbox:checked + .search__price-fieldset {
+  display: block;
 }
 
 .search__price-fieldset span {
@@ -546,9 +599,30 @@
   margin-bottom: 30px;
 }
 
+.search__country-label {
+  margin-bottom: 0;
+}
+
 .search__label--country {
   font-size: 16px;
   letter-spacing: 0.5px;
+}
+
+.search__country-wrapper {
+  display: none;
+  margin: 20px auto 50px -20px;
+  font-weight: normal;
+}
+
+.search__country-wrapper a {
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  font-size: 13px;
+}
+
+.search__country-checkbox:checked + .search__country-wrapper {
+  display: flex;
 }
 
 .search__country-wrapper label input {
