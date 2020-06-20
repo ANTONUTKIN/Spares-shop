@@ -1,17 +1,20 @@
 .popular {
-  margin-bottom: 165px;
+  margin-bottom: 150px;
 }
 
 .popular h2 {
   font-size: 26px;
   line-height: 30px;
   font-weight: bold;
+  padding-left: 15px;
 }
 
 .popular__categories-list {
   padding: 0;
   list-style: none;
   display: flex;
+  padding-left: 15px;
+  margin-bottom: 0;
 }
 
 .popular__categories-button {
@@ -37,8 +40,6 @@
 
 .popular__products {
   position: relative;
-  display: flex;
-  justify-content: space-between;
   margin-bottom: 120px;
 }
 
@@ -122,8 +123,8 @@
   width: 252px;
   height: 50px;
   padding-top: 17px;
-  left: 460px;
-  bottom: -84px;
+  left: 475px;
+  bottom: -72px;
   background-color: #F0F0F4;
   font-family: "Proxima Nova", "Arial", sans-serif;
   font-style: normal;
