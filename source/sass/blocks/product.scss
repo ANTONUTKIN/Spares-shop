@@ -1,0 +1,102 @@
+.product {
+  display: flex;
+}
+
+.product__photo {
+  position: relative;
+  height: 585px;
+  width: 475px;
+  margin-right: 128px;
+}
+
+.product__photo-sale {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: "Proxima Nova", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.12em;
+  padding: 14px 28px;
+  text-align: center;
+}
+
+.product__photo-gift,
+.product__photo-term {
+  position: absolute;
+  top: 53px;
+  left: 0;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.7px;
+  color: #A8A8A8;
+}
+
+.product__photo-term {
+  top: 105px;
+}
+
+.product__photo-price {
+  position: absolute;
+  top: 135px;
+  left: 0;
+  font-family: "Proxima Nova", "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.5px;
+  color: #A8A8A8;
+  font-weight: bold;
+}
+
+.product__photo-image {
+  display: block;
+  margin: 45px auto auto 167px;
+}
+
+.product__photo-old-price {
+  position: absolute;
+  bottom: 93px;
+  left: 228px;
+  font-size: 30px;
+  line-height: 36px;
+  color: #48494D;
+
+  &::after {
+		position: absolute;
+		content: "";
+		width: 135px;
+		transform: rotate(-8deg);
+		border-bottom: 1px solid #48494D;
+		top: 19px;
+		right: -19px;
+	}
+}
+
+.product__photo-new-price {
+  position: absolute;
+  bottom: 40px;
+  left: 200px;
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: bold;
+  color: #48494D;
+}
+
+.product__photo-link {
+  position: absolute;
+  left: 170px;
+  bottom: 2px;
+  font-family: "Proxima Nova", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 18px;
+  color: #FF7931;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 121, 49, 0.2) ;
+}
+
+.product__photo-snowflake {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
