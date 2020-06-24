@@ -1,0 +1,171 @@
+.info {
+  margin-bottom: 86px;
+}
+
+.info__nav {
+  display: flex;
+  box-sizing: border-box;
+  justify-content: space-around;
+  width: 100%;
+  height: 70px;
+  background-color: #F4F4F6;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 52px;
+}
+
+.info__nav-item {
+  display: block;
+  text-align: center;
+  font-family: "Proxima Nova", "Arial", sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.info__nav-item:hover {
+  color: #000;
+  border-bottom: 2px solid #FF7931;
+  text-shadow: 1px 0 0 #48494D;
+  cursor: pointer;
+}
+
+.info__search-form {
+  display: flex;
+  padding-left: 40px;
+  margin-bottom: 50px;
+  font-size: 17px;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.7);
+  letter-spacing: 0.6px;
+}
+
+.info__search-text {
+  display: block;
+  padding-top: 6px;
+  margin-right: 10px;
+}
+
+.info__search-textarea {
+  position: relative;
+  margin-right: 175px;
+}
+
+.info__search-textarea input {
+  display: block;
+  width: 253px;
+  height: 30px;
+  padding: 0 50px 0 10px;
+  background-color: #F4F4F6;
+  border-radius: 50px;
+  border: none;
+}
+
+.info__search-submit {
+  position: absolute;
+  top: 5px;
+  right: 13px;
+  display: block;
+  background-image: url("data:image/svg+xml,%3Csvg width='16' height='17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M6.17 12.56A6.22 6.22 0 010 6.28 6.22 6.22 0 016.17 0c3.4 0 6.16 2.81 6.16 6.28 0 1.49-.5 2.86-1.36 3.94l4.83 4.92c.27.26.27.7 0 .96a.66.66 0 01-.94 0l-4.83-4.92a6.07 6.07 0 01-3.86 1.38zm0-1.36C8.84 11.2 11 9 11 6.28a4.88 4.88 0 00-4.83-4.92 4.88 4.88 0 00-4.84 4.92 4.88 4.88 0 004.84 4.92z' fill='%23C4C4C4'/%3E%3C/svg%3E%0A");
+  width: 16px;
+  height: 15px;
+}
+
+.info__search-radio {
+  position: relative;
+  display: block;
+  padding-top: 5px;
+
+  &--1 {
+    margin-right: 60px;
+  }
+}
+
+.info__custom-checkbox {
+  position: absolute;
+  content: "";
+  left: -20px;
+  top: 7px;
+  width: 12px;
+  height: 12px;
+  border: 1px solid #CDCDCD;
+}
+
+.info__search-input {
+  appearance: none;
+}
+
+.info__search-input:checked + .info__custom-checkbox {
+  background-image: url("data:image/svg+xml,%3Csvg width='14' height='14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11.67.25H2.33v1.5h9.34V.25zm-9.34 0C1.2.25.25 1.19.25 2.33h1.5c0-.32.26-.58.58-.58V.25zM.25 2.33v9.34h1.5V2.33H.25zm0 9.34c0 1.14.94 2.08 2.08 2.08v-1.5a.59.59 0 01-.58-.58H.25zm2.08 2.08h9.34v-1.5H2.33v1.5zm9.34 0c1.14 0 2.08-.94 2.08-2.08h-1.5c0 .32-.26.58-.58.58v1.5zm2.08-2.08V2.33h-1.5v9.34h1.5zm0-9.34c0-1.14-.94-2.08-2.08-2.08v1.5c.32 0 .58.26.58.58h1.5z' fill='%23FF7931'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M9.67 3.57H4.33a.76.76 0 00-.76.76v5.34c0 .42.34.76.76.76h5.34c.42 0 .76-.34.76-.76V4.33a.76.76 0 00-.76-.76z' fill='%23FF7931'/%3E%3Cpath d='M9.67 2.82H4.33v1.5h5.34v-1.5zm-5.34 0c-.83 0-1.5.68-1.5 1.51h1.5v-1.5zm-1.5 1.51v5.34h1.5V4.33h-1.5zm0 5.34c0 .83.67 1.5 1.5 1.5v-1.5h-1.5zm1.5 1.5h5.34v-1.5H4.33v1.5zm5.34 0c.83 0 1.5-.67 1.5-1.5h-1.5v1.5zm1.5-1.5V4.33h-1.5v5.34h1.5zm0-5.34c0-.83-.67-1.5-1.5-1.5v1.5h1.5z' fill='%23FF7931'/%3E%3C/svg%3E%0A");
+  background-position: center;
+  width: 12px;
+  height: 12px;
+}
+
+.info__table {
+  padding-left: 38px;
+  box-sizing: border-box;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.6px;
+  color: rgba(0, 0, 0, 0.7);
+  margin: 0;
+}
+
+
+.info__table-row {
+  display: flex;
+  margin-bottom: 18px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.info__table-header {
+  display: flex;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+  margin-bottom: 15px;
+}
+
+.info__table-adress {
+  width: 215px;
+  margin-right: 84px;
+  margin-bottom: 20px;
+}
+
+.info__table-regime {
+  display: inline-block;
+  justify-content: space-between;
+  width: 152px;
+  margin-right: 100px;
+}
+
+.info__table-regime span {
+  display: inline-block;
+  float: left;
+}
+
+.info__table-regime span:nth-child(2),
+.info__table-regime span:last-child {
+  float: right;
+}
+
+.info__table-availability {
+  width: 150px;
+  margin-right: 55px;
+}
+
+.info__table-quantity {
+  width: 150px;
+  margin-right: 80px;
+}
+
+.info__table-button {
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  width: 60px;
+  padding: 10px 41px 9px 41px;
+  margin-top: 2px;
+  text-decoration: none;
+}

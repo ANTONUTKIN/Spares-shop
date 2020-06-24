@@ -1,12 +1,14 @@
 .product {
   display: flex;
+  margin-bottom: 78px;
 }
 
 .product__photo {
   position: relative;
   height: 585px;
-  width: 475px;
-  margin-right: 128px;
+  width: 505px;
+  margin-top: 5px;
+  margin-right: 130px;
 }
 
 .product__photo-sale {
@@ -50,7 +52,7 @@
 
 .product__photo-image {
   display: block;
-  margin: 45px auto auto 167px;
+  margin: 45px auto auto 164px;
 }
 
 .product__photo-old-price {
@@ -100,3 +102,119 @@
   top: 0;
 }
 
+.product__discription {
+  box-sizing: border-box;
+}
+
+.product__discription-header {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 36px;
+  color: #48494D;
+  margin-top: 0;
+  padding: 0;
+  margin-bottom: 0;
+  letter-spacing: 0.5px;
+}
+
+.product__discription-code {
+  margin-top: 7px;
+  margin-bottom: 22px;
+}
+
+.product__discription-icons {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.product__icon {
+  display: block;
+  margin-right: 27px;
+}
+
+.product__stars {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product__stars svg {
+  padding-top: 2px;
+  margin-right: 7px;
+}
+
+.product__discription-main {
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.product__radio-text {
+  display: block;
+  font-size: 21px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  color: #48494D;
+  margin-right: 25px;
+  padding-bottom: 3px;
+}
+
+.product__radio {
+  appearance: none;
+  position: absolute;
+}
+
+.product__radio:checked + .product__radio-text {
+  font-weight: bold;
+  border-bottom: 2px solid #FF7931;
+}
+
+.product__discription-table {
+  font-size: 21px;
+  line-height: 22px;
+  letter-spacing: 0.5px;
+  color: #48494D;
+  box-sizing: border-box;
+  margin-bottom: 18px;
+}
+
+.product__discription-table tr {
+  display: flex;
+  text-align: start;
+  padding-bottom: 5px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.product__discription-table tr td {
+  display: block;
+  text-align: start;
+  padding: 16px 3px 0 2px;
+}
+
+.product__table-column1 {
+  width: 305px;
+}
+
+.product__discription-link {
+  display: block;
+  width: 92px;
+  font-family: "Proxima Nova", Arial, sans-serif;
+  text-align: center;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgb(255, 121, 49);
+  text-decoration: none;
+  border-bottom: 2px solid rgba(255, 121, 49, 0.2);
+  margin-bottom: 55px;
+}
+
+.product__discription-buy {
+  font-family: "Proxima Nova", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 17px;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 2.3px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding: 19px 28px 17px 28px;
+}

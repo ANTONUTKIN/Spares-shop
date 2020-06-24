@@ -43,7 +43,7 @@
     </header>
     <main>
       <div class="container">
-        <ul class="breadcrumbs">
+        <ul class="breadcrumbs breadcrumbs--card">
           <li><a href="index.html">Главная</a></li>
           <li><a href="">Шины</a></li>
           <li><a>Шины зимние</a></li>
@@ -63,19 +63,18 @@
         <img class="product__photo-snowflake" src="../img/snowflake.png" width="36" height="40" alt="Зимняя">
       </div>
       <div class="product__discription">
-        <div class="product__discription-header">
-          <h2>Шина 205/80 R16 104Q Misha RF Power Grum</h2>
-          <p>Код товара: 1380198269</p>
-          <div>
-            <!-- пока такой вид потом чекбоксами сделаю сердечко и звездочки во время стилизации --> 
-            <svg width="27" height="25" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path clip-rule="evenodd" d="M7.37 1.2C3.47 1.2.39 4.78 1.1 9.9c.62 4.43 11.22 13.3 12.4 13.3 1.18 0 11.78-8.87 12.4-13.3.7-5.13-2.38-8.7-6.27-8.7a7.09 7.09 0 00-6.13 3.28A7.09 7.09 0 007.37 1.2z" stroke="#A8A8A8" stroke-width="2"></path>
-            </svg>
-            <svg width="20" height="28" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="16" y="15.77" width="4" height="11.73" rx="2" fill="#CDCDCD"></rect>
-              <rect x="8" y=".53" width="4" height="26.97" rx="2" fill="#CDCDCD"></rect>
-              <rect y="9.91" width="4" height="17.59" rx="2" fill="#CDCDCD"></rect>
-            </svg>
+        <h2 class="product__discription-header">Шина 205/80 R16 104Q Misha RF Power Grum</h2>
+        <p class="product__discription-code">Код товара: 1380198269</p>
+        <div class="product__discription-icons">
+          <svg class="product__icon" width="27" height="25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path clip-rule="evenodd" d="M7.37 1.2C3.47 1.2.39 4.78 1.1 9.9c.62 4.43 11.22 13.3 12.4 13.3 1.18 0 11.78-8.87 12.4-13.3.7-5.13-2.38-8.7-6.27-8.7a7.09 7.09 0 00-6.13 3.28A7.09 7.09 0 007.37 1.2z" stroke="#A8A8A8" stroke-width="2"></path>
+          </svg>
+          <svg class="product__icon" width="20" height="28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="16" y="15.77" width="4" height="11.73" rx="2" fill="#CDCDCD"></rect>
+            <rect x="8" y=".53" width="4" height="26.97" rx="2" fill="#CDCDCD"></rect>
+            <rect y="9.91" width="4" height="17.59" rx="2" fill="#CDCDCD"></rect>
+          </svg>
+          <div class="product__stars">
             <svg width="23" height="21" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M11.11 0l2.6 7.95h8.38l-6.79 4.9 2.6 7.95-6.79-4.9-6.78 4.9 2.6-7.94L.13 7.95h8.38L11.12 0z" fill="#FF7931"></path>
             </svg>
@@ -95,40 +94,105 @@
         </div>
         <div class="product__discription-main">
           <label>
-            <input class="product__discription-checkbox product__discription-checkbox--characteristic" type="checkbox" checked="">
-            Характеристики
+            <input class="product__radio" name="discription" type="radio" checked="">
+            <span class="product__radio-text">Характеристики</span>
           </label>
           <label>
-            <input class="product__discription-checkbox product__discription-checkbox--availability" type="checkbox">
-            Наличие в автосалоне
+            <input class="product__radio" name="discription" type="radio">
+            <span class="product__radio-text">Наличие в автосалоне</span>
           </label>          
         </div>
         <div class="product__discription-characteristic">
           <table class="product__discription-table">
             <tr>
-              <td>Производитель</td>
+              <td class="product__table-column1">Производитель</td>
               <td>Кама</td>
             </tr>
             <tr>
-              <td>Диаметр</td>
+              <td class="product__table-column1">Диаметр</td>
               <td>20</td>
             </tr>
             <tr>
-              <td>Сезон</td>
+              <td class="product__table-column1">Сезон</td>
               <td>Всесезонная</td>
             </tr>
             <tr>
-              <td>Индекс скорости нагрузки</td>
+              <td class="product__table-column1">Индекс скорости нагрузки</td>
               <td>141/139L</td>
             </tr>
             <tr>
-              <td>Серия</td>
+              <td class="product__table-column1">Серия</td>
               <td>HN 06</td>
             </tr>
           </table>
-          <a href="#">Показать еще</a>
+          <a class="product__discription-link" href="#">Показать еще</a>
         </div>
         <a href="#" class="product__discription-buy btn">купить шину</a>
+      </div>
+    </section>
+    <section class="info container">
+      <nav class="info__nav">
+        <div class="info__nav-item">О товаре</div>
+        <div class="info__nav-item">Характеристики</div>
+        <div class="info__nav-item">Отзывы</div>
+        <div class="info__nav-item">Самовывоз</div>
+        <div class="info__nav-item">Доставка</div>
+        <div class="info__nav-item">Услуги</div>
+        <div class="info__nav-item">Бизнесу</div>
+      </nav>
+      <div class="info__search">
+        <form class="info__search-form" action="GET">
+          <span class="info__search-text">Магазин</span>
+          <label class="info__search-textarea" for="">
+            <input type="text">
+            <a href="" class="info__search-submit"></a>
+          </label>
+          <label class="info__search-radio info__search-radio--1">
+            <input class="info__search-input" type="radio" name="purhcase">Забрать сегодня
+            <span class="info__custom-checkbox"></span>
+          </label>
+          <label class="info__search-radio info__search-radio--1">
+            <input class="info__search-input" type="radio" name="purhcase" checked="">Забрать завтра и позднее
+            <span class="info__custom-checkbox"></span>
+          </label>
+        </form>
+        <table class="info__table">
+          <tr class="info__table-header">
+            <td class="info__table-adress">Адрес</td>
+            <td class="info__table-regime">Режим работы</td>
+            <td class="info__table-availability">Доступно</td>
+            <td class="info__table-quantity">Количество</td>
+            <td class="info__table-button"> </td>
+          </tr>
+          <tr class="info__table-row">
+            <td class="info__table-adress">Санкт-Петербург, ул Большая Конюшенная, д 19</td>
+            <td class="info__table-regime"><span>пн-сб:</span><span> 08:00-19:00</span><span>вс:</span><span>09:00-17:00</span></td>
+            <td class="info__table-availability">Завтра и позднее</td>
+            <td class="info__table-quantity">Мало</td>
+            <td><a class="info__table-button btn" href="#">КУПИТЬ</a></td>
+          </tr>
+          <tr class="info__table-row">
+            <td class="info__table-adress">Санкт-Петербург, ул Большая Конюшенная, д 19</td>
+            <td class="info__table-regime"><span>пн-сб:</span><span> 08:00-19:00</span><span>вс:</span><span>09:00-17:00
+            <td class="info__table-availability">Завтра и позднее</td>
+            <td class="info__table-quantity">Много</td>
+            <td><a class="info__table-button btn" href="#">КУПИТЬ</a></td>
+          </span></td></tr>
+          <tr class="info__table-row">
+            <td class="info__table-adress">Санкт-Петербург, ул Большая Конюшенная, д 19</td>
+            <td class="info__table-regime"><span>пн-сб:</span><span> 08:00-19:00</span><span>вс:</span><span>09:00-17:00
+            <td class="info__table-availability">Завтра и позднее</td>
+            <td class="info__table-quantity">Достаточно</td>
+            <td><a class="info__table-button btn" href="#">КУПИТЬ</a></td>
+          </span></td></tr>
+          <tr class="info__table-row">
+            <td class="info__table-adress">Санкт-Петербург, ул Большая Конюшенная, д 19</td>
+            <td class="info__table-regime"><span>пн-сб:</span><span> 08:00-19:00</span><span>вс:</span><span>09:00-17:00
+            <td class="info__table-availability">Завтра и позднее</td>
+            <td class="info__table-quantity">Мало</td>
+            <td><a class="info__table-button btn" href="#">КУПИТЬ</a></td>
+          </span></td></tr>
+        </table>
       </div>
     </section>
     <section class="additive container-slider">
