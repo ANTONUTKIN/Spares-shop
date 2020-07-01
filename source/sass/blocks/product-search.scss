@@ -11,10 +11,15 @@
 .product-search__list li {
   list-style: none;
   margin: 0 13px;
+  
 }
 
 .product-search__list li:first-child {
   margin-left: 0;
+
+  @media (max-width: $tablet-width) {
+		margin-left: 13px;
+	}
 }
 
 .product-search__button {
@@ -25,18 +30,21 @@
   padding: 12px 22px;
   background-color: transparent;
   border: none;
-}
+  cursor: pointer;
 
-.product-search__button--checked {
-  font-weight: bold;
-  background: #F0F0F4;
-  border-radius: 5px;
+  &--active {
+    text-shadow: 1px 0 0 #48494D;
+    background: #F0F0F4;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+  }
 }
 
 .product-search__input {
   position: relative;
   height: 50px;
   overflow: hidden;
+  display: none;
 }
 
 .product-search__input-textarea {

@@ -26,6 +26,10 @@
   padding-bottom: 10px;
   cursor: pointer;
 
+  @media (max-width: $tablet-width) {
+		margin-right: 12px;
+	}
+
   &:hover {
     text-shadow: 1px 0 0 #48494D;
     border-bottom: 2px solid #FF7931;

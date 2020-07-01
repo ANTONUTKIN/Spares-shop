@@ -2,6 +2,10 @@
   width: 1170px;
   margin-left: auto;
   margin-right: auto;
+
+  @media (max-width: $tablet-width) {
+    width: 770px;
+  }
 }
 
 .container-slider {
@@ -9,4 +13,9 @@
   padding: 0 70px;
   margin-left: auto;
   margin-right: auto;
+
+  @media (max-width: $tablet-width) {
+    width: 770px;
+    padding: 0;
+  }
 }

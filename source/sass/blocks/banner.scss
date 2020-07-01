@@ -1,9 +1,30 @@
 .banner {
-	height: 395px;
-	width: 268px;
+	height: 394px;
+	width: 269px;
 	margin-top: 20px;
 	border: 1px solid #cdcdcd;
-	border-radius: 3px;
+  border-radius: 3px;
+  
+  @media (max-width: $tablet-width) {
+		margin: 0 58px;
+  }
+
+
+  &--2 {
+    display: none;
+  
+    @media (max-width: $tablet-width) {
+      display: block;
+    }
+  }
+
+  &--3 {
+    display: none;
+
+    @media (max-width: $tablet-width) {
+      display: block;
+    }
+  }
 }
 
 .banner__top {

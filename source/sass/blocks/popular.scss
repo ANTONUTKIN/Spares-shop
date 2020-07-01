@@ -1,5 +1,9 @@
 .popular {
   margin-bottom: 150px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 200px;
+	}
 }
 
 .popular h2 {
@@ -29,6 +33,10 @@
   border-bottom: 2px solid #fff;
   padding-bottom: 10px;
   cursor: pointer;
+
+  @media (max-width: $tablet-width) {
+		margin-right: 12px;
+	}
 }
 
 .popular__categories-button:hover {
@@ -123,7 +131,8 @@
   width: 252px;
   height: 50px;
   padding-top: 17px;
-  left: 475px;
+  left: 50%;
+  margin-left: -125px;
   bottom: -72px;
   background-color: #F0F0F4;
   font-family: "Proxima Nova", "Arial", sans-serif;
@@ -137,4 +146,8 @@
   color: #BDBEC2;
   text-decoration: none;
   box-sizing: border-box;
+
+  @media (max-width: $tablet-width) {
+    bottom: -130px;
+	}
 }

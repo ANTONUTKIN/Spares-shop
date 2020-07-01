@@ -3,6 +3,16 @@
 	overflow: hidden;
 	margin-right: 40px;
 	margin-left: -10px;
+
+	@media (max-width: $tablet-width) {
+    margin: 0 auto 30px auto;
+    width: 755px
+  }
+}
+
+.slider__item img {
+	width: 100%;
+	height: 100%;
 }
  
 .slick-track{
@@ -56,7 +66,11 @@
 	left: 347px;
 	display: flex;
 	align-items: center;
-	justify-content: center;
+  justify-content: center;
+  
+  @media (max-width: $tablet-width) {
+    left: 280px;
+  }
 }
   
 .slider .slick-dots li {
@@ -82,13 +96,53 @@
 	margin-bottom: 0;
 }
 
+.slider__popular .slick-dots,
+.slider__additive .slick-dots {
+  position: absolute;
+  display: flex;
+	bottom: -50px;
+  left: 50%;
+  margin-left: -80px;
+	display: flex;
+	align-items: center;
+  justify-content: center;
+}
+
+.slider__popular .slick-dots li,
+.slider__additive .slick-dots li {
+	list-style: none;
+	margin: 0 5px;
+}
+
+.slider__popular .slick-dots li button,
+.slider__additive .slick-dots li button, {
+	font-size: 0;
+	width: 10px;
+	height: 10px;
+	background-color: rgba(0, 0, 0, 0.2);
+	border: none;
+	border-radius: 50%;
+	padding: 0;
+}
+
+.slider__popular .slick-dots li.slick-active button,
+.slider__additive .slick-dots li.slick-active button {
+	background-color: #FF7931;
+}
+
+
 .slider__additive {
 	position: relative;
 }
 
 .slider__additive .card, 
 .slider__popular .card {
-	margin: 15px 15px;
+  margin: 15px 15px;
+  
+  @media (max-width: $tablet-width) {
+    margin: 15px 55px;
+  }
+
 }
 
 
@@ -134,4 +188,45 @@
 	right: -51px;
 	top: 200px;
 }
+
+.slider__banner {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  height: 420px;
+  width: 270px;
   
+  @media (max-width: $tablet-width) {
+		width: 770px;
+		justify-content: space-around;
+  }
+}
+
+.slider__banner .slick-dots {
+	position: absolute;
+	bottom: -34px;
+  left: 50%;
+  margin-left: -70px;
+	display: flex;
+	align-items: center;
+  justify-content: center;
+}
+
+.slider__banner .slick-dots li {
+	list-style: none;
+	margin: 0 5px;
+}
+  
+.slider__banner .slick-dots li.slick-active button {
+	background-color: #FF7931;
+}
+  
+.slider__banner .slick-dots li button {
+	font-size: 0;
+	width: 10px;
+	height: 10px;
+	background-color: rgba(0, 0, 0, 0.2);
+	border: none;
+	border-radius: 50%;
+	padding: 0;
+}
