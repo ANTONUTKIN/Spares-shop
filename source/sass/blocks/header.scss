@@ -60,6 +60,10 @@
       }
 }
 
+.header__top-list li a:hover {
+  color: #FF7931;
+}
+
 .header__top-logo {
     margin: 17px 103px 17px 0;
 
@@ -189,5 +193,9 @@
 .header__nav-list li:hover {
     text-shadow: 1px 0 0 #48494D;
     border-bottom: 4px solid #FF7931;
-    padding-bottom: 16px;
+    padding-bottom: 10px;
+
+    @media (max-width: $tablet-width) {
+      padding-bottom: 16px;
+  }
 }

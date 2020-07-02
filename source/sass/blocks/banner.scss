@@ -9,7 +9,6 @@
 		margin: 0 58px;
   }
 
-
   &--2 {
     display: none;
   
@@ -27,6 +26,11 @@
   }
 }
 
+.banner a {
+  color: inherit;
+  text-decoration: none;
+}
+
 .banner__top {
 	position: relative;
 	width: 100%;
@@ -40,7 +44,7 @@
 		width: 25px;
 		left: -1px;
 		top: -1px;
-		background-image: url("../../img/discount.jpg");
+		background-image: url("../img/discount.jpg");
 	}
 }
 
@@ -114,7 +118,7 @@
 		content: "";
 		width: 28px;
 		height: 28px;
-		background-image: url("../../img/svg/icon-timer.svg");
+		background-image: url("../img/svg/icon-timer.svg");
 		left: 46px;
 		bottom: -10px;
 	}

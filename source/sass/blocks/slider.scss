@@ -35,11 +35,12 @@
 	width: 35px;
 	height: 35px;
 	border: none;
+	cursor: pointer;
 }
   
 .slider .slick-arrow.slick-prev {
 	left: 20px;
-	background: url('../../img/svg/icon-arrow.svg') 50% 50% / 60% no-repeat;
+	background: url('../img/svg/icon-arrow.svg') 50% 50% / 60% no-repeat;
 	transform: rotate(-180deg);
 	background-color: rgba(255, 255, 255, 0.3);
 	border-radius: 100%;
@@ -51,7 +52,7 @@
   
 .slider .slick-arrow.slick-next {
 	right: 0;
-	background: url('../../img/svg/icon-arrow.svg') 50% 50% / 60% no-repeat;
+	background: url('../img/svg/icon-arrow.svg') 50% 50% / 60% no-repeat;
 	background-color: rgba(255, 255, 255, 0.3);
 	border-radius: 100%;
 }
@@ -115,7 +116,7 @@
 }
 
 .slider__popular .slick-dots li button,
-.slider__additive .slick-dots li button, {
+.slider__additive .slick-dots li button {
 	font-size: 0;
 	width: 10px;
 	height: 10px;
@@ -151,17 +152,18 @@
 	position: absolute;
   font-size: 0;
   top: 166px;
-  background: url('../../img/svg/icon-arrow.svg') 50% 50% / 60% no-repeat;
+  background: url('../img/svg/icon-arrow.svg') 50% 50% / 60% no-repeat;
 	width: 35px;
 	height: 35px;
 	background-color: transparent;
   border: 1px solid #fff;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
 	border-radius: 50%;
-	z-index: 5;
+  z-index: 5;
+  cursor: pointer;
 
 	&:hover {
-    background-image: url('../../img/svg/icon-arrow-hover.svg') 50% 50% / 60% no-repeat;
+    background-image: url('../img/svg/icon-arrow-hover.svg') 50% 50% / 60% no-repeat;
     background-color: #D7D9DF;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
   }
