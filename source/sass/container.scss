@@ -4,9 +4,14 @@
   margin-right: auto;
 
   @media (max-width: $tablet-width) {
-    width: 770px;
+    width: 760px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 330px;
   }
 }
+
 
 .container-slider {
   width: 1200px;
@@ -17,5 +22,9 @@
   @media (max-width: $tablet-width) {
     width: 770px;
     padding: 0;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 330px;
   }
 }
