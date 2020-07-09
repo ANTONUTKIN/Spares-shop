@@ -67,6 +67,7 @@
           settings: {
             arrows: false,
             slidesToShow: 1,
+            slidesToScroll: 1,
             variableWidth: true,
             dots: true,
           }
@@ -94,13 +95,13 @@
           settings: {
             arrows: false,
             slidesToShow: 1,
+            slidesToScroll: 1,
             variableWidth: true,
             dots: true,
           }
         }
       ]
     });
-    $('.slider__parts').slick('setPosition');
   });
 
   $(document).ready(function(){
@@ -158,6 +159,13 @@
       variableWidth: true,
       responsive: [
         {
+          breakpoint: 1340,
+          settings: {
+            variableWidth: true,
+            focusOnSelect: true,
+            slidesToScroll: 1,
+          }
+        },{
           breakpoint: 760,
           settings: {
             slidesToShow: 1,
@@ -168,6 +176,53 @@
       ]
     });
   });
+
+  $(document).ready(function(){
+    $('.popular__categories-list').slick({
+      arrows: false,
+      slidesToShow: 6,
+      slidesToScroll: 6,
+      infinite: false,
+      variableWidth: true,
+      responsive: [
+        {
+          breakpoint: 760,
+          settings: {      
+            arrows: false,
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            focusOnSelect: true,
+            infinite: false,
+            focusOnSelect: true,
+          }
+        }
+      ]
+    });
+  });
+
+  $(document).ready(function(){
+    $('.additive__list').slick({
+      arrows: false,
+      slidesToShow: 6,
+      slidesToScroll: 6,
+      infinite: false,
+      variableWidth: true,
+      responsive: [
+        {
+          breakpoint: 760,
+          settings: {      
+            arrows: false,
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            focusOnSelect: true,
+            infinite: false,
+            focusOnSelect: true,
+          }
+        }
+      ]
+    });
+  });
+  
 
   $(document).ready(function(){
     $('.product-search__input:first').show();
@@ -192,7 +247,23 @@
       $(this).addClass('popular__categories-button--active');
       $('.sliders').hide();
       $('.sliders').eq(index).show();
-      $('.sliders').slick('setPosition');
+      $('.slider__parts').slick('setPosition');
+      $('.slider__popular').slick('setPosition');
+    });
+  });
+
+  $(document).ready(function(){
+    $('.slider__aditive-wrapper:first').show();
+    $('.additive__list li:first').addClass('additive__button--active');
+
+    $('.additive__list li').click(function(event) {
+      var index = $(this).index();
+      $('.additive__list li').removeClass('additive__button--active');
+      $(this).addClass('additive__button--active');
+      $('.slider__aditive-wrapper').hide();
+      $('.slider__aditive-wrapper').eq(index).show();
+      $('.slider__additive').slick('setPosition');
+      $('.slider__parts').slick('setPosition');
     });
   });
 })();

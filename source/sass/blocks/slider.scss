@@ -120,11 +120,43 @@
   justify-content: center;
 }
 
+.slider__popular .slick-dots {
+  @media (max-width: $mobile-width) {
+    left: 28%;
+    width: 200px;
+    overflow: hidden;
+    bottom: -37px;
+  }
+}
+
+.slider__additive .slick-dots,
+.slider__parts .slick-dots {
+  @media (max-width: $mobile-width) {
+    left: 25%;
+    width: 200px;
+    overflow: hidden;
+    bottom: -37px;
+  }
+}
+
 .slider__popular .slick-dots li,
 .slider__additive .slick-dots li,
 .slider__parts .slick-dots li {
 	list-style: none;
 	margin: 0 5px;
+}
+
+.slider__popular .slick-dots li:not(:nth-child(-n+3)) {
+	@media (max-width: $mobile-width) {
+	    display: none;
+	  }
+}
+
+.slider__parts .slick-dots li:not(:nth-child(-n+3)),
+.slider__additive .slick-dots li:not(:nth-child(-n+3)) {
+	@media (max-width: $mobile-width) {
+	    display: none;
+	  }
 }
 
 .slider__popular .slick-dots li button,
@@ -139,6 +171,16 @@
 	padding: 0;
 }
 
+.slider__popular .slick-dots li button,
+.slider__parts .slick-dots li button,
+.slider__additive .slick-dots li button {
+  @media (max-width: $mobile-width) {
+    width: 14px;
+    height: 14px;
+    margin-right: 12px;
+  }
+}
+
 .slider__popular .slick-dots li.slick-active button,
 .slider__additive .slick-dots li.slick-active button,
 .slider__parts .slick-dots li.slick-active button {
@@ -146,7 +188,8 @@
 }
 
 
-.slider__additive {
+.slider__additive,
+.slider__parts {
 	position: relative;
 }
 
@@ -188,12 +231,12 @@
 .slider__additive .slick-arrow.slick-prev {
 	transform: rotate(-180deg);
 	left: -51px;
-	top: 190px;
+	top: 200px;
 }
 
 .slider__additive .slick-arrow.slick-next {
 	right: -51px;
-	top: 190px;
+	top: 200px;
 }
 
 .slider__popular .slick-arrow.slick-prev,
@@ -270,6 +313,8 @@
   }
 }
 
-.sliders {
+.sliders,
+.slider__aditive-wrapper {
   display: none;
 }
+
