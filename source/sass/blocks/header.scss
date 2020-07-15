@@ -205,8 +205,8 @@
   margin-top: 40px;
 
   @media (max-width: $tablet-width) {
-		width: 245px;
-		justify-content: space-between;
+    width: 245px;
+    justify-content: space-between;
   }
 
   @media (max-width: $mobile-width) {
@@ -217,38 +217,38 @@
 }
 
 .header__icon {
-	display: block;
-	padding: 0 12px;
-	width: 30px;
-	height: 30px;
+  display: block;
+  padding: 0 12px;
+  width: 30px;
+  height: 30px;
 
-	@media (max-width: $tablet-width) {
+  @media (max-width: $tablet-width) {
     width: 52px;
   }
 
-	&--like {  
-		background-image: url("data:image/svg+xml,%3Csvg width='27' height='25' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath clip-rule='evenodd' d='M7.37 1.2C3.47 1.2.39 4.78 1.1 9.9c.62 4.43 11.22 13.3 12.4 13.3 1.18 0 11.78-8.87 12.4-13.3.7-5.13-2.38-8.7-6.27-8.7a7.09 7.09 0 00-6.13 3.28A7.09 7.09 0 007.37 1.2z' stroke='%23A8A8A8' stroke-width='2'/%3E%3C/svg%3E%0A");
-		background-repeat: no-repeat;
-	}
+  &--like {
+    background-image: url("data:image/svg+xml,%3Csvg width='27' height='25' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath clip-rule='evenodd' d='M7.37 1.2C3.47 1.2.39 4.78 1.1 9.9c.62 4.43 11.22 13.3 12.4 13.3 1.18 0 11.78-8.87 12.4-13.3.7-5.13-2.38-8.7-6.27-8.7a7.09 7.09 0 00-6.13 3.28A7.09 7.09 0 007.37 1.2z' stroke='%23A8A8A8' stroke-width='2'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+  }
 
-	&--profile {
-		padding-left: 2px;
+  &--profile {
+    padding-left: 2px;
     background-image: url("data:image/svg+xml,%3Csvg width='24' height='26' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 15c2.75 0 5.5-2.21 5.5-6.38 0-4.16-1.83-6.66-5.5-6.66S6.5 5.33 6.5 8.62C6.5 12.8 9.25 15 12 15zm0 0c5.5 0 11 4.39 11 9.45H1c0-4.5 5.5-9.46 11-9.46z' stroke='%23A8A8A8' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
     background-repeat: no-repeat;
 
     @media (max-width: $mobile-width) {
       background-image: url("data:image/svg+xml,%3Csvg width='21' height='24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10.35.83A7.21 7.21 0 003.1 8a7.14 7.14 0 003.17 5.9A10.21 10.21 0 000 23.33h2.07a8.17 8.17 0 018.28-8.18 8.17 8.17 0 018.28 8.18h2.07c0-4.23-2.58-7.87-6.28-9.42a7.14 7.14 0 003.17-5.91A7.21 7.21 0 0010.35.83zm0 2.05a5.13 5.13 0 015.17 5.1c0 2.84-2.3 5.12-5.17 5.12a5.13 5.13 0 01-5.18-5.11c0-2.84 2.3-5.11 5.18-5.11z' fill='%23A8A8A8'/%3E%3C/svg%3E%0A");
     }
-	}
+  }
 
-	&--buy {
-		background-image: url("data:image/svg+xml,%3Csvg width='30' height='28' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 1.94h3.88a1 1 0 01.97.72l4.22 14.9a1 1 0 00.97.73h14.72a1 1 0 00.96-.74l2.93-10.72a1 1 0 00-.96-1.26H5.67M15 23.91a2.54 2.54 0 01-2.5 2.58 2.54 2.54 0 01-2.5-2.58 2.54 2.54 0 012.5-2.57c1.36 0 2.5 1.13 2.5 2.57zM24 23.91a2.54 2.54 0 01-2.5 2.58 2.54 2.54 0 01-2.5-2.58 2.54 2.54 0 012.5-2.57c1.36 0 2.5 1.13 2.5 2.57z' stroke='%23A8A8A8' stroke-width='2'/%3E%3C/svg%3E%0A");
+  &--buy {
+    background-image: url("data:image/svg+xml,%3Csvg width='30' height='28' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 1.94h3.88a1 1 0 01.97.72l4.22 14.9a1 1 0 00.97.73h14.72a1 1 0 00.96-.74l2.93-10.72a1 1 0 00-.96-1.26H5.67M15 23.91a2.54 2.54 0 01-2.5 2.58 2.54 2.54 0 01-2.5-2.58 2.54 2.54 0 012.5-2.57c1.36 0 2.5 1.13 2.5 2.57zM24 23.91a2.54 2.54 0 01-2.5 2.58 2.54 2.54 0 01-2.5-2.58 2.54 2.54 0 012.5-2.57c1.36 0 2.5 1.13 2.5 2.57z' stroke='%23A8A8A8' stroke-width='2'/%3E%3C/svg%3E%0A");
     background-repeat: no-repeat;
 
     @media (max-width: $mobile-width) {
       background-image: url("data:image/svg+xml,%3Csvg width='27' height='24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 1.83h3.31a1 1 0 01.96.72l3.65 12.47a1 1 0 00.96.72h12.71a1 1 0 00.97-.73l2.48-8.82a1 1 0 00-.96-1.27H8.13M13.22 20.37c0 1.17-.93 2.1-2.04 2.1a2.07 2.07 0 01-2.05-2.1c0-1.16.93-2.09 2.05-2.09 1.11 0 2.04.93 2.04 2.1zM21.35 20.37c0 1.17-.93 2.1-2.05 2.1a2.07 2.07 0 01-2.04-2.1c0-1.16.93-2.09 2.04-2.09 1.12 0 2.05.93 2.05 2.1z' stroke='%23A8A8A8' stroke-width='2'/%3E%3C/svg%3E%0A");
     }
-	}
+  }
 }
 
 .header__nav {

@@ -1,14 +1,14 @@
 .card {
-	position: relative;
+  position: relative;
   width: 270px;
   height: 403px;
   border: 1px solid #acabab;
   box-sizing: border-box;
-	border-radius: 3px;
-	
-	&:hover {
-		box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
-	}
+  border-radius: 3px;
+
+  &:hover {
+    box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
+  }
 }
 
 .card:hover .card__popular-hover {
@@ -16,11 +16,11 @@
 }
 
 .card__photo {
-	position: absolute;
+  position: absolute;
   left: 18px;
-	top: 50px;
-	
-	&--2 {
+  top: 50px;
+
+  &--2 {
     top: 57px;
     left: 59px;
   }
@@ -32,16 +32,16 @@
   &--4 {
     top: 57px;
     left: 57px;
-	}
+  }
 
-	&--5 {
-	top: 52px;
-	left: 57px;
-	}
-}
+  &--5 {
+    top: 52px;
+    left: 57px;
+  }
+  }
 
 .card__name {
-	position: absolute;
+  position: absolute;
   display: block;
   width: 100%;
   font-size: 20px;
@@ -60,22 +60,22 @@
   &--4 {
     bottom: 100px;
     left: 5px;
-	}
-	
-	&--5 {
-		width: 250px;
-		left: 10px;
-		bottom: 100px;
-	}
+  }
 
-	&--6 {
-		width: 250px;
-		left: 10px;
-	}
+  &--5 {
+    width: 250px;
+    left: 10px;
+    bottom: 100px;
+  }
+
+  &--6 {
+    width: 250px;
+    left: 10px;
+  }
 }
 
 .card__price {
-	position: absolute;
+  position: absolute;
   display: block;
   font-size: 30px;
   line-height: 36px;
@@ -92,37 +92,37 @@
 }
 
 .card__icon-like {
-	position: absolute;
+  position: absolute;
   top: 17px;
   right: 17px;
 
   &--2 {
     top: 24px;
     right: 68px;
-	}
-	
-	&--3 {
-		top: 24px;
-		right: 68px;
-		fill: #FF7931;
-		border: none;
-	}
+  }
+
+  &--3 {
+    top: 24px;
+    right: 68px;
+    fill: #FF7931;
+    border: none;
+  }
 }
 
 .card__icon-snow {
-	position: absolute;
+  position: absolute;
   top: 19px;
   right: 20px;
 }
 
 .card__banner-sale {
-	position: absolute;
+  position: absolute;
   left: -1px;
   top: -1px;
 }
 
 .card__buy {
-	position: absolute;
+  position: absolute;
   width: 60px;
   height: 40px;
   bottom: 0;
@@ -137,7 +137,7 @@
 }
 
 .card__out-of-stock {
-	position: absolute;
+  position: absolute;
   display: block;
   width: 100%;
   bottom: 60px;
@@ -150,7 +150,7 @@
 }
 
 .card__link {
-	position: absolute;
+  position: absolute;
   display: block;
   text-align: center;
   text-decoration: none;
@@ -165,7 +165,7 @@
 }
 
 .card__popular-hover {
-	position: absolute;
+  position: absolute;
   display: none;
   width: 230px;
   height: 43px;

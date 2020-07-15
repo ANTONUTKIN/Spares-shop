@@ -1,17 +1,17 @@
 .banner {
-	height: 394px;
-	width: 269px;
-	margin-top: 20px;
-	border: 1px solid #cdcdcd;
+  height: 394px;
+  width: 269px;
+  margin-top: 20px;
+  border: 1px solid #cdcdcd;
   border-radius: 3px;
-  
+
   @media (max-width: $tablet-width) {
-		margin: 0 58px;
+    margin: 0 58px;
   }
 
   &--2 {
     display: none;
-  
+
     @media (max-width: $tablet-width) {
       display: block;
     }
@@ -32,139 +32,139 @@
 }
 
 .banner__top {
-	position: relative;
-	width: 100%;
-	height: 296px;
-	background-color: #ffffff;
+  position: relative;
+  width: 100%;
+  height: 296px;
+  background-color: #ffffff;
 
-	&::after {
-		position: absolute;
-		content: "";
-		height: 87px;
-		width: 25px;
-		left: -1px;
-		top: -1px;
-		background-image: url("../img/discount.jpg");
-	}
+  &::after {
+    position: absolute;
+    content: "";
+    height: 87px;
+    width: 25px;
+    left: -1px;
+    top: -1px;
+    background-image: url("../img/discount.jpg");
+  }
 }
 
 .banner__image {
-	position: absolute;
-	left: 60px;
-	top: 50px;
+  position: absolute;
+  left: 60px;
+  top: 50px;
 }
 
 .banner__price-new {
-	position: absolute;
-	font-size: 27px;
-	color: #FF7931;
-	font-weight: 700;
-	top: 17px;
-	right: 17px;
+  position: absolute;
+  font-size: 27px;
+  color: #FF7931;
+  font-weight: 700;
+  top: 17px;
+  right: 17px;
 }
 
 .banner__price-old {
-	position: absolute;
-	font-size: 20px;
-	color: #A8A8A8;
-	top: 51px;
-	right: 25px;
+  position: absolute;
+  font-size: 20px;
+  color: #A8A8A8;
+  top: 51px;
+  right: 25px;
 
-	&::after {
-		position: absolute;
-		content: "";
-		width: 65px;
-		transform: rotate(-12deg);
-		border-bottom:1px solid #A8A8A8;
-		top: 10px;
-		right: -10px;
-	}
+  &::after {
+    position: absolute;
+    content: "";
+    width: 65px;
+    transform: rotate(-12deg);
+    border-bottom:1px solid #A8A8A8;
+    top: 10px;
+    right: -10px;
+  }
 }
 
 .banner__product {
-	position: absolute;
-	color: #48494D;
-	left: 40px;
-	bottom: 13px;
-	font-size: 23px;
-	letter-spacing: 1px;
-	font-weight: 700;
+  position: absolute;
+  color: #48494D;
+  left: 40px;
+  bottom: 13px;
+  font-size: 23px;
+  letter-spacing: 1px;
+  font-weight: 700;
 }
 
 .banner__down {
-	font-family: "Proxima Nova", "Arial", sans-serif;
-	text-align: center;
-	background-color: #F0F0F4;
-	height: 99px;
+  font-family: "Proxima Nova", "Arial", sans-serif;
+  text-align: center;
+  background-color: #F0F0F4;
+  height: 99px;
 }
 
 .banner__down-timer {
-	display: block;
-	padding-top: 15px;
-	margin-bottom: 15px;
-	font-size: 19px;
-	color: #48494D;
+  display: block;
+  padding-top: 15px;
+  margin-bottom: 15px;
+  font-size: 19px;
+  color: #48494D;
 }
 
 .banner__timer {
-	position: relative;
-	display: flex;
-	padding-left: 89px;
-	font-size: 20px;
-	font-weight: 700;
+  position: relative;
+  display: flex;
+  padding-left: 89px;
+  font-size: 20px;
+  font-weight: 700;
 
-	&::after {
-		position: absolute;
-		content: "";
-		width: 28px;
-		height: 28px;
-		background-image: url("../img/svg/icon-timer.svg");
-		left: 46px;
-		bottom: -10px;
-	}
+  &::after {
+    position: absolute;
+    content: "";
+    width: 28px;
+    height: 28px;
+    background-image: url("../img/svg/icon-timer.svg");
+    left: 46px;
+    bottom: -10px;
+  }
 }
 
 .banner__timer p {
-	margin: 0;
+  margin: 0;
 }
 
 .banner__timer-hours {
-	position: relative;
-	padding-right: 5px;
+  position: relative;
+  padding-right: 5px;
 
-	&::after {
-		position: absolute;
-		content: "часов";
-		font-size: 10px;
-		color: #cdcdcd;
-		bottom: -8px;
-		left: 0;
-	}
+  &::after {
+    position: absolute;
+    content: "часов";
+    font-size: 10px;
+    color: #cdcdcd;
+    bottom: -8px;
+    left: 0;
+  }
 }
 
 .banner__timer-minutes {
-	position: relative;
-	padding-right: 5px;
+  position: relative;
+  padding-right: 5px;
 
-	&::after {
-		position: absolute;
-		content: "минут";
-		font-size: 10px;
-		color: #cdcdcd;
-		bottom: -8px;
-		left: 10px;
-	}
+  &::after {
+    position: absolute;
+    content: "минут";
+    font-size: 10px;
+    color: #cdcdcd;
+    bottom: -8px;
+    left: 10px;
+  }
 }
 
 .banner__timer-seconds {
-	position: relative;
+  position: relative;
 
-	&::after {
-		position: absolute;
-		content: "секунд";
-		font-size: 10px;
-		color: #cdcdcd;
-		bottom: -8px;
-		left: 9px;
-	}
+  &::after {
+    position: absolute;
+    content: "секунд";
+    font-size: 10px;
+    color: #cdcdcd;
+    bottom: -8px;
+    left: 9px;
+  }
 }

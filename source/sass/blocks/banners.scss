@@ -1,14 +1,13 @@
 .banners {
-	display: flex;
-	flex-direction: row;
-	margin-bottom: 82px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 82px;
 
-	
-	@media (max-width: $tablet-width) {
-		display: block;
+  @media (max-width: $tablet-width) {
+    display: block;
   }
-  
+
   @media (max-width: $mobile-width) {
     margin-bottom: 85px;
-	}
+  }
 }

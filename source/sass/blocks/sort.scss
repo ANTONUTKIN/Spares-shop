@@ -4,13 +4,13 @@
 }
 
 .sort h2 {
-	display: block;
+  display: block;
   font-weight: bold;
-	font-size: 30px;
-	line-height: 36px;
-	letter-spacing: 1.6px;
-	color: #48494D;
-	margin-bottom: 25px;
+  font-size: 30px;
+  line-height: 36px;
+  letter-spacing: 1.6px;
+  color: #48494D;
+  margin-bottom: 25px;
 }
 
 .sort__wrapper {
@@ -21,33 +21,33 @@
 }
 
 .sort__categories {
-	display: flex;
+  display: flex;
 }
 
 .sort__categories button {
   box-sizing: border-box;
-	display: block;
-	padding: 4px 20px;
-	margin-right: 12px;
-	background: #F4F4F6;
-	border-radius: 50px;
-	border: none;
-	color: rgba(72, 73, 77, 0.7);
-	font-size: 13px;
-	line-height: 17px;
-	letter-spacing: 1px;
-	cursor: pointer;
+  display: block;
+  padding: 4px 20px;
+  margin-right: 12px;
+  background: #F4F4F6;
+  border-radius: 50px;
+  border: none;
+  color: rgba(72, 73, 77, 0.7);
+  font-size: 13px;
+  line-height: 17px;
+  letter-spacing: 1px;
+  cursor: pointer;
 }
 
 .sort__select-wrapper {
-	position: relative;
+  position: relative;
   margin: 0 90px 0 auto;
   box-sizing: border-box;
 }
 
 .sort__select {
   display: block;
-	border: 1.5px solid #D7D9DF;
+  border: 1.5px solid #D7D9DF;
   padding: 8px 48px 7px 20px;
   appearance: none;
   background-color: transparent;

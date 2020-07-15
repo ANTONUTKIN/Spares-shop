@@ -3,7 +3,7 @@
 
   @media (max-width: $tablet-width) {
     margin-bottom: 200px;
-	}
+  }
 }
 
 .popular h2 {
@@ -54,13 +54,13 @@
   cursor: pointer;
 
   @media (max-width: $tablet-width) {
-		margin-right: 12px;
+    margin-right: 12px;
   }
 
   @media (max-width: $mobile-width) {
-		margin-right: 25px;
+    margin-right: 25px;
   }
-  
+
   &--active {
     text-shadow: 1px 0 0 #48494D;
     border-bottom: 2px solid #FF7931;
@@ -81,7 +81,7 @@
   margin-bottom: 120px;
 
   @media (max-width: $mobile-width) {
-		padding-left: 13px;
+    padding-left: 13px;
   }
 }
 
@@ -132,13 +132,13 @@
   font-size: 0;
   top: 184px;
   background: url('../../img/svg/icon-arrow.svg') 50% 50% / 60% no-repeat;
-	width: 35px;
-	height: 35px;
-	background-color: transparent;
+  width: 35px;
+  height: 35px;
+  background-color: transparent;
   border: 1px solid #fff;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  
+
   &--left {
     transform: rotate(-180deg);
     left: -65px;

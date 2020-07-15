@@ -64,14 +64,14 @@
   color: #48494D;
 
   &::after {
-		position: absolute;
-		content: "";
-		width: 135px;
-		transform: rotate(-8deg);
-		border-bottom: 1px solid #48494D;
-		top: 19px;
-		right: -19px;
-	}
+    position: absolute;
+    content: "";
+    width: 135px;
+    transform: rotate(-8deg);
+    border-bottom: 1px solid #48494D;
+    top: 19px;
+    right: -19px;
+  }
 }
 
 .product__photo-new-price {

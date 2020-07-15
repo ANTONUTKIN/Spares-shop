@@ -8,7 +8,6 @@
   padding: 0;
   margin-bottom: 24px;
 
-  
   @media (max-width: $mobile-width) {
     margin-bottom: 16px;
   }
@@ -79,7 +78,7 @@
   }
 }
 
-.product-search__input-container {  
+.product-search__input-container {
   @media (max-width: $mobile-width) {
     width: 100%;
   }
