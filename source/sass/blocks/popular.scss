@@ -159,7 +159,8 @@
   }
 }
 
-.popular__products-more {
+.popular__products-more,
+.popular__products-more-mobile {
   position: absolute;
   display: block;
   width: 252px;
@@ -184,8 +185,17 @@
   @media (max-width: $tablet-width) {
     bottom: -130px;
   }
-  
+
   @media (max-width: $mobile-width) {
+    display: none;
+  }
+}
+
+.popular__products-more-mobile {
+  display: none;
+
+  @media (max-width: $mobile-width) {
+    display: block;
     bottom: -111px;
     margin-left: -143px;
   }

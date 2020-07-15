@@ -1,3 +1,7 @@
+.additive {
+  position: relative;
+}
+
 .additive h2 {
   font-size: 27px;
   line-height: 25px;
@@ -74,4 +78,37 @@
 .additive__products {
   margin-bottom: 93px;
   min-width: 0;
+
+  @media (max-width: $mobile-width) {
+    padding-left: 11px;
+    margin-bottom: 195px;
+  }
+}
+
+.additive__more {
+  position: absolute;
+  display: block;
+  width: 252px;
+  height: 50px;
+  padding-top: 17px;
+  left: 50%;
+  bottom: -115px;
+  margin-left: -143px;
+  background-color: #F0F0F4;
+  font-family: "Proxima Nova", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #BDBEC2;
+  text-decoration: none;
+  box-sizing: border-box;
+  display: none;
+
+  @media (max-width: $mobile-width) {
+    display: block;
+  }
 }

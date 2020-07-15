@@ -31,15 +31,18 @@
 .product-search__list li {
   list-style: none;
   margin: 0 13px;
-  
+
+  @media (max-width: $tablet-width) {
+    margin: 0 5px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin: 0 13px;
+  }
 }
 
 .product-search__list li:first-child {
   margin-left: 0;
-
-  @media (max-width: $tablet-width) {
-		margin-left: 13px;
-	}
 }
 
 .product-search__button {
@@ -52,8 +55,14 @@
   border: none;
   cursor: pointer;
 
+  @media (max-width: $tablet-width) {
+    padding: 10px;
+    font-size: 18px;
+  }
+
   @media (max-width: $mobile-width) {
     padding: 3px 0;
+    max-width: auto;
   }
 
   &--active {

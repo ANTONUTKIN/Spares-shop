@@ -40,6 +40,7 @@
           settings: {
             arrows: false,
             slidesToShow: 1,
+            slidesToScroll: 1,
             variableWidth: true,
             dots: true,
           }
@@ -264,6 +265,15 @@
       $('.slider__aditive-wrapper').eq(index).show();
       $('.slider__additive').slick('setPosition');
       $('.slider__parts').slick('setPosition');
+    });
+  });
+
+  // Попап бургер меню
+
+  $(document).ready(function(){
+    $('.header__menu-toggle').click(function(event) {
+      $('.header__menu-toggle,.menu').toggleClass('active');
+      $('body').toggleClass('lock');
     });
   });
 })();
