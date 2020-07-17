@@ -1,6 +1,11 @@
 .sort {
   position: relative;
   margin-bottom: 50px;
+
+  @media (max-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .sort h2 {
@@ -11,6 +16,12 @@
   letter-spacing: 1.6px;
   color: #48494D;
   margin-bottom: 25px;
+
+  @media (max-width: $mobile-width) {
+    font-size: 20px;
+    letter-spacing: 1.1px;
+    margin-top: 7px;
+  }
 }
 
 .sort__wrapper {
@@ -18,10 +29,31 @@
   display: flex;
   right: 0;
   bottom: -5px;
+
+  @media (max-width: $tablet-width) {
+    position: relative;
+    order: 1;
+    bottom: 0;
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
 }
 
 .sort__categories {
   display: flex;
+
+  @media (max-width: $tablet-width) {
+    position: relative;
+    order: 2;
+  }
+
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
 }
 
 .sort__categories button {
@@ -43,6 +75,10 @@
   position: relative;
   margin: 0 90px 0 auto;
   box-sizing: border-box;
+
+  @media (max-width: $tablet-width) {
+    margin: 0 auto 0 0;
+  }
 }
 
 .sort__select {
@@ -71,11 +107,21 @@
   &--1 {
     right: 36px;
     bottom: 9px;
+
+    @media (max-width: $tablet-width) {
+      bottom: 7px;
+      left: 210px;
+    }
   }
 
   &--2 {
     right: 2px;
     bottom: 9px;
+
+    @media (max-width: $tablet-width) {
+      bottom: 8px;
+      left: 245px;
+    }
   }
 }
 

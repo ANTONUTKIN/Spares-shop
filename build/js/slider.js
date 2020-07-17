@@ -139,7 +139,7 @@
       responsive: [
         {
           breakpoint: 760,
-          settings: {      
+          settings: {
             arrows: false,
             slidesToShow: 2,
             slidesToScroll: 1,
@@ -188,7 +188,7 @@
       responsive: [
         {
           breakpoint: 760,
-          settings: {      
+          settings: {
             arrows: false,
             slidesToShow: 2,
             slidesToScroll: 1,
@@ -211,7 +211,7 @@
       responsive: [
         {
           breakpoint: 760,
-          settings: {      
+          settings: {
             arrows: false,
             slidesToShow: 2,
             slidesToScroll: 1,
@@ -223,7 +223,7 @@
       ]
     });
   });
-  
+
 
   $(document).ready(function(){
     $('.product-search__input:first').show();
