@@ -152,6 +152,28 @@
   });
 
   $(document).ready(function(){
+    $('.sort__categories').slick({
+      arrows: false,
+      slidesToShow: 5,
+      slidesToScroll: 5,
+      infinite: false,
+      variableWidth: true,
+      responsive: [
+        {
+          breakpoint: 760,
+          settings: {
+            arrows: false,
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            focusOnSelect: true,
+            infinite: true,
+          }
+        }
+      ]
+    });
+  });
+
+  $(document).ready(function(){
     $('.product-search__list').slick({
       arrows: false,
       slidesToShow: 4,
@@ -239,6 +261,19 @@
   });
 
   $(document).ready(function(){
+    $('.search__filter-wrapper:first').show();
+    $('.search__filter-header li:first').addClass('search__header-item--active');
+
+    $('.search__filter-header li').click(function(event) {
+      var index = $(this).index();
+      $('.search__filter-header li').removeClass('search__header-item--active');
+      $(this).addClass('search__header-item--active');
+      $('.search__filter-wrapper').hide();
+      $('.search__filter-wrapper').eq(index).show();
+    });
+  });
+
+  $(document).ready(function(){
     $('.sliders:first').show();
     $('.popular__categories-list li:first').addClass('popular__categories-button--active');
 
@@ -273,6 +308,15 @@
   $(document).ready(function(){
     $('.header__menu-toggle').click(function(event) {
       $('.header__menu-toggle,.menu').toggleClass('active');
+      $('body').toggleClass('lock');
+    });
+  });
+
+  // Попап меню филтров
+
+  $(document).ready(function(){
+    $('.sort__toggle-filtres').click(function(event) {
+      $('.sort__toggle-filtres,.search__filter').toggleClass('active');
       $('body').toggleClass('lock');
     });
   });
