@@ -271,7 +271,7 @@
 }
 
 .search__season-wrapper::before,
-.search__price-fieldset::before,
+.search__accordion-wrapper::before,
 .search__brand-wrapper::before,
 .search__model-wrapper::before,
 .search__country-wrapper::before {
@@ -427,17 +427,16 @@
   appearance: none;
 }
 
-.search__price-fieldset {
+.search__accordion-wrapper {
   display: none;
   border: none;
-  margin-bottom: 40px;
 }
 
-.search__price-checkbox:checked + .search__price-fieldset {
+.search__price-checkbox:checked + .search__accordion-wrapper {
   display: block;
 }
 
-.search__price-fieldset span {
+.search__accordion-wrapper span {
   font-size: 14px;
   line-height: 17px;
   color: rgba(0, 0, 0, 0.5);
@@ -968,3 +967,67 @@
     display: block;
   }
 }
+
+.search__accordion-wrapper {
+  margin-top: 20px;
+}
+
+.search__range-controls {
+  position: relative;
+  margin-bottom: 22px;
+}
+
+.search__range-controls .search__scale {
+  height: 1px;
+  background: #e0e0e0;
+  width: 270px;
+}
+
+.search__range-controls .search__bar {
+  width: 90px;
+  height: 3px;
+  background: #ff7931;
+  margin-left: 18px;
+}
+
+.search__range-toggle {
+  position: absolute;
+  top: -2px;
+  width: 7px;
+  height: 7px;
+  background: #ff7931;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.search__range-toggle--min {
+  left: 18px;
+}
+
+.search__range-toggle--max {
+  left: 108px;
+}
+
+.search__price-controls {
+  display: flex;
+  justify-content: space-between;
+  width: 250px;
+}
+
+.search__price-controls label {
+  color: rgba(0, 0, 0, 0.5);
+  margin-right: 6px;
+}
+
+.search__price-controls input {
+  font: inherit;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  border: 0;
+  border-bottom: 1px solid #e0e0e0;
+  width: 44px;
+  text-align: center;
+}
+

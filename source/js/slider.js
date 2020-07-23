@@ -320,4 +320,35 @@
       $('body').toggleClass('lock');
     });
   });
+
+  // Табы меню характеристки
+
+  $(document).ready(function(){
+    $('.product__characteristic:first').show();
+    $('.product__discription-tabs li:first').addClass('product__tab--active');
+
+    $('.product__discription-tabs li').click(function(event) {
+      var index = $(this).index();
+      $('.product__discription-tabs li').removeClass('product__tab--active');
+      $(this).addClass('product__tab--active');
+      $('.product__characteristic').hide();
+      $('.product__characteristic').eq(index).show();
+    });
+  });
+
+  // Табы меню карты продукта
+
+  $(document).ready(function(){
+    $('.info__search:first').show();
+    $('.info__nav li:first').addClass('info__nav-item--active');
+
+    $('.info__nav li').click(function(event) {
+      var index = $(this).index();
+      $('.info__nav li').removeClass('info__nav-item--active');
+      $(this).addClass('info__nav-item--active');
+      $('.info__search').hide();
+      $('.info__search').eq(index).show();
+    });
+  });
+
 })();

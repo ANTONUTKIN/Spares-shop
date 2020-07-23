@@ -181,21 +181,25 @@
               <label class="search__filter-price">
                 <input class="search__price-checkbox" type="checkbox" checked>
                 Цена
-                <fieldset class="search__price-fieldset">
-                  <div class="search__price-rangebar">
-                    <div class="search__pin search__pin--min"></div>
-                    <div class="search__pin search__pin--max"></div>
-                    <div class="search__priceline"></div>
+                <div class="search__accordion-wrapper">
+                  <div class="search__range-controls">
+                    <div class="search__scale">
+                      <div class="search__bar"></div>
+                    </div>
+                    <div class="search__range-toggle search__range-toggle--min"></div>
+                    <div class="search__range-toggle search__range-toggle--max"></div>
                   </div>
-                  <div class="search__price-value search__price-value--min">
-                    <span>от</span>
-                    <input type="number" name="min-price" value="2000">
+                  <div class="search__price-controls">
+                    <div class="search__row search__row--input search__min-price">
+                      <label for="min-price-mask">от</label>
+                      <input type="text" name="min-price" value="2000" pattern="^[ 0-9]+$" id="min-price-mask">
+                    </div>
+                    <div class="search__row search__row--input search__max-price">
+                      <label for="max-price-mask">до</label>
+                      <input type="text" name="max-price" value="12000" pattern="^[ 0-9]+$" id="max-price-mask">
+                    </div>
                   </div>
-                  <div class="search__price-value search__price-value--max">
-                    <span>до</span>
-                    <input type="number" name="min-price" value="12000">
-                  </div>
-                </fieldset>
+                </div>
               </label>
             </div>
             <div class="search__filter-diameter">
