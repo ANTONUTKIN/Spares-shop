@@ -171,18 +171,26 @@
 
 .banner__tyres {
   display: none;
+
+  
+  @media (max-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-right: 26px;
+  } 
+}
+
+.banner__wrapper {
   background: linear-gradient(91.8deg, #9710e9 1.17%, #fd8d43 99.31%);
   text-align: center;
   color: #ffffff;
   height: 195px;
   margin-bottom: 80px;
 
-  @media (max-width: $tablet-width) {
-    display: block;
-  }
-
   @media (max-width: $mobile-width) {
-    margin-left: -15px;
+    width: 330px;
   }
 }
 

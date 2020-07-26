@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
-    <header class="header">
+    <header class="header header--tyres">
       <div class="menu">
         <div class="menu__wrapper">
           <ul class="menu__list">
@@ -81,7 +81,7 @@
           <a href="" class="header__icon header__icon--buy"></a>
         </div>
       </div>
-      <nav class="header__nav">
+      <nav class="header__nav header__nav--tyres">
         <ul class="header__nav-list container">
           <li><a href="#">Каталог Запчастей</a></li>
           <li><a href="tyres.html">Каталог ТО</a></li>
@@ -187,19 +187,19 @@
         <li class="info__nav-item">О товаре</li>
         <li class="info__nav-item">Характеристики</li>
         <li class="info__nav-item">Отзывы</li>
-        <li class="info__nav-item">Самовывоз</li>
+        <li class="info__nav-item info__nav-item--takeout">Самовывоз</li>
         <li class="info__nav-item">Доставка</li>
         <li class="info__nav-item">Услуги</li>
         <li class="info__nav-item">Бизнесу</li>
       </ul>
-      <div class="info__search">О товаре</div>
-      <div class="info__search">Характеристики</div>
-      <div class="info__search">Отзывы</div>
-      <div class="info__search">
+      <div class="info__search"><span class="visually-hidden">О товаре</span></div>
+      <div class="info__search"><span class="visually-hidden">Характеристики</span></div>
+      <div class="info__search"><span class="visually-hidden">Отзывы</span></div>
+      <div class="info__search info__search--takeout">
         <form class="info__search-form" action="GET">
           <span class="info__search-text">Магазин</span>
           <label class="info__search-textarea" for="">
-            <input type="text">
+            <input type="text" placeholder="Введите название магазина">
             <a href="" class="info__search-submit"></a>
           </label>
           <div class="info__search-radio-wrapper">
@@ -226,36 +226,38 @@
             <td class="info__table-regime"><span class="info__cell-header">Режим работы</span><span>пн-сб:</span><span class="info__cell-time"> 08:00-19:00</span><span>вс:</span><span class="info__cell-time info__cell-time--weekend">09:00-17:00</span></td>
             <td class="info__table-availability"><span class="info__cell-header">Доступно</span>Завтра и позднее</td>
             <td class="info__table-quantity"><span class="info__cell-header">Количество</span>Мало</td>
-            <td><a class="info__table-button btn" href="#">КУПИТЬ</a></td>
+            <td><span class="info__table-notice">Нажимая на эту кнопку вы сможете забрать товар вне очереди</span><a class="info__table-button btn" href="#">КУПИТЬ</a></td>
           </tr>
           <tr class="info__table-row">
             <td class="info__table-adress">Санкт-Петербург, ул Большая Конюшенная, д 19</td>
             <td class="info__table-regime"><span class="info__cell-header">Режим работы</span><span>пн-сб:</span><span class="info__cell-time">08:00-19:00</span><span>вс:</span><span class="info__cell-time info__cell-time--weekend">09:00-17:00</span</td>
             <td class="info__table-availability"><span class="info__cell-header">Доступно</span>Завтра и позднее</td>
-            <td class="info__table-quantity"><span class="info__cell-header"></span>Много</td>
-            <td><a class="info__table-button btn" href="#">КУПИТЬ</a></td>
+            <td class="info__table-quantity"><span class="info__cell-header">Количество</span>Много</td>
+            <td><span class="info__table-notice">Нажимая на эту кнопку вы сможете забрать товар вне очереди</span><a class="info__table-button btn" href="#">КУПИТЬ</a></td>
           </tr>
           <tr class="info__table-row info__table-row--desktop">
             <td class="info__table-adress">Санкт-Петербург, ул Большая Конюшенная, д 19</td>
             <td class="info__table-regime"><span>пн-сб:</span><span class="info__cell-time">08:00-19:00</span><span>вс:</span><span class="info__cell-time">09:00-17:00</span</td>
             <td class="info__table-availability">Завтра и позднее</td>
-            <td class="info__table-quantity">Достаточно</td>
-            <td><a class="info__table-button btn" href="#">КУПИТЬ</a></td>
+            <td class="info__table-quantity"><span class="info__cell-header">Количество</span>Достаточно</td>
+            <td><span class="info__table-notice">Нажимая на эту кнопку вы сможете забрать товар вне очереди</span><a class="info__table-button btn" href="#">КУПИТЬ</a></td>
           </tr>
           <tr class="info__table-row info__table-row--desktop">
             <td class="info__table-adress">Санкт-Петербург, ул Большая Конюшенная, д 19</td>
             <td class="info__table-regime"><span>пн-сб:</span><span class="info__cell-time">08:00-19:00</span><span>вс:</span><span class="info__cell-time">09:00-17:00</span</td>
             <td class="info__table-availability">Завтра и позднее</td>
-            <td class="info__table-quantity">Мало</td>
-            <td><a class="info__table-button btn" href="#">КУПИТЬ</a></td>
+            <td class="info__table-quantity"><span class="info__cell-header">Количество</span>Мало</td>
+            <td><span class="info__table-notice">Нажимая на эту кнопку вы сможете забрать товар вне очереди</span><a class="info__table-button btn" href="#">КУПИТЬ</a></td>
           </tr>
         </table>
         <a href="#" class="info__link">Показать все автосалоны</a>
       </div>
     </section>
     <section class="banner__tyres container">
-      <h2>Шиномонтаж</h2>
-      <p>Любой сложности и без очередей</p>
+      <div class="banner__wrapper">
+        <h2>Шиномонтаж</h2>
+        <p>Любой сложности и без очередей</p>
+      </div>
     </section>
     <section class="additive additive--tyres container-slider">
       <h2>С этим товаром покупают</h2>

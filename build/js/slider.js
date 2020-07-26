@@ -312,7 +312,7 @@
     });
   });
 
-  // Попап меню филтров
+  // Попап меню фильтров
 
   $(document).ready(function(){
     $('.sort__toggle-filtres').click(function(event) {
@@ -345,9 +345,16 @@
     $('.info__nav li').click(function(event) {
       var index = $(this).index();
       $('.info__nav li').removeClass('info__nav-item--active');
+      $('.info__nav li').removeClass('info__nav-item--takeout-active');
       $(this).addClass('info__nav-item--active');
       $('.info__search').hide();
       $('.info__search').eq(index).show();
+    });
+  });
+
+  $(document).ready(function(){
+    $('.info__nav-item--takeout').click(function(event) {
+      $('.info__nav-item--takeout').addClass('info__nav-item--takeout-active');
     });
   });
 
