@@ -239,7 +239,7 @@
   height: 12px;
   border: 1px solid #CDCDCD;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $mobile-width) {
    left: 285px;
   }
 }

@@ -139,6 +139,12 @@
   }
 }
 
+.slider__additive .slick-dots {
+  @media (max-width: $mobile-width) {
+    left: 32%;
+  }
+}
+
 .slider__popular .slick-dots li,
 .slider__additive .slick-dots li,
 .slider__parts .slick-dots li {
@@ -190,6 +196,12 @@
 .slider__additive,
 .slider__parts {
   position: relative;
+}
+
+.slider__additive {
+  @media (max-width: $mobile-width) {
+    padding-left: 25px;
+  }
 }
 
 .slider__additive .card,
