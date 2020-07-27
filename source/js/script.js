@@ -1,6 +1,7 @@
 'use strict';
 
 (function () {
+// Оживление бегунков цены
   var minPrice = document.getElementById('min-price-mask');
   var maxPrice = document.getElementById('max-price-mask');
   var previousMinPriceValue;

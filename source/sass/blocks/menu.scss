@@ -13,6 +13,12 @@
   transform: translateX(-242px);
   transition: transform 0.3s ease-in;
   z-index: 10;
+
+  &--nojs {
+  @media (max-width: $mobile-width) {
+      display: block;
+    }
+  }
 }
 
 .menu.active {

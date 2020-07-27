@@ -9,7 +9,7 @@
   </head>
   <body>
     <header class="header header--tyres">
-      <div class="menu">
+      <div class="menu menu--nojs">
         <div class="menu__wrapper">
           <ul class="menu__list">
             <li class="menu__list-item">
@@ -78,7 +78,7 @@
         <div class="header__top-icons">
           <a href="" class="header__icon header__icon--like"></a>
           <a href="" class="header__icon header__icon--profile"></a>
-          <a href="" class="header__icon header__icon--buy"></a>
+          <a href="" class="header__icon header__icon--buy header__icon--buy-tyres"></a>
         </div>
       </div>
       <nav class="header__nav header__nav--tyres">
@@ -128,21 +128,11 @@
             <rect y="9.91" width="4" height="17.59" rx="2" fill="#CDCDCD"></rect>
           </svg>
           <div class="product__stars">
-            <svg width="23" height="21" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M11.11 0l2.6 7.95h8.38l-6.79 4.9 2.6 7.95-6.79-4.9-6.78 4.9 2.6-7.94L.13 7.95h8.38L11.12 0z" fill="#FF7931"></path>
-            </svg>
-            <svg width="23" height="21" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M11.11 0l2.6 7.95h8.38l-6.79 4.9 2.6 7.95-6.79-4.9-6.78 4.9 2.6-7.94L.13 7.95h8.38L11.12 0z" fill="#FF7931"></path>
-            </svg>
-            <svg width="23" height="21" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M11.11 0l2.6 7.95h8.38l-6.79 4.9 2.6 7.95-6.79-4.9-6.78 4.9 2.6-7.94L.13 7.95h8.38L11.12 0z" fill="#E2E2E2"></path>
-            </svg>
-            <svg width="23" height="21" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M11.11 0l2.6 7.95h8.38l-6.79 4.9 2.6 7.95-6.79-4.9-6.78 4.9 2.6-7.94L.13 7.95h8.38L11.12 0z" fill="#E2E2E2"></path>
-            </svg>
-            <svg width="23" height="21" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M11.11 0l2.6 7.95h8.38l-6.79 4.9 2.6 7.95-6.79-4.9-6.78 4.9 2.6-7.94L.13 7.95h8.38L11.12 0z" fill="#E2E2E2"></path>
-            </svg>
+            <input type="radio" name="star" id="star1"><label for="star1"></label>
+            <input type="radio" name="star" id="star2"><label for="star2"></label>
+            <input type="radio" name="star" id="star3"><label for="star3"></label>
+            <input type="radio" name="star" id="star4"><label for="star4"></label>
+            <input type="radio" name="star" id="star5"><label for="star5"></label>
           </div>
         </div>
         <div class="product__discription-main">
@@ -443,6 +433,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/slider.js"></script>
+    <script src="js/tabs.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>

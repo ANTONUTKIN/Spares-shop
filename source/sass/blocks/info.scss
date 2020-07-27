@@ -127,7 +127,6 @@
   color: rgba(0, 0, 0, 0.7);
   letter-spacing: 0.6px;
 
-  
   @media (max-width: $mobile-width) {
     font-size: 15px;
     padding-left: 0;
@@ -240,7 +239,7 @@
   border: 1px solid #CDCDCD;
 
   @media (max-width: $mobile-width) {
-   left: 285px;
+    left: 285px;
   }
 }
 
@@ -382,7 +381,7 @@
     width: auto;
     margin-bottom: 20px;
   }
-  
+
   @media (max-width: $mobile-width) {
     font-size: 15px;
     margin-bottom: 7px;

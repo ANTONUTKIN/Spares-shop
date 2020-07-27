@@ -172,14 +172,13 @@
 .banner__tyres {
   display: none;
 
-  
   @media (max-width: $tablet-width) {
     display: block;
   }
 
   @media (max-width: $mobile-width) {
     padding-right: 26px;
-  } 
+  }
 }
 
 .banner__wrapper {
