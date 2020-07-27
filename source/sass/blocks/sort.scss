@@ -18,7 +18,7 @@
   font-size: 30px;
   line-height: 36px;
   letter-spacing: 1.6px;
-  color: #48494D;
+  color: #48494d;
   margin-bottom: 25px;
 
   @media (max-width: $mobile-width) {
@@ -52,7 +52,7 @@
   font-weight: bold;
   line-height: 18px;
   letter-spacing: 0.6px;
-  color: #48494D;
+  color: #48494d;
 
   &::before {
     content: "";
@@ -144,7 +144,7 @@
     top: 0;
     width: 75px;
     height: 30px;
-    background: linear-gradient(90deg,rgba(255,255,255,0) 8%,rgba(255,255,255,.883258) 37%,#fff 95%);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 8%, rgba(255, 255, 255, 0.883258) 37%, #ffffff 95%);
     z-index: 5;
   }
 }
@@ -154,7 +154,7 @@
   display: block;
   padding: 4px 20px;
   margin-right: 12px;
-  background: #F4F4F6;
+  background: #f4f4f6;
   border-radius: 50px;
   border: none;
   color: rgba(72, 73, 77, 0.7);
@@ -176,7 +176,7 @@
 
 .sort__select {
   display: block;
-  border: 1.5px solid #D7D9DF;
+  border: 1.5px solid #d7d9df;
   padding: 8px 48px 7px 20px;
   appearance: none;
   background-color: transparent;
@@ -258,10 +258,10 @@
   display: block;
   appearance: none;
   padding-left: 50px;
-  border: 1px solid #fff;
+  border: 1px solid #ffffff;
   font-size: 16px;
   line-height: 18px;
-  color: #FF7931;
+  color: #ff7931;
   font-weight: bold;
 }
 

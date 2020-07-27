@@ -6,7 +6,7 @@
 
   @media (max-width: $tablet-width) {
     margin: 0 auto 30px auto;
-    width: 755px
+    width: 755px;
   }
 
   @media (max-width: $mobile-width) {
@@ -29,7 +29,7 @@
   height: 100%;
 }
 
-.slick-track{
+.slick-track {
   display: flex;
 }
 
@@ -54,7 +54,7 @@
 
 .slider .slick-arrow.slick-prev {
   left: 20px;
-  background: url('../img/svg/icon-arrow.svg') 50% 50% / 60% no-repeat;
+  background: url("../img/svg/icon-arrow.svg") 50% 50% / 60% no-repeat;
   transform: rotate(-180deg);
   background-color: rgba(255, 255, 255, 0.3);
   border-radius: 100%;
@@ -66,7 +66,7 @@
 
 .slider .slick-arrow.slick-next {
   right: 0;
-  background: url('../img/svg/icon-arrow.svg') 50% 50% / 60% no-repeat;
+  background: url("../img/svg/icon-arrow.svg") 50% 50% / 60% no-repeat;
   background-color: rgba(255, 255, 255, 0.3);
   border-radius: 100%;
 }
@@ -98,7 +98,7 @@
 }
 
 .slider .slick-dots li.slick-active button {
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 .slider .slick-dots li button {
@@ -106,7 +106,7 @@
   width: 10px;
   height: 10px;
   background-color: transparent;
-  border: 1px solid #fff;
+  border: 1px solid #ffffff;
   border-radius: 50%;
   padding: 0;
 }
@@ -123,7 +123,6 @@
   bottom: -50px;
   left: 50%;
   margin-left: -80px;
-  display: flex;
   align-items: center;
   justify-content: center;
 }
@@ -183,11 +182,7 @@
   border: none;
   border-radius: 50%;
   padding: 0;
-}
 
-.slider__popular .slick-dots li button,
-.slider__parts .slick-dots li button,
-.slider__additive .slick-dots li button {
   @media (max-width: $mobile-width) {
     width: 14px;
     height: 14px;
@@ -198,7 +193,7 @@
 .slider__popular .slick-dots li.slick-active button,
 .slider__additive .slick-dots li.slick-active button,
 .slider__parts .slick-dots li.slick-active button {
-  background-color: #FF7931;
+  background-color: #ff7931;
 }
 
 .slider__additive,
@@ -220,9 +215,7 @@
   @media (max-width: $tablet-width) {
     margin: 15px 55px;
   }
-
 }
-
 
 .slider__additive .slick-arrow,
 .slider__popular .slick-arrow,
@@ -230,20 +223,20 @@
   position: absolute;
   font-size: 0;
   top: 166px;
-  background: url('../img/svg/icon-arrow.svg') 50% 50% / 60% no-repeat;
+  background: url("../img/svg/icon-arrow.svg") 50% 50% / 60% no-repeat;
   width: 35px;
   height: 35px;
   background-color: transparent;
-  border: 1px solid #fff;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ffffff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   z-index: 5;
   cursor: pointer;
 
   &:hover {
-    background-image: url('../img/svg/icon-arrow-hover.svg') 50% 50% / 60% no-repeat;
-    background-color: #D7D9DF;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    background-image: url("../img/svg/icon-arrow-hover.svg") 50% 50% / 60% no-repeat;
+    background-color: #d7d9df;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   }
 }
 
@@ -314,7 +307,7 @@
 }
 
 .slider__banner .slick-dots li.slick-active button {
-  background-color: #FF7931;
+  background-color: #ff7931;
 }
 
 .slider__banner .slick-dots li button {

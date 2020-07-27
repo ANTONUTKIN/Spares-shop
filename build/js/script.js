@@ -1,12 +1,6 @@
 'use strict';
 
 (function () {
-// Удаление no-js
-var menu = document.querySelector(".menu");
-
-menu.classList.remove("menu--nojs");
-
-
 // Оживление бегунков цены
   var minPrice = document.getElementById('min-price-mask');
   var maxPrice = document.getElementById('max-price-mask');
