@@ -131,4 +131,36 @@
       $('.info__nav-item--takeout').addClass('info__nav-item--takeout-active');
     });
   });
+
+  // Табы фильтров меню поиска
+
+  $(document).ready(function(){
+    $('.search__season-filter').click(function(event) {
+      $('.search__season-wrapper').toggleClass('search__season-wrapper--hidden');
+    });
+  });
+
+  $(document).ready(function(){
+    $('.search__price-button').click(function(event) {
+      $('.search__accordion-wrapper').toggleClass('search__accordion-wrapper--hidden');
+    });
+  });
+
+  $(document).ready(function(){
+    $('.search__brand-button').click(function(event) {
+      $('.search__brand-wrapper').toggleClass('search__brand-wrapper--hidden');
+    });
+  });
+  
+  $(document).ready(function(){
+    $('.search__model-button').click(function(event) {
+      $('.search__model-wrapper').toggleClass('search__model-wrapper--hidden');
+    });
+  });
+
+  $(document).ready(function(){
+    $('.search__country-button').click(function(event) {
+      $('.search__country-wrapper').toggleClass('search__country-wrapper--hidden');
+    });
+  });
 })();

@@ -142,24 +142,21 @@
             <li class="search__header-item">По марке</li>
           </ul>
           <div class="search__filter-wrapper">
-            <div class="search__filter-season">
-              <label class="search__season-label">
-                <input class="search__season-checkbox" type="checkbox" checked>
-                  Сезонность
-                  <div class="search__season-wrapper">
-                    <label  class="search__season-checkbox-opened search__season-checkbox-opened--winter">
-                      <input class="search__season-radio-1" name="season-radio" type="radio">Зимние
-                      <span class="search__custom-checkbox"></span>
-                      <span class="search__info">?</span>
-                    </label>
-                    <label  class="search__season-checkbox-opened search__season-checkbox-opened--summer">
-                      <input class="search__season-radio-1" name="season-radio" type="radio">Летние
-                      <span class="search__custom-checkbox"></span>
-                    </label>
-                  </div>
-                  <div class="search__season-arrow"></div>
-              </label>
-            </div>
+            <div class="search__season-filter">
+                Сезонность
+                <div class="search__season-wrapper">
+                  <label  class="search__season-checkbox-opened search__season-checkbox-opened--winter">
+                    <input class="search__season-radio-1" name="season-radio" type="radio">Зимние
+                    <span class="search__custom-checkbox"></span>
+                    <span class="search__info">?</span>
+                  </label>
+                  <label  class="search__season-checkbox-opened search__season-checkbox-opened--summer">
+                    <input class="search__season-radio-1" name="season-radio" type="radio">Летние
+                    <span class="search__custom-checkbox"></span>
+                  </label>
+                </div>
+                <div class="search__season-arrow"></div>
+              </div>
             <div class="search__filter-type">
               <h3>Тип шин</h3>
               <label class="search__type-checkbox search__type-checkbox--all">
@@ -178,9 +175,10 @@
               </label>
             </div>
             <div class="search__price">
-              <label class="search__filter-price">
-                <input class="search__price-checkbox" type="checkbox" checked>
-                Цена
+              <div class="search__filter-price">
+                <p>Цена</p>
+                <button type="button" name="button" class="search__price-button"><span
+                  class="visually-hidden">закрыть раздел</span></button>
                 <div class="search__accordion-wrapper">
                   <div class="search__range-controls">
                     <div class="search__scale">
@@ -200,7 +198,7 @@
                     </div>
                   </div>
                 </div>
-              </label>
+              </div>
             </div>
             <div class="search__filter-diameter">
               <h3>Диаметр</h3>
@@ -240,8 +238,10 @@
               </select>
             </div>
             <div class="search__filter-brand">
-              <label class="search__brand-checkbox">
-                <input class="search__filter-brand-input" type="checkbox" checked>Бренд
+              <div class="search__brand-filter">
+                <p>Бренд</p>
+                <button type="button" name="button" class="search__brand-button"><span
+                  class="visually-hidden">закрыть раздел</span></button>
                 <div class="search__brand-wrapper">
                   <div class="search__textarea-wrapper">
                     <input class="search__brand-textarea" type="text" placeholder="Введите бренд шины">
@@ -266,36 +266,36 @@
                   </div>
                   <a href="#">Показать еще</a>
                 </div>
-              </label>
+              </div>
             </div>
             <div class="search__filter-model">
-              <label class="search__model-label">
-                <input class="search__model-checkbox" type="checkbox" checked>Модель
-                <div class="search__model-wrapper">
-                  <div  class="search__textarea-wrapper">
-                    <input class="search__brand-textarea" type="text" placeholder="Введите модель шины">
-                  </div>
-                  <div class="search__model-label-wrapper">
-                    <label class="search__label">
-                      <input class="search__model" type="checkbox" checked>ALINA
-                      <span class="search__custom-checkbox search__custom-checkbox--2"></span>
-                    </label>
-                    <label class="search__label">
-                      <input class="search__model" type="checkbox" checked>BLIWWAS
-                      <span class="search__custom-checkbox search__custom-checkbox--2"></span>
-                    </label>
-                    <label class="search__label">
-                      <input class="search__model" type="checkbox">FORCE Moode
-                      <span class="search__custom-checkbox search__custom-checkbox--2"></span>
-                    </label>
-                    <label class="search__label">
-                      <input class="search__model" type="checkbox">ICE Gide
-                      <span class="search__custom-checkbox search__custom-checkbox--2"></span>
-                    </label>
-                  </div>
-                  <a href="#">Показать еще</a>
+              <p>Модель</p>
+              <button type="button" name="button" class="search__model-button"><span
+                class="visually-hidden">закрыть раздел</span></button>
+              <div class="search__model-wrapper">
+                <div  class="search__textarea-wrapper">
+                  <input class="search__brand-textarea" type="text" placeholder="Введите модель шины">
                 </div>
-              </label>
+                <div class="search__model-label-wrapper">
+                  <label class="search__label">
+                    <input class="search__model" type="checkbox" checked>ALINA
+                    <span class="search__custom-checkbox search__custom-checkbox--2"></span>
+                  </label>
+                  <label class="search__label">
+                    <input class="search__model" type="checkbox" checked>BLIWWAS
+                    <span class="search__custom-checkbox search__custom-checkbox--2"></span>
+                  </label>
+                  <label class="search__label">
+                    <input class="search__model" type="checkbox">FORCE Moode
+                    <span class="search__custom-checkbox search__custom-checkbox--2"></span>
+                  </label>
+                  <label class="search__label">
+                    <input class="search__model" type="checkbox">ICE Gide
+                    <span class="search__custom-checkbox search__custom-checkbox--2"></span>
+                  </label>
+                </div>
+                <a href="#">Показать еще</a>
+              </div>
             </div>
             <div class="search__filter-techology">
               <h3>Технология</h3>
@@ -331,28 +331,30 @@
               </div>
             </div>
             <div class="search__filter-country">
-              <label class="search__country-label">
-                <input class="search__country-checkbox" type="checkbox" checked>Страны
-                  <div class="search__country-wrapper">
-                    <label class="search__label search__label--country">
-                      <input class="search__brand" type="checkbox" checked>Россия
-                      <span class="search__custom-checkbox search__custom-checkbox--2"></span>
-                    </label>
-                    <label class="search__label search__label--country">
-                      <input class="search__brand" type="checkbox" checked>Германия
-                      <span class="search__custom-checkbox search__custom-checkbox--2"></span>
-                    </label>
-                    <label class="search__label search__label--country">
-                      <input class="search__brand" type="checkbox">Россия
-                      <span class="search__custom-checkbox search__custom-checkbox--2"></span>
-                    </label>
-                    <label class="search__label search__label--country">
-                      <input class="search__brand" type="checkbox">Германия
-                      <span class="search__custom-checkbox search__custom-checkbox--2"></span>
-                    </label>
-                    <a href="#">Показать еще</a>
-                  </div>
-              </label>
+              <div class="search__country-label">
+                <p>Страны</p>
+                <button type="button" name="button" class="search__country-button"><span
+                  class="visually-hidden">закрыть раздел</span></button>
+                <div class="search__country-wrapper">
+                  <label class="search__label search__label--country">
+                    <input class="search__brand" type="checkbox" checked>Россия
+                    <span class="search__custom-checkbox search__custom-checkbox--2"></span>
+                  </label>
+                  <label class="search__label search__label--country">
+                    <input class="search__brand" type="checkbox" checked>Германия
+                    <span class="search__custom-checkbox search__custom-checkbox--2"></span>
+                  </label>
+                  <label class="search__label search__label--country">
+                    <input class="search__brand" type="checkbox">Россия
+                    <span class="search__custom-checkbox search__custom-checkbox--2"></span>
+                  </label>
+                  <label class="search__label search__label--country">
+                    <input class="search__brand" type="checkbox">Германия
+                    <span class="search__custom-checkbox search__custom-checkbox--2"></span>
+                  </label>
+                  <a href="#">Показать еще</a>
+                </div>
+              </div>
             </div>
           </div>
           <div class="search__filter-wrapper">
@@ -492,19 +494,18 @@
         </form>
         <div class="search__result">
           <div class="card">
-            <a class="card__main-link" href="card.html">
-              <img class="card__photo card__photo--4" src="img/wheel2.png" width="151" height="181" alt="product-photo">
-              <span class="card__name card__name--5">Шина 205/80 R16 104Q Misha RF Power Grum</span>
-              <span class="card__out-of-stock">нет в наличии</span>
-              <svg class="card__icon-like card__icon-like--2" width="27" height="25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path clip-rule="evenodd" d="M7.37 1.2C3.47 1.2.39 4.78 1.1 9.9c.62 4.43 11.22 13.3 12.4 13.3 1.18 0 11.78-8.87 12.4-13.3.7-5.13-2.38-8.7-6.27-8.7a7.09 7.09 0 00-6.13 3.28A7.09 7.09 0 007.37 1.2z" stroke="#A8A8A8" stroke-width="2"/>
-              </svg>
-              <svg class="card__icon-snow" width="31" height="31" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M6.52 8.52a1.4 1.4 0 102-2L6.53 4.55a1.41 1.41 0 10-1.99 2l1.97 1.97zM29.58 14.1h-2.8a1.4 1.4 0 100 2.82h2.8a1.4 1.4 0 100-2.83zM5.63 15.5c0-.78-.62-1.4-1.42-1.4H1.42a1.41 1.41 0 100 2.8h2.8c.78 0 1.41-.62 1.41-1.4zM15.5 7.04a8.45 8.45 0 100 16.91 8.45 8.45 0 000-16.9zm0 14.1a5.64 5.64 0 110-11.28 5.64 5.64 0 010 11.27zM6.52 22.49l-1.97 1.97a1.41 1.41 0 102 1.99l1.96-1.97a1.41 1.41 0 10-1.99-2zM24.48 8.52l1.97-1.98a1.4 1.4 0 10-2-2L22.5 6.53a1.41 1.41 0 101.99 2zM15.5 25.37c-.78 0-1.4.62-1.4 1.42v2.79a1.41 1.41 0 102.8 0v-2.8c0-.78-.62-1.41-1.4-1.41zM24.48 22.49a1.41 1.41 0 10-2 1.99l1.98 1.97a1.4 1.4 0 102-2l-1.98-1.96zM15.5 5.63c.78 0 1.4-.62 1.4-1.42V1.42a1.41 1.41 0 10-2.8 0v2.8c0 .78.62 1.41 1.4 1.41z" fill="#FF7931"/>
-              </svg>
-              <img class="card__banner-sale" src="img/sale.jpg" width="25" height="63" alt="sale">
-              <a class="card__link" href="#">Сообщить о поступлении</a>
-            </a>
+            <a class="card__main-link" href="card.html"></a>
+            <img class="card__photo card__photo--4" src="img/wheel2.png" width="151" height="181" alt="product-photo">
+            <span class="card__name card__name--5">Шина 205/80 R16 104Q Misha RF Power Grum</span>
+            <span class="card__out-of-stock">нет в наличии</span>
+            <svg class="card__icon-like card__icon-like--2" width="27" height="25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path clip-rule="evenodd" d="M7.37 1.2C3.47 1.2.39 4.78 1.1 9.9c.62 4.43 11.22 13.3 12.4 13.3 1.18 0 11.78-8.87 12.4-13.3.7-5.13-2.38-8.7-6.27-8.7a7.09 7.09 0 00-6.13 3.28A7.09 7.09 0 007.37 1.2z" stroke="#A8A8A8" stroke-width="2"/>
+            </svg>
+            <svg class="card__icon-snow" width="31" height="31" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6.52 8.52a1.4 1.4 0 102-2L6.53 4.55a1.41 1.41 0 10-1.99 2l1.97 1.97zM29.58 14.1h-2.8a1.4 1.4 0 100 2.82h2.8a1.4 1.4 0 100-2.83zM5.63 15.5c0-.78-.62-1.4-1.42-1.4H1.42a1.41 1.41 0 100 2.8h2.8c.78 0 1.41-.62 1.41-1.4zM15.5 7.04a8.45 8.45 0 100 16.91 8.45 8.45 0 000-16.9zm0 14.1a5.64 5.64 0 110-11.28 5.64 5.64 0 010 11.27zM6.52 22.49l-1.97 1.97a1.41 1.41 0 102 1.99l1.96-1.97a1.41 1.41 0 10-1.99-2zM24.48 8.52l1.97-1.98a1.4 1.4 0 10-2-2L22.5 6.53a1.41 1.41 0 101.99 2zM15.5 25.37c-.78 0-1.4.62-1.4 1.42v2.79a1.41 1.41 0 102.8 0v-2.8c0-.78-.62-1.41-1.4-1.41zM24.48 22.49a1.41 1.41 0 10-2 1.99l1.98 1.97a1.4 1.4 0 102-2l-1.98-1.96zM15.5 5.63c.78 0 1.4-.62 1.4-1.42V1.42a1.41 1.41 0 10-2.8 0v2.8c0 .78.62 1.41 1.4 1.41z" fill="#FF7931"/>
+            </svg>
+            <img class="card__banner-sale" src="img/sale.jpg" width="25" height="63" alt="sale">
+            <a class="card__link" href="#">Сообщить о поступлении</a>
           </div>
           <div class="card">
             <a class="card__main-link" href="card.html">
@@ -523,80 +524,32 @@
             </a>
           </div>
           <div class="card">
-            <a class="card__main-link" href="card.html">
-              <img class="card__photo card__photo--4" src="img/wheel2.png" width="151" height="181" alt="product-photo">
-              <span class="card__name card__name--5">Шина 205/80 R16 104Q Misha RF Power Grum</span>
-              <span class="card__out-of-stock">нет в наличии</span>
-              <svg class="card__icon-like card__icon-like--2" width="27" height="25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path clip-rule="evenodd" d="M7.37 1.2C3.47 1.2.39 4.78 1.1 9.9c.62 4.43 11.22 13.3 12.4 13.3 1.18 0 11.78-8.87 12.4-13.3.7-5.13-2.38-8.7-6.27-8.7a7.09 7.09 0 00-6.13 3.28A7.09 7.09 0 007.37 1.2z" stroke="#A8A8A8" stroke-width="2"/>
-              </svg>
-              <svg class="card__icon-snow" width="31" height="31" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M6.52 8.52a1.4 1.4 0 102-2L6.53 4.55a1.41 1.41 0 10-1.99 2l1.97 1.97zM29.58 14.1h-2.8a1.4 1.4 0 100 2.82h2.8a1.4 1.4 0 100-2.83zM5.63 15.5c0-.78-.62-1.4-1.42-1.4H1.42a1.41 1.41 0 100 2.8h2.8c.78 0 1.41-.62 1.41-1.4zM15.5 7.04a8.45 8.45 0 100 16.91 8.45 8.45 0 000-16.9zm0 14.1a5.64 5.64 0 110-11.28 5.64 5.64 0 010 11.27zM6.52 22.49l-1.97 1.97a1.41 1.41 0 102 1.99l1.96-1.97a1.41 1.41 0 10-1.99-2zM24.48 8.52l1.97-1.98a1.4 1.4 0 10-2-2L22.5 6.53a1.41 1.41 0 101.99 2zM15.5 25.37c-.78 0-1.4.62-1.4 1.42v2.79a1.41 1.41 0 102.8 0v-2.8c0-.78-.62-1.41-1.4-1.41zM24.48 22.49a1.41 1.41 0 10-2 1.99l1.98 1.97a1.4 1.4 0 102-2l-1.98-1.96zM15.5 5.63c.78 0 1.4-.62 1.4-1.42V1.42a1.41 1.41 0 10-2.8 0v2.8c0 .78.62 1.41 1.4 1.41z" fill="#FF7931"/>
-              </svg>
-              <img class="card__banner-sale" src="img/sale.jpg" width="25" height="63" alt="sale">
-              <a class="card__link" href="#">Сообщить о поступлении</a>
-            </a>
+            <a class="card__main-link" href="card.html"></a>
+            <img class="card__photo card__photo--4" src="img/wheel2.png" width="151" height="181" alt="product-photo">
+            <span class="card__name card__name--5">Шина 205/80 R16 104Q Misha RF Power Grum</span>
+            <span class="card__out-of-stock">нет в наличии</span>
+            <svg class="card__icon-like card__icon-like--2" width="27" height="25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path clip-rule="evenodd" d="M7.37 1.2C3.47 1.2.39 4.78 1.1 9.9c.62 4.43 11.22 13.3 12.4 13.3 1.18 0 11.78-8.87 12.4-13.3.7-5.13-2.38-8.7-6.27-8.7a7.09 7.09 0 00-6.13 3.28A7.09 7.09 0 007.37 1.2z" stroke="#A8A8A8" stroke-width="2"/>
+            </svg>
+            <svg class="card__icon-snow" width="31" height="31" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6.52 8.52a1.4 1.4 0 102-2L6.53 4.55a1.41 1.41 0 10-1.99 2l1.97 1.97zM29.58 14.1h-2.8a1.4 1.4 0 100 2.82h2.8a1.4 1.4 0 100-2.83zM5.63 15.5c0-.78-.62-1.4-1.42-1.4H1.42a1.41 1.41 0 100 2.8h2.8c.78 0 1.41-.62 1.41-1.4zM15.5 7.04a8.45 8.45 0 100 16.91 8.45 8.45 0 000-16.9zm0 14.1a5.64 5.64 0 110-11.28 5.64 5.64 0 010 11.27zM6.52 22.49l-1.97 1.97a1.41 1.41 0 102 1.99l1.96-1.97a1.41 1.41 0 10-1.99-2zM24.48 8.52l1.97-1.98a1.4 1.4 0 10-2-2L22.5 6.53a1.41 1.41 0 101.99 2zM15.5 25.37c-.78 0-1.4.62-1.4 1.42v2.79a1.41 1.41 0 102.8 0v-2.8c0-.78-.62-1.41-1.4-1.41zM24.48 22.49a1.41 1.41 0 10-2 1.99l1.98 1.97a1.4 1.4 0 102-2l-1.98-1.96zM15.5 5.63c.78 0 1.4-.62 1.4-1.42V1.42a1.41 1.41 0 10-2.8 0v2.8c0 .78.62 1.41 1.4 1.41z" fill="#FF7931"/>
+            </svg>
+            <img class="card__banner-sale" src="img/sale.jpg" width="25" height="63" alt="sale">
+            <a class="card__link" href="#">Сообщить о поступлении</a>
           </div>
           <div class="card">
-            <a class="card__main-link" href="card.html">
-              <img class="card__photo card__photo--4" src="img/wheel2.png" width="151" height="181" alt="product-photo">
-              <span class="card__name card__name--5">Шина 205/80 R16 104Q Misha RF Power Grum</span>
-              <span class="card__out-of-stock">нет в наличии</span>
-              <svg class="card__icon-like card__icon-like--2" width="27" height="25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path clip-rule="evenodd" d="M7.37 1.2C3.47 1.2.39 4.78 1.1 9.9c.62 4.43 11.22 13.3 12.4 13.3 1.18 0 11.78-8.87 12.4-13.3.7-5.13-2.38-8.7-6.27-8.7a7.09 7.09 0 00-6.13 3.28A7.09 7.09 0 007.37 1.2z" stroke="#A8A8A8" stroke-width="2"/>
-              </svg>
-              <svg class="card__icon-snow" width="31" height="31" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M6.52 8.52a1.4 1.4 0 102-2L6.53 4.55a1.41 1.41 0 10-1.99 2l1.97 1.97zM29.58 14.1h-2.8a1.4 1.4 0 100 2.82h2.8a1.4 1.4 0 100-2.83zM5.63 15.5c0-.78-.62-1.4-1.42-1.4H1.42a1.41 1.41 0 100 2.8h2.8c.78 0 1.41-.62 1.41-1.4zM15.5 7.04a8.45 8.45 0 100 16.91 8.45 8.45 0 000-16.9zm0 14.1a5.64 5.64 0 110-11.28 5.64 5.64 0 010 11.27zM6.52 22.49l-1.97 1.97a1.41 1.41 0 102 1.99l1.96-1.97a1.41 1.41 0 10-1.99-2zM24.48 8.52l1.97-1.98a1.4 1.4 0 10-2-2L22.5 6.53a1.41 1.41 0 101.99 2zM15.5 25.37c-.78 0-1.4.62-1.4 1.42v2.79a1.41 1.41 0 102.8 0v-2.8c0-.78-.62-1.41-1.4-1.41zM24.48 22.49a1.41 1.41 0 10-2 1.99l1.98 1.97a1.4 1.4 0 102-2l-1.98-1.96zM15.5 5.63c.78 0 1.4-.62 1.4-1.42V1.42a1.41 1.41 0 10-2.8 0v2.8c0 .78.62 1.41 1.4 1.41z" fill="#FF7931"/>
-              </svg>
-              <img class="card__banner-sale" src="img/sale.jpg" width="25" height="63" alt="sale">
-              <a class="card__link" href="#">Сообщить о поступлении</a>
-            </a>
-          </div>
-          <div class="card">
-            <a class="card__main-link" href="card.html">
-              <img class="card__photo card__photo--4" src="img/wheel2.png" width="151" height="181" alt="product-photo">
-              <span class="card__name card__name--6">Шина 205/80 R16 104Q Misha RF Power Grum</span>
-              <span class="card__price">11 680 ₽</span>
-              <svg class="card__icon-like card__icon-like--2" width="27" height="25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path clip-rule="evenodd" d="M7.37 1.2C3.47 1.2.39 4.78 1.1 9.9c.62 4.43 11.22 13.3 12.4 13.3 1.18 0 11.78-8.87 12.4-13.3.7-5.13-2.38-8.7-6.27-8.7a7.09 7.09 0 00-6.13 3.28A7.09 7.09 0 007.37 1.2z" stroke="#A8A8A8" stroke-width="2"/>
-              </svg>
-              <svg class="card__icon-snow" width="31" height="31" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M6.52 8.52a1.4 1.4 0 102-2L6.53 4.55a1.41 1.41 0 10-1.99 2l1.97 1.97zM29.58 14.1h-2.8a1.4 1.4 0 100 2.82h2.8a1.4 1.4 0 100-2.83zM5.63 15.5c0-.78-.62-1.4-1.42-1.4H1.42a1.41 1.41 0 100 2.8h2.8c.78 0 1.41-.62 1.41-1.4zM15.5 7.04a8.45 8.45 0 100 16.91 8.45 8.45 0 000-16.9zm0 14.1a5.64 5.64 0 110-11.28 5.64 5.64 0 010 11.27zM6.52 22.49l-1.97 1.97a1.41 1.41 0 102 1.99l1.96-1.97a1.41 1.41 0 10-1.99-2zM24.48 8.52l1.97-1.98a1.4 1.4 0 10-2-2L22.5 6.53a1.41 1.41 0 101.99 2zM15.5 25.37c-.78 0-1.4.62-1.4 1.42v2.79a1.41 1.41 0 102.8 0v-2.8c0-.78-.62-1.41-1.4-1.41zM24.48 22.49a1.41 1.41 0 10-2 1.99l1.98 1.97a1.4 1.4 0 102-2l-1.98-1.96zM15.5 5.63c.78 0 1.4-.62 1.4-1.42V1.42a1.41 1.41 0 10-2.8 0v2.8c0 .78.62 1.41 1.4 1.41z" fill="#FF7931"/>
-              </svg>
-              <div class="card__buy card__buy--2">
-                <img src="img/svg/icon-bag.svg" alt="">
-              </div>
-            </a>
-          </div>
-          <div class="card">
-            <a class="card__main-link" href="card.html">
-              <img class="card__photo card__photo--4" src="img/wheel2.png" width="151" height="181" alt="product-photo">
-              <span class="card__name card__name--5">Шина 205/80 R16 104Q Misha RF Power Grum</span>
-              <span class="card__out-of-stock">нет в наличии</span>
-              <svg class="card__icon-like card__icon-like--2" width="27" height="25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path clip-rule="evenodd" d="M7.37 1.2C3.47 1.2.39 4.78 1.1 9.9c.62 4.43 11.22 13.3 12.4 13.3 1.18 0 11.78-8.87 12.4-13.3.7-5.13-2.38-8.7-6.27-8.7a7.09 7.09 0 00-6.13 3.28A7.09 7.09 0 007.37 1.2z" stroke="#A8A8A8" stroke-width="2"/>
-              </svg>
-              <svg class="card__icon-snow" width="31" height="31" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M6.52 8.52a1.4 1.4 0 102-2L6.53 4.55a1.41 1.41 0 10-1.99 2l1.97 1.97zM29.58 14.1h-2.8a1.4 1.4 0 100 2.82h2.8a1.4 1.4 0 100-2.83zM5.63 15.5c0-.78-.62-1.4-1.42-1.4H1.42a1.41 1.41 0 100 2.8h2.8c.78 0 1.41-.62 1.41-1.4zM15.5 7.04a8.45 8.45 0 100 16.91 8.45 8.45 0 000-16.9zm0 14.1a5.64 5.64 0 110-11.28 5.64 5.64 0 010 11.27zM6.52 22.49l-1.97 1.97a1.41 1.41 0 102 1.99l1.96-1.97a1.41 1.41 0 10-1.99-2zM24.48 8.52l1.97-1.98a1.4 1.4 0 10-2-2L22.5 6.53a1.41 1.41 0 101.99 2zM15.5 25.37c-.78 0-1.4.62-1.4 1.42v2.79a1.41 1.41 0 102.8 0v-2.8c0-.78-.62-1.41-1.4-1.41zM24.48 22.49a1.41 1.41 0 10-2 1.99l1.98 1.97a1.4 1.4 0 102-2l-1.98-1.96zM15.5 5.63c.78 0 1.4-.62 1.4-1.42V1.42a1.41 1.41 0 10-2.8 0v2.8c0 .78.62 1.41 1.4 1.41z" fill="#FF7931"/>
-              </svg>
-              <img class="card__banner-sale" src="img/sale.jpg" width="25" height="63" alt="sale">
-              <a class="card__link" href="#">Сообщить о поступлении</a>
-            </a>
-          </div>
-          <div class="card">
-            <a class="card__main-link" href="card.html">
-              <img class="card__photo card__photo--4" src="img/wheel2.png" width="151" height="181" alt="product-photo">
-              <span class="card__name card__name--5">Шина 205/80 R16 104Q Misha RF Power Grum</span>
-              <span class="card__out-of-stock">нет в наличии</span>
-              <svg class="card__icon-like card__icon-like--2" width="27" height="25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path clip-rule="evenodd" d="M7.37 1.2C3.47 1.2.39 4.78 1.1 9.9c.62 4.43 11.22 13.3 12.4 13.3 1.18 0 11.78-8.87 12.4-13.3.7-5.13-2.38-8.7-6.27-8.7a7.09 7.09 0 00-6.13 3.28A7.09 7.09 0 007.37 1.2z" stroke="#A8A8A8" stroke-width="2"/>
-              </svg>
-              <svg class="card__icon-snow" width="31" height="31" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M6.52 8.52a1.4 1.4 0 102-2L6.53 4.55a1.41 1.41 0 10-1.99 2l1.97 1.97zM29.58 14.1h-2.8a1.4 1.4 0 100 2.82h2.8a1.4 1.4 0 100-2.83zM5.63 15.5c0-.78-.62-1.4-1.42-1.4H1.42a1.41 1.41 0 100 2.8h2.8c.78 0 1.41-.62 1.41-1.4zM15.5 7.04a8.45 8.45 0 100 16.91 8.45 8.45 0 000-16.9zm0 14.1a5.64 5.64 0 110-11.28 5.64 5.64 0 010 11.27zM6.52 22.49l-1.97 1.97a1.41 1.41 0 102 1.99l1.96-1.97a1.41 1.41 0 10-1.99-2zM24.48 8.52l1.97-1.98a1.4 1.4 0 10-2-2L22.5 6.53a1.41 1.41 0 101.99 2zM15.5 25.37c-.78 0-1.4.62-1.4 1.42v2.79a1.41 1.41 0 102.8 0v-2.8c0-.78-.62-1.41-1.4-1.41zM24.48 22.49a1.41 1.41 0 10-2 1.99l1.98 1.97a1.4 1.4 0 102-2l-1.98-1.96zM15.5 5.63c.78 0 1.4-.62 1.4-1.42V1.42a1.41 1.41 0 10-2.8 0v2.8c0 .78.62 1.41 1.4 1.41z" fill="#FF7931"/>
-              </svg>
-              <img class="card__banner-sale" src="img/sale.jpg" width="25" height="63" alt="sale">
-              <a class="card__link" href="#">Сообщить о поступлении</a>
-            </a>
+            <a class="card__main-link" href="card.html"></a>
+            <img class="card__photo card__photo--4" src="img/wheel2.png" width="151" height="181" alt="product-photo">
+            <span class="card__name card__name--5">Шина 205/80 R16 104Q Misha RF Power Grum</span>
+            <span class="card__out-of-stock">нет в наличии</span>
+            <svg class="card__icon-like card__icon-like--2" width="27" height="25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path clip-rule="evenodd" d="M7.37 1.2C3.47 1.2.39 4.78 1.1 9.9c.62 4.43 11.22 13.3 12.4 13.3 1.18 0 11.78-8.87 12.4-13.3.7-5.13-2.38-8.7-6.27-8.7a7.09 7.09 0 00-6.13 3.28A7.09 7.09 0 007.37 1.2z" stroke="#A8A8A8" stroke-width="2"/>
+            </svg>
+            <svg class="card__icon-snow" width="31" height="31" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6.52 8.52a1.4 1.4 0 102-2L6.53 4.55a1.41 1.41 0 10-1.99 2l1.97 1.97zM29.58 14.1h-2.8a1.4 1.4 0 100 2.82h2.8a1.4 1.4 0 100-2.83zM5.63 15.5c0-.78-.62-1.4-1.42-1.4H1.42a1.41 1.41 0 100 2.8h2.8c.78 0 1.41-.62 1.41-1.4zM15.5 7.04a8.45 8.45 0 100 16.91 8.45 8.45 0 000-16.9zm0 14.1a5.64 5.64 0 110-11.28 5.64 5.64 0 010 11.27zM6.52 22.49l-1.97 1.97a1.41 1.41 0 102 1.99l1.96-1.97a1.41 1.41 0 10-1.99-2zM24.48 8.52l1.97-1.98a1.4 1.4 0 10-2-2L22.5 6.53a1.41 1.41 0 101.99 2zM15.5 25.37c-.78 0-1.4.62-1.4 1.42v2.79a1.41 1.41 0 102.8 0v-2.8c0-.78-.62-1.41-1.4-1.41zM24.48 22.49a1.41 1.41 0 10-2 1.99l1.98 1.97a1.4 1.4 0 102-2l-1.98-1.96zM15.5 5.63c.78 0 1.4-.62 1.4-1.42V1.42a1.41 1.41 0 10-2.8 0v2.8c0 .78.62 1.41 1.4 1.41z" fill="#FF7931"/>
+            </svg>
+            <img class="card__banner-sale" src="img/sale.jpg" width="25" height="63" alt="sale">
+            <a class="card__link" href="#">Сообщить о поступлении</a>
           </div>
           <div class="card">
             <a class="card__main-link" href="card.html">
@@ -615,34 +568,76 @@
             </a>
           </div>
           <div class="card">
-            <a class="card__main-link" href="card.html">
-              <img class="card__photo card__photo--4" src="img/wheel2.png" width="151" height="181" alt="product-photo">
-              <span class="card__name card__name--5">Шина 205/80 R16 104Q Misha RF Power Grum</span>
-              <span class="card__out-of-stock">нет в наличии</span>
-              <svg class="card__icon-like card__icon-like--2" width="27" height="25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path clip-rule="evenodd" d="M7.37 1.2C3.47 1.2.39 4.78 1.1 9.9c.62 4.43 11.22 13.3 12.4 13.3 1.18 0 11.78-8.87 12.4-13.3.7-5.13-2.38-8.7-6.27-8.7a7.09 7.09 0 00-6.13 3.28A7.09 7.09 0 007.37 1.2z" stroke="#A8A8A8" stroke-width="2"/>
-              </svg>
-              <svg class="card__icon-snow" width="31" height="31" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M6.52 8.52a1.4 1.4 0 102-2L6.53 4.55a1.41 1.41 0 10-1.99 2l1.97 1.97zM29.58 14.1h-2.8a1.4 1.4 0 100 2.82h2.8a1.4 1.4 0 100-2.83zM5.63 15.5c0-.78-.62-1.4-1.42-1.4H1.42a1.41 1.41 0 100 2.8h2.8c.78 0 1.41-.62 1.41-1.4zM15.5 7.04a8.45 8.45 0 100 16.91 8.45 8.45 0 000-16.9zm0 14.1a5.64 5.64 0 110-11.28 5.64 5.64 0 010 11.27zM6.52 22.49l-1.97 1.97a1.41 1.41 0 102 1.99l1.96-1.97a1.41 1.41 0 10-1.99-2zM24.48 8.52l1.97-1.98a1.4 1.4 0 10-2-2L22.5 6.53a1.41 1.41 0 101.99 2zM15.5 25.37c-.78 0-1.4.62-1.4 1.42v2.79a1.41 1.41 0 102.8 0v-2.8c0-.78-.62-1.41-1.4-1.41zM24.48 22.49a1.41 1.41 0 10-2 1.99l1.98 1.97a1.4 1.4 0 102-2l-1.98-1.96zM15.5 5.63c.78 0 1.4-.62 1.4-1.42V1.42a1.41 1.41 0 10-2.8 0v2.8c0 .78.62 1.41 1.4 1.41z" fill="#FF7931"/>
-              </svg>
-              <img class="card__banner-sale" src="img/sale.jpg" width="25" height="63" alt="sale">
-              <a class="card__link" href="#">Сообщить о поступлении</a>
-            </a>
+            <a class="card__main-link" href="card.html"></a>
+            <img class="card__photo card__photo--4" src="img/wheel2.png" width="151" height="181" alt="product-photo">
+            <span class="card__name card__name--5">Шина 205/80 R16 104Q Misha RF Power Grum</span>
+            <span class="card__out-of-stock">нет в наличии</span>
+            <svg class="card__icon-like card__icon-like--2" width="27" height="25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path clip-rule="evenodd" d="M7.37 1.2C3.47 1.2.39 4.78 1.1 9.9c.62 4.43 11.22 13.3 12.4 13.3 1.18 0 11.78-8.87 12.4-13.3.7-5.13-2.38-8.7-6.27-8.7a7.09 7.09 0 00-6.13 3.28A7.09 7.09 0 007.37 1.2z" stroke="#A8A8A8" stroke-width="2"/>
+            </svg>
+            <svg class="card__icon-snow" width="31" height="31" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6.52 8.52a1.4 1.4 0 102-2L6.53 4.55a1.41 1.41 0 10-1.99 2l1.97 1.97zM29.58 14.1h-2.8a1.4 1.4 0 100 2.82h2.8a1.4 1.4 0 100-2.83zM5.63 15.5c0-.78-.62-1.4-1.42-1.4H1.42a1.41 1.41 0 100 2.8h2.8c.78 0 1.41-.62 1.41-1.4zM15.5 7.04a8.45 8.45 0 100 16.91 8.45 8.45 0 000-16.9zm0 14.1a5.64 5.64 0 110-11.28 5.64 5.64 0 010 11.27zM6.52 22.49l-1.97 1.97a1.41 1.41 0 102 1.99l1.96-1.97a1.41 1.41 0 10-1.99-2zM24.48 8.52l1.97-1.98a1.4 1.4 0 10-2-2L22.5 6.53a1.41 1.41 0 101.99 2zM15.5 25.37c-.78 0-1.4.62-1.4 1.42v2.79a1.41 1.41 0 102.8 0v-2.8c0-.78-.62-1.41-1.4-1.41zM24.48 22.49a1.41 1.41 0 10-2 1.99l1.98 1.97a1.4 1.4 0 102-2l-1.98-1.96zM15.5 5.63c.78 0 1.4-.62 1.4-1.42V1.42a1.41 1.41 0 10-2.8 0v2.8c0 .78.62 1.41 1.4 1.41z" fill="#FF7931"/>
+            </svg>
+            <img class="card__banner-sale" src="img/sale.jpg" width="25" height="63" alt="sale">
+            <a class="card__link" href="#">Сообщить о поступлении</a>
+          </div>
+          <div class="card">
+            <a class="card__main-link" href="card.html"></a>
+            <img class="card__photo card__photo--4" src="img/wheel2.png" width="151" height="181" alt="product-photo">
+            <span class="card__name card__name--5">Шина 205/80 R16 104Q Misha RF Power Grum</span>
+            <span class="card__out-of-stock">нет в наличии</span>
+            <svg class="card__icon-like card__icon-like--2" width="27" height="25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path clip-rule="evenodd" d="M7.37 1.2C3.47 1.2.39 4.78 1.1 9.9c.62 4.43 11.22 13.3 12.4 13.3 1.18 0 11.78-8.87 12.4-13.3.7-5.13-2.38-8.7-6.27-8.7a7.09 7.09 0 00-6.13 3.28A7.09 7.09 0 007.37 1.2z" stroke="#A8A8A8" stroke-width="2"/>
+            </svg>
+            <svg class="card__icon-snow" width="31" height="31" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6.52 8.52a1.4 1.4 0 102-2L6.53 4.55a1.41 1.41 0 10-1.99 2l1.97 1.97zM29.58 14.1h-2.8a1.4 1.4 0 100 2.82h2.8a1.4 1.4 0 100-2.83zM5.63 15.5c0-.78-.62-1.4-1.42-1.4H1.42a1.41 1.41 0 100 2.8h2.8c.78 0 1.41-.62 1.41-1.4zM15.5 7.04a8.45 8.45 0 100 16.91 8.45 8.45 0 000-16.9zm0 14.1a5.64 5.64 0 110-11.28 5.64 5.64 0 010 11.27zM6.52 22.49l-1.97 1.97a1.41 1.41 0 102 1.99l1.96-1.97a1.41 1.41 0 10-1.99-2zM24.48 8.52l1.97-1.98a1.4 1.4 0 10-2-2L22.5 6.53a1.41 1.41 0 101.99 2zM15.5 25.37c-.78 0-1.4.62-1.4 1.42v2.79a1.41 1.41 0 102.8 0v-2.8c0-.78-.62-1.41-1.4-1.41zM24.48 22.49a1.41 1.41 0 10-2 1.99l1.98 1.97a1.4 1.4 0 102-2l-1.98-1.96zM15.5 5.63c.78 0 1.4-.62 1.4-1.42V1.42a1.41 1.41 0 10-2.8 0v2.8c0 .78.62 1.41 1.4 1.41z" fill="#FF7931"/>
+            </svg>
+            <img class="card__banner-sale" src="img/sale.jpg" width="25" height="63" alt="sale">
+            <a class="card__link" href="#">Сообщить о поступлении</a>
           </div>
           <div class="card">
             <a class="card__main-link" href="card.html">
               <img class="card__photo card__photo--4" src="img/wheel2.png" width="151" height="181" alt="product-photo">
-              <span class="card__name card__name--5">Шина 205/80 R16 104Q Misha RF Power Grum</span>
-              <span class="card__out-of-stock">нет в наличии</span>
+              <span class="card__name card__name--6">Шина 205/80 R16 104Q Misha RF Power Grum</span>
+              <span class="card__price">11 680 ₽</span>
               <svg class="card__icon-like card__icon-like--2" width="27" height="25" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path clip-rule="evenodd" d="M7.37 1.2C3.47 1.2.39 4.78 1.1 9.9c.62 4.43 11.22 13.3 12.4 13.3 1.18 0 11.78-8.87 12.4-13.3.7-5.13-2.38-8.7-6.27-8.7a7.09 7.09 0 00-6.13 3.28A7.09 7.09 0 007.37 1.2z" stroke="#A8A8A8" stroke-width="2"/>
               </svg>
               <svg class="card__icon-snow" width="31" height="31" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M6.52 8.52a1.4 1.4 0 102-2L6.53 4.55a1.41 1.41 0 10-1.99 2l1.97 1.97zM29.58 14.1h-2.8a1.4 1.4 0 100 2.82h2.8a1.4 1.4 0 100-2.83zM5.63 15.5c0-.78-.62-1.4-1.42-1.4H1.42a1.41 1.41 0 100 2.8h2.8c.78 0 1.41-.62 1.41-1.4zM15.5 7.04a8.45 8.45 0 100 16.91 8.45 8.45 0 000-16.9zm0 14.1a5.64 5.64 0 110-11.28 5.64 5.64 0 010 11.27zM6.52 22.49l-1.97 1.97a1.41 1.41 0 102 1.99l1.96-1.97a1.41 1.41 0 10-1.99-2zM24.48 8.52l1.97-1.98a1.4 1.4 0 10-2-2L22.5 6.53a1.41 1.41 0 101.99 2zM15.5 25.37c-.78 0-1.4.62-1.4 1.42v2.79a1.41 1.41 0 102.8 0v-2.8c0-.78-.62-1.41-1.4-1.41zM24.48 22.49a1.41 1.41 0 10-2 1.99l1.98 1.97a1.4 1.4 0 102-2l-1.98-1.96zM15.5 5.63c.78 0 1.4-.62 1.4-1.42V1.42a1.41 1.41 0 10-2.8 0v2.8c0 .78.62 1.41 1.4 1.41z" fill="#FF7931"/>
               </svg>
-              <img class="card__banner-sale" src="img/sale.jpg" width="25" height="63" alt="sale">
-              <a class="card__link" href="#">Сообщить о поступлении</a>
+              <div class="card__buy card__buy--2">
+                <img src="img/svg/icon-bag.svg" alt="">
+              </div>
             </a>
+          </div>
+          <div class="card">
+            <a class="card__main-link" href="card.html"></a>
+            <img class="card__photo card__photo--4" src="img/wheel2.png" width="151" height="181" alt="product-photo">
+            <span class="card__name card__name--5">Шина 205/80 R16 104Q Misha RF Power Grum</span>
+            <span class="card__out-of-stock">нет в наличии</span>
+            <svg class="card__icon-like card__icon-like--2" width="27" height="25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path clip-rule="evenodd" d="M7.37 1.2C3.47 1.2.39 4.78 1.1 9.9c.62 4.43 11.22 13.3 12.4 13.3 1.18 0 11.78-8.87 12.4-13.3.7-5.13-2.38-8.7-6.27-8.7a7.09 7.09 0 00-6.13 3.28A7.09 7.09 0 007.37 1.2z" stroke="#A8A8A8" stroke-width="2"/>
+            </svg>
+            <svg class="card__icon-snow" width="31" height="31" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6.52 8.52a1.4 1.4 0 102-2L6.53 4.55a1.41 1.41 0 10-1.99 2l1.97 1.97zM29.58 14.1h-2.8a1.4 1.4 0 100 2.82h2.8a1.4 1.4 0 100-2.83zM5.63 15.5c0-.78-.62-1.4-1.42-1.4H1.42a1.41 1.41 0 100 2.8h2.8c.78 0 1.41-.62 1.41-1.4zM15.5 7.04a8.45 8.45 0 100 16.91 8.45 8.45 0 000-16.9zm0 14.1a5.64 5.64 0 110-11.28 5.64 5.64 0 010 11.27zM6.52 22.49l-1.97 1.97a1.41 1.41 0 102 1.99l1.96-1.97a1.41 1.41 0 10-1.99-2zM24.48 8.52l1.97-1.98a1.4 1.4 0 10-2-2L22.5 6.53a1.41 1.41 0 101.99 2zM15.5 25.37c-.78 0-1.4.62-1.4 1.42v2.79a1.41 1.41 0 102.8 0v-2.8c0-.78-.62-1.41-1.4-1.41zM24.48 22.49a1.41 1.41 0 10-2 1.99l1.98 1.97a1.4 1.4 0 102-2l-1.98-1.96zM15.5 5.63c.78 0 1.4-.62 1.4-1.42V1.42a1.41 1.41 0 10-2.8 0v2.8c0 .78.62 1.41 1.4 1.41z" fill="#FF7931"/>
+            </svg>
+            <img class="card__banner-sale" src="img/sale.jpg" width="25" height="63" alt="sale">
+            <a class="card__link" href="#">Сообщить о поступлении</a>
+          </div>
+          <div class="card">
+            <a class="card__main-link" href="card.html"></a>
+            <img class="card__photo card__photo--4" src="img/wheel2.png" width="151" height="181" alt="product-photo">
+            <span class="card__name card__name--5">Шина 205/80 R16 104Q Misha RF Power Grum</span>
+            <span class="card__out-of-stock">нет в наличии</span>
+            <svg class="card__icon-like card__icon-like--2" width="27" height="25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path clip-rule="evenodd" d="M7.37 1.2C3.47 1.2.39 4.78 1.1 9.9c.62 4.43 11.22 13.3 12.4 13.3 1.18 0 11.78-8.87 12.4-13.3.7-5.13-2.38-8.7-6.27-8.7a7.09 7.09 0 00-6.13 3.28A7.09 7.09 0 007.37 1.2z" stroke="#A8A8A8" stroke-width="2"/>
+            </svg>
+            <svg class="card__icon-snow" width="31" height="31" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6.52 8.52a1.4 1.4 0 102-2L6.53 4.55a1.41 1.41 0 10-1.99 2l1.97 1.97zM29.58 14.1h-2.8a1.4 1.4 0 100 2.82h2.8a1.4 1.4 0 100-2.83zM5.63 15.5c0-.78-.62-1.4-1.42-1.4H1.42a1.41 1.41 0 100 2.8h2.8c.78 0 1.41-.62 1.41-1.4zM15.5 7.04a8.45 8.45 0 100 16.91 8.45 8.45 0 000-16.9zm0 14.1a5.64 5.64 0 110-11.28 5.64 5.64 0 010 11.27zM6.52 22.49l-1.97 1.97a1.41 1.41 0 102 1.99l1.96-1.97a1.41 1.41 0 10-1.99-2zM24.48 8.52l1.97-1.98a1.4 1.4 0 10-2-2L22.5 6.53a1.41 1.41 0 101.99 2zM15.5 25.37c-.78 0-1.4.62-1.4 1.42v2.79a1.41 1.41 0 102.8 0v-2.8c0-.78-.62-1.41-1.4-1.41zM24.48 22.49a1.41 1.41 0 10-2 1.99l1.98 1.97a1.4 1.4 0 102-2l-1.98-1.96zM15.5 5.63c.78 0 1.4-.62 1.4-1.42V1.42a1.41 1.41 0 10-2.8 0v2.8c0 .78.62 1.41 1.4 1.41z" fill="#FF7931"/>
+            </svg>
+            <img class="card__banner-sale" src="img/sale.jpg" width="25" height="63" alt="sale">
+            <a class="card__link" href="#">Сообщить о поступлении</a>
           </div>
           <div class="card">
             <a class="card__main-link" href="card.html">
@@ -661,19 +656,18 @@
             </a>
           </div>
           <div class="card">
-            <a class="card__main-link" href="card.html">
-              <img class="card__photo card__photo--4" src="img/wheel2.png" width="151" height="181" alt="product-photo">
-              <span class="card__name card__name--5">Шина 205/80 R16 104Q Misha RF Power Grum</span>
-              <span class="card__out-of-stock">нет в наличии</span>
-              <svg class="card__icon-like card__icon-like--2" width="27" height="25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path clip-rule="evenodd" d="M7.37 1.2C3.47 1.2.39 4.78 1.1 9.9c.62 4.43 11.22 13.3 12.4 13.3 1.18 0 11.78-8.87 12.4-13.3.7-5.13-2.38-8.7-6.27-8.7a7.09 7.09 0 00-6.13 3.28A7.09 7.09 0 007.37 1.2z" stroke="#A8A8A8" stroke-width="2"/>
-              </svg>
-              <svg class="card__icon-snow" width="31" height="31" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M6.52 8.52a1.4 1.4 0 102-2L6.53 4.55a1.41 1.41 0 10-1.99 2l1.97 1.97zM29.58 14.1h-2.8a1.4 1.4 0 100 2.82h2.8a1.4 1.4 0 100-2.83zM5.63 15.5c0-.78-.62-1.4-1.42-1.4H1.42a1.41 1.41 0 100 2.8h2.8c.78 0 1.41-.62 1.41-1.4zM15.5 7.04a8.45 8.45 0 100 16.91 8.45 8.45 0 000-16.9zm0 14.1a5.64 5.64 0 110-11.28 5.64 5.64 0 010 11.27zM6.52 22.49l-1.97 1.97a1.41 1.41 0 102 1.99l1.96-1.97a1.41 1.41 0 10-1.99-2zM24.48 8.52l1.97-1.98a1.4 1.4 0 10-2-2L22.5 6.53a1.41 1.41 0 101.99 2zM15.5 25.37c-.78 0-1.4.62-1.4 1.42v2.79a1.41 1.41 0 102.8 0v-2.8c0-.78-.62-1.41-1.4-1.41zM24.48 22.49a1.41 1.41 0 10-2 1.99l1.98 1.97a1.4 1.4 0 102-2l-1.98-1.96zM15.5 5.63c.78 0 1.4-.62 1.4-1.42V1.42a1.41 1.41 0 10-2.8 0v2.8c0 .78.62 1.41 1.4 1.41z" fill="#FF7931"/>
-              </svg>
-              <img class="card__banner-sale" src="img/sale.jpg" width="25" height="63" alt="sale">
-              <a class="card__link" href="#">Сообщить о поступлении</a>
-            </a>
+            <a class="card__main-link" href="card.html"></a>
+            <img class="card__photo card__photo--4" src="img/wheel2.png" width="151" height="181" alt="product-photo">
+            <span class="card__name card__name--5">Шина 205/80 R16 104Q Misha RF Power Grum</span>
+            <span class="card__out-of-stock">нет в наличии</span>
+            <svg class="card__icon-like card__icon-like--2" width="27" height="25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path clip-rule="evenodd" d="M7.37 1.2C3.47 1.2.39 4.78 1.1 9.9c.62 4.43 11.22 13.3 12.4 13.3 1.18 0 11.78-8.87 12.4-13.3.7-5.13-2.38-8.7-6.27-8.7a7.09 7.09 0 00-6.13 3.28A7.09 7.09 0 007.37 1.2z" stroke="#A8A8A8" stroke-width="2"/>
+            </svg>
+            <svg class="card__icon-snow" width="31" height="31" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6.52 8.52a1.4 1.4 0 102-2L6.53 4.55a1.41 1.41 0 10-1.99 2l1.97 1.97zM29.58 14.1h-2.8a1.4 1.4 0 100 2.82h2.8a1.4 1.4 0 100-2.83zM5.63 15.5c0-.78-.62-1.4-1.42-1.4H1.42a1.41 1.41 0 100 2.8h2.8c.78 0 1.41-.62 1.41-1.4zM15.5 7.04a8.45 8.45 0 100 16.91 8.45 8.45 0 000-16.9zm0 14.1a5.64 5.64 0 110-11.28 5.64 5.64 0 010 11.27zM6.52 22.49l-1.97 1.97a1.41 1.41 0 102 1.99l1.96-1.97a1.41 1.41 0 10-1.99-2zM24.48 8.52l1.97-1.98a1.4 1.4 0 10-2-2L22.5 6.53a1.41 1.41 0 101.99 2zM15.5 25.37c-.78 0-1.4.62-1.4 1.42v2.79a1.41 1.41 0 102.8 0v-2.8c0-.78-.62-1.41-1.4-1.41zM24.48 22.49a1.41 1.41 0 10-2 1.99l1.98 1.97a1.4 1.4 0 102-2l-1.98-1.96zM15.5 5.63c.78 0 1.4-.62 1.4-1.42V1.42a1.41 1.41 0 10-2.8 0v2.8c0 .78.62 1.41 1.4 1.41z" fill="#FF7931"/>
+            </svg>
+            <img class="card__banner-sale" src="img/sale.jpg" width="25" height="63" alt="sale">
+            <a class="card__link" href="#">Сообщить о поступлении</a>
           </div>
         </div>
         <a class="search__link" href="#">Показать еще</a>
@@ -696,18 +690,17 @@
         <div class="slider__additive">
           <div class="card">
             <a class="card__main-link" href="card.html"></a>
-              <img class="card__photo card__photo--4" src="img/wheel2.png" width="151" height="181" alt="product-photo">
-              <span class="card__name card__name--5">Шина 205/80 R16 104Q Misha RF Power Grum</span>
-              <span class="card__out-of-stock">нет в наличии</span>
-              <svg class="card__icon-like card__icon-like--2" width="27" height="25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path clip-rule="evenodd" d="M7.37 1.2C3.47 1.2.39 4.78 1.1 9.9c.62 4.43 11.22 13.3 12.4 13.3 1.18 0 11.78-8.87 12.4-13.3.7-5.13-2.38-8.7-6.27-8.7a7.09 7.09 0 00-6.13 3.28A7.09 7.09 0 007.37 1.2z" stroke="#A8A8A8" stroke-width="2"/>
-              </svg>
-              <svg class="card__icon-snow" width="31" height="31" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M6.52 8.52a1.4 1.4 0 102-2L6.53 4.55a1.41 1.41 0 10-1.99 2l1.97 1.97zM29.58 14.1h-2.8a1.4 1.4 0 100 2.82h2.8a1.4 1.4 0 100-2.83zM5.63 15.5c0-.78-.62-1.4-1.42-1.4H1.42a1.41 1.41 0 100 2.8h2.8c.78 0 1.41-.62 1.41-1.4zM15.5 7.04a8.45 8.45 0 100 16.91 8.45 8.45 0 000-16.9zm0 14.1a5.64 5.64 0 110-11.28 5.64 5.64 0 010 11.27zM6.52 22.49l-1.97 1.97a1.41 1.41 0 102 1.99l1.96-1.97a1.41 1.41 0 10-1.99-2zM24.48 8.52l1.97-1.98a1.4 1.4 0 10-2-2L22.5 6.53a1.41 1.41 0 101.99 2zM15.5 25.37c-.78 0-1.4.62-1.4 1.42v2.79a1.41 1.41 0 102.8 0v-2.8c0-.78-.62-1.41-1.4-1.41zM24.48 22.49a1.41 1.41 0 10-2 1.99l1.98 1.97a1.4 1.4 0 102-2l-1.98-1.96zM15.5 5.63c.78 0 1.4-.62 1.4-1.42V1.42a1.41 1.41 0 10-2.8 0v2.8c0 .78.62 1.41 1.4 1.41z" fill="#FF7931"/>
-              </svg>
-              <img class="card__banner-sale" src="img/sale.jpg" width="25" height="63" alt="sale">
-              <a class="card__link" href="#">Сообщить о поступлении</a>
-            </a>
+            <img class="card__photo card__photo--4" src="img/wheel2.png" width="151" height="181" alt="product-photo">
+            <span class="card__name card__name--5">Шина 205/80 R16 104Q Misha RF Power Grum</span>
+            <span class="card__out-of-stock">нет в наличии</span>
+            <svg class="card__icon-like card__icon-like--2" width="27" height="25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path clip-rule="evenodd" d="M7.37 1.2C3.47 1.2.39 4.78 1.1 9.9c.62 4.43 11.22 13.3 12.4 13.3 1.18 0 11.78-8.87 12.4-13.3.7-5.13-2.38-8.7-6.27-8.7a7.09 7.09 0 00-6.13 3.28A7.09 7.09 0 007.37 1.2z" stroke="#A8A8A8" stroke-width="2"/>
+            </svg>
+            <svg class="card__icon-snow" width="31" height="31" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6.52 8.52a1.4 1.4 0 102-2L6.53 4.55a1.41 1.41 0 10-1.99 2l1.97 1.97zM29.58 14.1h-2.8a1.4 1.4 0 100 2.82h2.8a1.4 1.4 0 100-2.83zM5.63 15.5c0-.78-.62-1.4-1.42-1.4H1.42a1.41 1.41 0 100 2.8h2.8c.78 0 1.41-.62 1.41-1.4zM15.5 7.04a8.45 8.45 0 100 16.91 8.45 8.45 0 000-16.9zm0 14.1a5.64 5.64 0 110-11.28 5.64 5.64 0 010 11.27zM6.52 22.49l-1.97 1.97a1.41 1.41 0 102 1.99l1.96-1.97a1.41 1.41 0 10-1.99-2zM24.48 8.52l1.97-1.98a1.4 1.4 0 10-2-2L22.5 6.53a1.41 1.41 0 101.99 2zM15.5 25.37c-.78 0-1.4.62-1.4 1.42v2.79a1.41 1.41 0 102.8 0v-2.8c0-.78-.62-1.41-1.4-1.41zM24.48 22.49a1.41 1.41 0 10-2 1.99l1.98 1.97a1.4 1.4 0 102-2l-1.98-1.96zM15.5 5.63c.78 0 1.4-.62 1.4-1.42V1.42a1.41 1.41 0 10-2.8 0v2.8c0 .78.62 1.41 1.4 1.41z" fill="#FF7931"/>
+            </svg>
+            <img class="card__banner-sale" src="img/sale.jpg" width="25" height="63" alt="sale">
+            <a class="card__link" href="#">Сообщить о поступлении</a>
           </div>
           <div class="card">
             <a class="card__main-link" href="card.html">
@@ -726,19 +719,18 @@
             </a>
           </div>
           <div class="card">
-            <a class="card__main-link" href="card.html">
-              <img class="card__photo card__photo--5" src="img/wheel2.png" width="151" height="181" alt="product-photo">
-              <span class="card__name card__name--5">Шина 205/80 R16 104Q Misha RF Power Grum</span>
-              <span class="card__out-of-stock">нет в наличии</span>
-              <svg class="card__icon-like card__icon-like--3" width="27" height="25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path clip-rule="evenodd" d="M7.37 1.2C3.47 1.2.39 4.78 1.1 9.9c.62 4.43 11.22 13.3 12.4 13.3 1.18 0 11.78-8.87 12.4-13.3.7-5.13-2.38-8.7-6.27-8.7a7.09 7.09 0 00-6.13 3.28A7.09 7.09 0 007.37 1.2z" stroke="#FF7931" stroke-width="2"/>
-              </svg>
-              <svg class="card__icon-snow" width="31" height="31" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M6.52 8.52a1.4 1.4 0 102-2L6.53 4.55a1.41 1.41 0 10-1.99 2l1.97 1.97zM29.58 14.1h-2.8a1.4 1.4 0 100 2.82h2.8a1.4 1.4 0 100-2.83zM5.63 15.5c0-.78-.62-1.4-1.42-1.4H1.42a1.41 1.41 0 100 2.8h2.8c.78 0 1.41-.62 1.41-1.4zM15.5 7.04a8.45 8.45 0 100 16.91 8.45 8.45 0 000-16.9zm0 14.1a5.64 5.64 0 110-11.28 5.64 5.64 0 010 11.27zM6.52 22.49l-1.97 1.97a1.41 1.41 0 102 1.99l1.96-1.97a1.41 1.41 0 10-1.99-2zM24.48 8.52l1.97-1.98a1.4 1.4 0 10-2-2L22.5 6.53a1.41 1.41 0 101.99 2zM15.5 25.37c-.78 0-1.4.62-1.4 1.42v2.79a1.41 1.41 0 102.8 0v-2.8c0-.78-.62-1.41-1.4-1.41zM24.48 22.49a1.41 1.41 0 10-2 1.99l1.98 1.97a1.4 1.4 0 102-2l-1.98-1.96zM15.5 5.63c.78 0 1.4-.62 1.4-1.42V1.42a1.41 1.41 0 10-2.8 0v2.8c0 .78.62 1.41 1.4 1.41z" fill="#FF7931"/>
-              </svg>
-              <img class="card__banner-sale" src="img/sale.jpg" width="25" height="63" alt="sale">
-              <a class="card__link" href="#">Сообщить о поступлении</a>
-            </a>
+            <a class="card__main-link" href="card.html"></a>
+            <img class="card__photo card__photo--5" src="img/wheel2.png" width="151" height="181" alt="product-photo">
+            <span class="card__name card__name--5">Шина 205/80 R16 104Q Misha RF Power Grum</span>
+            <span class="card__out-of-stock">нет в наличии</span>
+            <svg class="card__icon-like card__icon-like--3" width="27" height="25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path clip-rule="evenodd" d="M7.37 1.2C3.47 1.2.39 4.78 1.1 9.9c.62 4.43 11.22 13.3 12.4 13.3 1.18 0 11.78-8.87 12.4-13.3.7-5.13-2.38-8.7-6.27-8.7a7.09 7.09 0 00-6.13 3.28A7.09 7.09 0 007.37 1.2z" stroke="#FF7931" stroke-width="2"/>
+            </svg>
+            <svg class="card__icon-snow" width="31" height="31" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6.52 8.52a1.4 1.4 0 102-2L6.53 4.55a1.41 1.41 0 10-1.99 2l1.97 1.97zM29.58 14.1h-2.8a1.4 1.4 0 100 2.82h2.8a1.4 1.4 0 100-2.83zM5.63 15.5c0-.78-.62-1.4-1.42-1.4H1.42a1.41 1.41 0 100 2.8h2.8c.78 0 1.41-.62 1.41-1.4zM15.5 7.04a8.45 8.45 0 100 16.91 8.45 8.45 0 000-16.9zm0 14.1a5.64 5.64 0 110-11.28 5.64 5.64 0 010 11.27zM6.52 22.49l-1.97 1.97a1.41 1.41 0 102 1.99l1.96-1.97a1.41 1.41 0 10-1.99-2zM24.48 8.52l1.97-1.98a1.4 1.4 0 10-2-2L22.5 6.53a1.41 1.41 0 101.99 2zM15.5 25.37c-.78 0-1.4.62-1.4 1.42v2.79a1.41 1.41 0 102.8 0v-2.8c0-.78-.62-1.41-1.4-1.41zM24.48 22.49a1.41 1.41 0 10-2 1.99l1.98 1.97a1.4 1.4 0 102-2l-1.98-1.96zM15.5 5.63c.78 0 1.4-.62 1.4-1.42V1.42a1.41 1.41 0 10-2.8 0v2.8c0 .78.62 1.41 1.4 1.41z" fill="#FF7931"/>
+            </svg>
+            <img class="card__banner-sale" src="img/sale.jpg" width="25" height="63" alt="sale">
+            <a class="card__link" href="#">Сообщить о поступлении</a>
           </div>
           <div class="card">
             <a class="card__main-link" href="card.html">
@@ -757,19 +749,18 @@
             </a>
           </div>
           <div class="card">
-            <a class="card__main-link" href="card.html">
-              <img class="card__photo card__photo--4" src="img/wheel2.png" width="151" height="181" alt="product-photo">
-              <span class="card__name card__name--5">Шина 205/80 R16 104Q Misha RF Power Grum</span>
-              <span class="card__out-of-stock">нет в наличии</span>
-              <svg class="card__icon-like card__icon-like--2" width="27" height="25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path clip-rule="evenodd" d="M7.37 1.2C3.47 1.2.39 4.78 1.1 9.9c.62 4.43 11.22 13.3 12.4 13.3 1.18 0 11.78-8.87 12.4-13.3.7-5.13-2.38-8.7-6.27-8.7a7.09 7.09 0 00-6.13 3.28A7.09 7.09 0 007.37 1.2z" stroke="#A8A8A8" stroke-width="2"/>
-              </svg>
-              <svg class="card__icon-snow" width="31" height="31" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M6.52 8.52a1.4 1.4 0 102-2L6.53 4.55a1.41 1.41 0 10-1.99 2l1.97 1.97zM29.58 14.1h-2.8a1.4 1.4 0 100 2.82h2.8a1.4 1.4 0 100-2.83zM5.63 15.5c0-.78-.62-1.4-1.42-1.4H1.42a1.41 1.41 0 100 2.8h2.8c.78 0 1.41-.62 1.41-1.4zM15.5 7.04a8.45 8.45 0 100 16.91 8.45 8.45 0 000-16.9zm0 14.1a5.64 5.64 0 110-11.28 5.64 5.64 0 010 11.27zM6.52 22.49l-1.97 1.97a1.41 1.41 0 102 1.99l1.96-1.97a1.41 1.41 0 10-1.99-2zM24.48 8.52l1.97-1.98a1.4 1.4 0 10-2-2L22.5 6.53a1.41 1.41 0 101.99 2zM15.5 25.37c-.78 0-1.4.62-1.4 1.42v2.79a1.41 1.41 0 102.8 0v-2.8c0-.78-.62-1.41-1.4-1.41zM24.48 22.49a1.41 1.41 0 10-2 1.99l1.98 1.97a1.4 1.4 0 102-2l-1.98-1.96zM15.5 5.63c.78 0 1.4-.62 1.4-1.42V1.42a1.41 1.41 0 10-2.8 0v2.8c0 .78.62 1.41 1.4 1.41z" fill="#FF7931"/>
-              </svg>
-              <img class="card__banner-sale" src="img/sale.jpg" width="25" height="63" alt="sale">
-              <a class="card__link" href="#">Сообщить о поступлении</a>
-            </a>
+            <a class="card__main-link" href="card.html"></a>
+            <img class="card__photo card__photo--4" src="img/wheel2.png" width="151" height="181" alt="product-photo">
+            <span class="card__name card__name--5">Шина 205/80 R16 104Q Misha RF Power Grum</span>
+            <span class="card__out-of-stock">нет в наличии</span>
+            <svg class="card__icon-like card__icon-like--2" width="27" height="25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path clip-rule="evenodd" d="M7.37 1.2C3.47 1.2.39 4.78 1.1 9.9c.62 4.43 11.22 13.3 12.4 13.3 1.18 0 11.78-8.87 12.4-13.3.7-5.13-2.38-8.7-6.27-8.7a7.09 7.09 0 00-6.13 3.28A7.09 7.09 0 007.37 1.2z" stroke="#A8A8A8" stroke-width="2"/>
+            </svg>
+            <svg class="card__icon-snow" width="31" height="31" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6.52 8.52a1.4 1.4 0 102-2L6.53 4.55a1.41 1.41 0 10-1.99 2l1.97 1.97zM29.58 14.1h-2.8a1.4 1.4 0 100 2.82h2.8a1.4 1.4 0 100-2.83zM5.63 15.5c0-.78-.62-1.4-1.42-1.4H1.42a1.41 1.41 0 100 2.8h2.8c.78 0 1.41-.62 1.41-1.4zM15.5 7.04a8.45 8.45 0 100 16.91 8.45 8.45 0 000-16.9zm0 14.1a5.64 5.64 0 110-11.28 5.64 5.64 0 010 11.27zM6.52 22.49l-1.97 1.97a1.41 1.41 0 102 1.99l1.96-1.97a1.41 1.41 0 10-1.99-2zM24.48 8.52l1.97-1.98a1.4 1.4 0 10-2-2L22.5 6.53a1.41 1.41 0 101.99 2zM15.5 25.37c-.78 0-1.4.62-1.4 1.42v2.79a1.41 1.41 0 102.8 0v-2.8c0-.78-.62-1.41-1.4-1.41zM24.48 22.49a1.41 1.41 0 10-2 1.99l1.98 1.97a1.4 1.4 0 102-2l-1.98-1.96zM15.5 5.63c.78 0 1.4-.62 1.4-1.42V1.42a1.41 1.41 0 10-2.8 0v2.8c0 .78.62 1.41 1.4 1.41z" fill="#FF7931"/>
+            </svg>
+            <img class="card__banner-sale" src="img/sale.jpg" width="25" height="63" alt="sale">
+            <a class="card__link" href="#">Сообщить о поступлении</a>
           </div>
           <div class="card">
             <a class="card__main-link" href="card.html">
@@ -788,19 +779,18 @@
             </a>
           </div>
           <div class="card">
-            <a class="card__main-link" href="card.html">
-              <img class="card__photo card__photo--5" src="img/wheel2.png" width="151" height="181" alt="product-photo">
-              <span class="card__name card__name--5">Шина 205/80 R16 104Q Misha RF Power Grum</span>
-              <span class="card__out-of-stock">нет в наличии</span>
-              <svg class="card__icon-like card__icon-like--3" width="27" height="25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path clip-rule="evenodd" d="M7.37 1.2C3.47 1.2.39 4.78 1.1 9.9c.62 4.43 11.22 13.3 12.4 13.3 1.18 0 11.78-8.87 12.4-13.3.7-5.13-2.38-8.7-6.27-8.7a7.09 7.09 0 00-6.13 3.28A7.09 7.09 0 007.37 1.2z" stroke="#FF7931" stroke-width="2"/>
-              </svg>
-              <svg class="card__icon-snow" width="31" height="31" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M6.52 8.52a1.4 1.4 0 102-2L6.53 4.55a1.41 1.41 0 10-1.99 2l1.97 1.97zM29.58 14.1h-2.8a1.4 1.4 0 100 2.82h2.8a1.4 1.4 0 100-2.83zM5.63 15.5c0-.78-.62-1.4-1.42-1.4H1.42a1.41 1.41 0 100 2.8h2.8c.78 0 1.41-.62 1.41-1.4zM15.5 7.04a8.45 8.45 0 100 16.91 8.45 8.45 0 000-16.9zm0 14.1a5.64 5.64 0 110-11.28 5.64 5.64 0 010 11.27zM6.52 22.49l-1.97 1.97a1.41 1.41 0 102 1.99l1.96-1.97a1.41 1.41 0 10-1.99-2zM24.48 8.52l1.97-1.98a1.4 1.4 0 10-2-2L22.5 6.53a1.41 1.41 0 101.99 2zM15.5 25.37c-.78 0-1.4.62-1.4 1.42v2.79a1.41 1.41 0 102.8 0v-2.8c0-.78-.62-1.41-1.4-1.41zM24.48 22.49a1.41 1.41 0 10-2 1.99l1.98 1.97a1.4 1.4 0 102-2l-1.98-1.96zM15.5 5.63c.78 0 1.4-.62 1.4-1.42V1.42a1.41 1.41 0 10-2.8 0v2.8c0 .78.62 1.41 1.4 1.41z" fill="#FF7931"/>
-              </svg>
-              <img class="card__banner-sale" src="img/sale.jpg" width="25" height="63" alt="sale">
-              <a class="card__link" href="#">Сообщить о поступлении</a>
-            </a>
+            <a class="card__main-link" href="card.html"></a>
+            <img class="card__photo card__photo--5" src="img/wheel2.png" width="151" height="181" alt="product-photo">
+            <span class="card__name card__name--5">Шина 205/80 R16 104Q Misha RF Power Grum</span>
+            <span class="card__out-of-stock">нет в наличии</span>
+            <svg class="card__icon-like card__icon-like--3" width="27" height="25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path clip-rule="evenodd" d="M7.37 1.2C3.47 1.2.39 4.78 1.1 9.9c.62 4.43 11.22 13.3 12.4 13.3 1.18 0 11.78-8.87 12.4-13.3.7-5.13-2.38-8.7-6.27-8.7a7.09 7.09 0 00-6.13 3.28A7.09 7.09 0 007.37 1.2z" stroke="#FF7931" stroke-width="2"/>
+            </svg>
+            <svg class="card__icon-snow" width="31" height="31" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6.52 8.52a1.4 1.4 0 102-2L6.53 4.55a1.41 1.41 0 10-1.99 2l1.97 1.97zM29.58 14.1h-2.8a1.4 1.4 0 100 2.82h2.8a1.4 1.4 0 100-2.83zM5.63 15.5c0-.78-.62-1.4-1.42-1.4H1.42a1.41 1.41 0 100 2.8h2.8c.78 0 1.41-.62 1.41-1.4zM15.5 7.04a8.45 8.45 0 100 16.91 8.45 8.45 0 000-16.9zm0 14.1a5.64 5.64 0 110-11.28 5.64 5.64 0 010 11.27zM6.52 22.49l-1.97 1.97a1.41 1.41 0 102 1.99l1.96-1.97a1.41 1.41 0 10-1.99-2zM24.48 8.52l1.97-1.98a1.4 1.4 0 10-2-2L22.5 6.53a1.41 1.41 0 101.99 2zM15.5 25.37c-.78 0-1.4.62-1.4 1.42v2.79a1.41 1.41 0 102.8 0v-2.8c0-.78-.62-1.41-1.4-1.41zM24.48 22.49a1.41 1.41 0 10-2 1.99l1.98 1.97a1.4 1.4 0 102-2l-1.98-1.96zM15.5 5.63c.78 0 1.4-.62 1.4-1.42V1.42a1.41 1.41 0 10-2.8 0v2.8c0 .78.62 1.41 1.4 1.41z" fill="#FF7931"/>
+            </svg>
+            <img class="card__banner-sale" src="img/sale.jpg" width="25" height="63" alt="sale">
+            <a class="card__link" href="#">Сообщить о поступлении</a>
           </div>
           <div class="card">
             <a class="card__main-link" href="card.html">
