@@ -75,6 +75,26 @@
     });
   });
 
+  // Аккордеон футера
+
+  $(document).ready(function(){
+    $('.footer__info').click(function(event) {
+      $('.footer__block2-list--info').toggleClass('footer__block2-list--info-open');
+    });
+  });
+
+  $(document).ready(function(){
+    $('.footer__service').click(function(event) {
+      $('.footer__block2-list--service').toggleClass('footer__block2-list--service-open');
+    });
+  });
+
+  $(document).ready(function(){
+    $('.footer__store').click(function(event) {
+      $('.footer__block2-list--store').toggleClass('footer__block2-list--store-open');
+    });
+  });
+
   // Табы меню характеристки
 
   $(document).ready(function(){

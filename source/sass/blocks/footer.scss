@@ -179,11 +179,14 @@
     padding-top: 35px;
   }
 
-  &--store {
-    display: flex;
+  &--store-left {
+    display: block;
+    width: 165px;
+    margin-right: 35px;
 
     @media (max-width: $tablet-width) {
       display: none;
+      width: 100%;
     }
 
     &::after {
@@ -191,8 +194,8 @@
         position: absolute;
         display: block;
         content: "";
-        top: -9px;
-        left: 68.8%;
+        top: -8px;
+        left: 68.1%;
         width: 14px;
         height: 8px;
         background-color: #f4f4f6;
@@ -205,9 +208,24 @@
 
       @media (max-width: $mobile-width) {
         top: -13px;
-        left: 88%;
+        left: 85%;
       }
     }
+  }
+
+  &--store-right{
+    display: block;
+    width: 185px;
+
+  @media (max-width: $tablet-width) {
+       width: 100%;
+       display: none;
+       padding-top: 0;
+    }
+  }
+
+  &--store-open {
+    display: block;
   }
 
   &--info {
@@ -235,6 +253,10 @@
     }
   }
 
+  &--info-open {
+    display: block;
+  }
+
   &--service {
     &::after {
       @media (max-width: $tablet-width) {
@@ -259,9 +281,13 @@
       }
     }
   }
+
+  &--service-open {
+    display: block;
+  }
 }
 
-.footer__block2-info {
+.footer__info {
   display: block;
   margin-right: 20px;
   width: 130px;
@@ -281,7 +307,24 @@
   }
 }
 
-.footer__block2-service {
+.footer__info h3,
+.footer__service h3,
+.footer__store h3 {
+  margin: 0;
+  font-size: 15px;
+  padding-left: 10px;
+
+  @media (max-width: $tablet-width) {
+    font-size: 25px;
+    font-weight: normal;
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 15px;
+  }
+}
+
+.footer__service {
   position: relative;
   margin-right: 45px;
   width: 165px;
@@ -299,7 +342,7 @@
   }
 }
 
-.footer__block2-store {
+.footer__store {
   @media (max-width: $tablet-width) {
     position: relative;
     width: 100%;
@@ -315,9 +358,9 @@
   }
 }
 
-.footer__block2-info::after,
-.footer__block2-service::after,
-.footer__block2-store::after {
+.footer__info::after,
+.footer__service::after,
+.footer__store::after {
   display: none;
 
   @media (max-width: $tablet-width) {
@@ -339,34 +382,19 @@
 }
 
 
-.footer__info-input,
-.footer__service-input,
-.footer__store-input {
-  appearance: none;
-}
-
 .footer__block2-list li a:hover {
   color: #ff7931;
 }
 
-.footer__store-left {
-  display: block;
-  width: 165px;
-  margin-right: 45px;
+.footer__store-wrapper {
+  display: flex;
 
   @media (max-width: $tablet-width) {
+    display: block;
     width: 100%;
   }
 }
 
-.footer__store-right {
-  display: block;
-  width: 185px;
-
-  @media (max-width: $tablet-width) {
-    width: 100%;
-  }
-}
 
 .footer__block2-list li {
   margin-bottom: 5px;
@@ -389,8 +417,3 @@
   }
 }
 
-.footer__info-input:checked + .footer__block2-list,
-.footer__service-input:checked + .footer__block2-list--service,
-.footer__store-input:checked + .footer__block2-list--store {
-  display: block;
-}
