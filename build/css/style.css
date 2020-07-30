@@ -915,15 +915,6 @@ body.lock {
     bottom: -8px;
     left: 9px; }
 
-.banner__tyres {
-  display: none; }
-  @media (max-width: 1340px) {
-    .banner__tyres {
-      display: block; } }
-  @media (max-width: 760px) {
-    .banner__tyres {
-      padding-right: 26px; } }
-
 .banner__wrapper {
   background: linear-gradient(91.8deg, #9710e9 1.17%, #fd8d43 99.31%);
   text-align: center;
@@ -934,7 +925,16 @@ body.lock {
     .banner__wrapper {
       width: 330px; } }
 
-.banner__tyres h2 {
+.banner-tyres {
+  display: none; }
+  @media (max-width: 1340px) {
+    .banner-tyres {
+      display: block; } }
+  @media (max-width: 760px) {
+    .banner-tyres {
+      padding-right: 26px; } }
+
+.banner-tyres h2 {
   font-size: 35px;
   line-height: 43px;
   letter-spacing: 0.04em;
@@ -943,12 +943,22 @@ body.lock {
   padding-bottom: 15px;
   text-transform: uppercase; }
 
-.banner__tyres p {
+.banner-tyres p {
   font-size: 18px;
   line-height: 22px;
   margin: 0;
   padding-top: 0;
   padding-bottom: 52px; }
+
+.banner-tyres__wrapper {
+  background: linear-gradient(91.8deg, #9710e9 1.17%, #fd8d43 99.31%);
+  text-align: center;
+  color: #ffffff;
+  height: 195px;
+  margin-bottom: 80px; }
+  @media (max-width: 760px) {
+    .banner-tyres__wrapper {
+      width: 330px; } }
 
 .search {
   display: -webkit-box;

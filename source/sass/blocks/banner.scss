@@ -169,18 +169,6 @@
   }
 }
 
-.banner__tyres {
-  display: none;
-
-  @media (max-width: $tablet-width) {
-    display: block;
-  }
-
-  @media (max-width: $mobile-width) {
-    padding-right: 26px;
-  }
-}
-
 .banner__wrapper {
   background: linear-gradient(91.8deg, #9710e9 1.17%, #fd8d43 99.31%);
   text-align: center;
@@ -191,22 +179,4 @@
   @media (max-width: $mobile-width) {
     width: 330px;
   }
-}
-
-.banner__tyres h2 {
-  font-size: 35px;
-  line-height: 43px;
-  letter-spacing: 0.04em;
-  margin: 0;
-  padding-top: 64px;
-  padding-bottom: 15px;
-  text-transform: uppercase;
-}
-
-.banner__tyres p {
-  font-size: 18px;
-  line-height: 22px;
-  margin: 0;
-  padding-top: 0;
-  padding-bottom: 52px;
 }
