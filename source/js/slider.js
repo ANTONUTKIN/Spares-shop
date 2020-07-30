@@ -3,7 +3,7 @@
 (function () {
 
   $(document).ready(function(){
-    $('.slider').slick({
+    $('.slider-big').slick({
       dots: true,
       speed: 1000,
       autoplay: true,
@@ -23,6 +23,34 @@
 
   $(document).ready(function(){
     $('.slider__additive').slick({
+      arrows: true,
+      slidesToScroll: 4,
+      slidesToShow: 4,
+      responsive: [
+        {
+          breakpoint: 1340,
+          settings: {
+            arrows: false,
+            dots: true,
+            slidesToShow: 2,
+            slidesToScroll: 2,
+          }
+        },{
+          breakpoint: 760,
+          settings: {
+            arrows: false,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            variableWidth: true,
+            dots: true,
+          }
+        }
+      ]
+    });
+  });
+
+  $(document).ready(function(){
+    $('.slider-additive__additive').slick({
       arrows: true,
       slidesToScroll: 4,
       slidesToShow: 4,
@@ -106,7 +134,35 @@
   });
 
   $(document).ready(function(){
-    $('.slider__banner').slick({
+    $('.slider-additive__parts').slick({
+      arrows: true,
+      slidesToShow: 4,
+      slidesToScroll: 4,
+      responsive: [
+        {
+          breakpoint: 1340,
+          settings: {
+            arrows: false,
+            dots: true,
+            slidesToShow: 2,
+            slidesToScroll: 2,
+          }
+        },{
+          breakpoint: 760,
+          settings: {
+            arrows: false,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            variableWidth: true,
+            dots: true,
+          }
+        }
+      ]
+    });
+  });
+
+  $(document).ready(function(){
+    $('.discount-banner').slick({
       arrows: false,
       slidesToShow: 1,
       slidesToScroll: 1,

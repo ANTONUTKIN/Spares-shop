@@ -1,0 +1,61 @@
+.discount-banner {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  height: 420px;
+  width: 270px;
+
+  @media (max-width: $tablet-width) {
+    width: 770px;
+    justify-content: space-around;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 330px;
+    margin: 0 auto;
+    padding-left: 10px;
+  }
+}
+  
+.discount-banner .slick-dots {
+  position: absolute;
+  bottom: -34px;
+  left: 50%;
+  margin-left: -70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media (max-width: $mobile-width) {
+    margin-left: -120px;
+  }
+}
+  
+.discount-banner .slick-dots li {
+  list-style: none;
+  margin: 0 5px;
+
+  @media (max-width: $mobile-width) {
+    margin: 11px;
+  }
+}
+  
+
+.discount-banner .slick-dots li.slick-active button {
+  background-color: #ff7931;
+}
+
+.discount-banner .slick-dots li button {
+  font-size: 0;
+  width: 10px;
+  height: 10px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: none;
+  border-radius: 50%;
+  padding: 0;
+
+  @media (max-width: $mobile-width) {
+    width: 14px;
+    height: 14px;
+  }
+}
