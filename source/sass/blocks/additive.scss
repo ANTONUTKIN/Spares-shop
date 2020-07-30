@@ -2,7 +2,6 @@
   position: relative;
 
   &--tyres {
-    display: none;
     margin-bottom: 100px;
 
     @media (max-width: $tablet-width) {
@@ -26,9 +25,13 @@
 }
 
 .additive--tyres h2 {
-  font-size: 30px;
+  font-size: 25px;
   line-height: 36px;
-  text-align: center;
+  text-align: start;
+
+  @media (max-width: $tablet-width) {
+    text-align: center;
+  }
 }
 
 .additive__list {

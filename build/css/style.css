@@ -211,7 +211,7 @@ body.lock {
   color: #ff7931; }
 
 .header__top-logo {
-  margin: 17px 103px 17px 0; }
+  margin: 17px 115px 17px 0; }
   @media (max-width: 1340px) {
     .header__top-logo {
       margin-right: 50px; } }
@@ -252,7 +252,7 @@ body.lock {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 135px;
+  width: 115px;
   height: 35px;
   margin-top: 40px; }
   @media (max-width: 1340px) {
@@ -298,7 +298,7 @@ body.lock {
   display: block;
   color: #ffffff;
   content: "1";
-  right: 8px;
+  right: 0;
   top: 10px;
   width: 23px;
   height: 23px;
@@ -353,7 +353,7 @@ body.lock {
   display: block;
   text-align: center;
   padding: 0 10px;
-  margin: 0 10px; }
+  margin: 0 15px; }
   @media (max-width: 1340px) {
     .header__nav-list li {
       margin: 0 7px;
@@ -564,14 +564,13 @@ body.lock {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
-
-@media (max-width: 760px) {
-  .slider-additive__additive .slick-dots,
-  .slider-additive__parts .slick-dots {
-    left: 25%;
-    width: 200px;
-    overflow: hidden;
-    bottom: -37px; } }
+  @media (max-width: 760px) {
+    .slider-additive__additive .slick-dots,
+    .slider-additive__parts .slick-dots {
+      left: 25%;
+      width: 200px;
+      overflow: hidden;
+      bottom: -37px; } }
 
 @media (max-width: 760px) {
   .slider-additive__additive .slick-dots {
@@ -665,6 +664,9 @@ body.lock {
   right: -51px;
   top: 200px; }
 
+.slider-big {
+  position: relative; }
+
 .slider-big-wrapper {
   width: 870px;
   overflow: hidden;
@@ -679,9 +681,6 @@ body.lock {
       width: 330px;
       margin-bottom: 60px;
       margin-left: -17px; } }
-
-.slider-big {
-  position: relative; }
 
 .slider-big .slick-arrow {
   position: absolute;
@@ -1195,7 +1194,7 @@ body.lock {
 
 .search__season-wrapper {
   display: block;
-  margin-bottom: 55px; }
+  margin-bottom: 70px; }
   .search__season-wrapper--hidden {
     display: none; }
 
@@ -1281,7 +1280,7 @@ body.lock {
 .search__filter-type {
   position: relative;
   display: block;
-  height: 115px;
+  height: 100px;
   cursor: pointer; }
 
 .search__filter-type h3 {
@@ -1313,7 +1312,7 @@ body.lock {
           appearance: none; }
 
 .search__price {
-  margin-bottom: 40px; }
+  margin-bottom: 30px; }
 
 .search__filter-price {
   position: relative;
@@ -1436,10 +1435,11 @@ body.lock {
 .search__filter-model {
   position: relative;
   margin-top: 0;
-  margin-bottom: 30px; }
+  margin-bottom: 25px; }
 
 .search__filter-model {
   margin-left: 25px;
+  margin-bottom: 45px;
   font-weight: bold;
   color: #48494d; }
   .search__filter-model::before {
@@ -2511,7 +2511,6 @@ body.lock {
 .additive {
   position: relative; }
   .additive--tyres {
-    display: none;
     margin-bottom: 100px; }
     @media (max-width: 1340px) {
       .additive--tyres {
@@ -2530,9 +2529,12 @@ body.lock {
       text-align: center; } }
 
 .additive--tyres h2 {
-  font-size: 30px;
+  font-size: 25px;
   line-height: 36px;
-  text-align: center; }
+  text-align: start; }
+  @media (max-width: 1340px) {
+    .additive--tyres h2 {
+      text-align: center; } }
 
 .additive__list {
   position: relative;
@@ -3547,7 +3549,8 @@ body.lock {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-left: 0; }
+  padding-left: 0;
+  margin: 0; }
   @media (max-width: 760px) {
     .product__discription-tabs {
       display: none; } }

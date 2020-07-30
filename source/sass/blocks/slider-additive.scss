@@ -11,10 +11,7 @@
   margin-left: -80px;
   align-items: center;
   justify-content: center;
-}
 
-.slider-additive__additive .slick-dots,
-.slider-additive__parts .slick-dots {
   @media (max-width: $mobile-width) {
     left: 25%;
     width: 200px;
