@@ -5,6 +5,7 @@
   @media (max-width: $mobile-width) {
     position: relative;
     margin-bottom: 40px;
+    padding-left: 35px;
   }
 }
 
@@ -166,6 +167,10 @@
 
   @media (max-width: $mobile-width) {
     left: 35px;
+  }
+
+  &:hover {
+    opacity: 0.5;
   }
 }
 
@@ -396,6 +401,10 @@
   @media (max-width: $mobile-width) {
     display: none;
   }
+
+  &:hover {
+    opacity: 0.5;
+  }
 }
 
 .product__discription-buy {
@@ -417,5 +426,9 @@
     top: 420px;
     left: 0;
     box-sizing: border-box;
+  }
+
+  &:hover {
+    background-color: #f55600;
   }
 }

@@ -151,7 +151,7 @@
       $('.search__brand-wrapper').toggleClass('search__brand-wrapper--hidden');
     });
   });
-  
+
   $(document).ready(function(){
     $('.search__model-button').click(function(event) {
       $('.search__model-wrapper').toggleClass('search__model-wrapper--hidden');

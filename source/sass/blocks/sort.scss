@@ -9,6 +9,7 @@
 
   @media (max-width: $mobile-width) {
     margin-bottom: 30px;
+    padding: 0 10px;
   }
 }
 
@@ -126,6 +127,9 @@
 .sort__categories {
   position: relative;
   display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  max-width: 860px;
 
   @media (max-width: $tablet-width) {
     position: relative;
@@ -162,6 +166,11 @@
   line-height: 17px;
   letter-spacing: 1px;
   cursor: pointer;
+
+  &:hover {
+    background-color: #b4b4b4;
+    color: #585858;
+  }
 }
 
 .sort__select-wrapper {
@@ -280,7 +289,7 @@
   display: block;
   content: "";
   top: 6px;
-  right: 95px;
+  right: 80px;
   width: 12px;
   height: 8px;
   background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M10.6 0L6 4.6 1.4 0 0 1.4l6 6 6-6L10.6 0z' fill='%23D7D9DF'/%3E%3C/svg%3E%0A");

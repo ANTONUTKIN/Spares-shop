@@ -146,7 +146,7 @@
   line-height: 22px;
   letter-spacing: 0.7px;
   text-align: center;
-  color: #48494d;
+  color: #757575;
 }
 
 .card__link {
@@ -162,6 +162,14 @@
   left: 44px;
   border-bottom: 1px solid rgba(255, 121, 49, 0.2);
   z-index: 7;
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:active {
+    color: #9e9492;
+  }
 }
 
 .card__popular-hover {

@@ -81,7 +81,7 @@
   margin-bottom: 120px;
 
   @media (max-width: $mobile-width) {
-    padding-left: 13px;
+    padding-left: 33px;
   }
 }
 
@@ -189,6 +189,12 @@
   @media (max-width: $mobile-width) {
     display: none;
   }
+
+  &:hover {
+    background-color: #b4b4b4;
+    color: #585858;
+    box-shadow: 2px 2px 17px rgba(50, 50, 50, 0.25);
+  }
 }
 
 .popular__products-more-mobile {
@@ -197,6 +203,5 @@
   @media (max-width: $mobile-width) {
     display: block;
     bottom: -111px;
-    margin-left: -143px;
   }
 }

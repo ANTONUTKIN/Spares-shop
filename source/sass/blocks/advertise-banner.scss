@@ -16,8 +16,9 @@
 .advertise-banner a {
   @media (max-width: $mobile-width) {
     display: block;
-    width: 300px;
+    width: 320px;
     height: 92px;
     background-image: url("../../img/sale-mobile.jpg");
+    margin-left: 5px;
   }
 }
