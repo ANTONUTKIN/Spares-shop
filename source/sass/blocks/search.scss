@@ -44,7 +44,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   width: 875px;
-  height: 1705px;
+  max-height: 1705px;
   margin-bottom: 205px;
 
   @media (max-width: $tablet-width) {
@@ -62,6 +62,10 @@
     left: 0;
     padding-left: 30px;
   }
+}
+
+.search__result .card:not(:nth-child(-n+12)) {
+  display: none;
 }
 
 .search__result .card:not(:nth-child(-n+5)) {
