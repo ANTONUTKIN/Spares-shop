@@ -17,14 +17,23 @@
 .header__top {
   display: flex;
   flex-direction: row;
+  text-align: center;
   margin-top: 17px;
   margin-bottom: 6px;
+  width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (max-width: $tablet-width) {
+    width: 768px;
+  }
 
   @media (max-width: $mobile-width) {
     margin-top: 0;
     margin-bottom: 0;
     height: 64px;
-    padding-left: 30px
+    padding-left: 30px;
+    width: 100%;
   }
 }
 
@@ -322,6 +331,10 @@
   flex-wrap: wrap;
   list-style: none;
   padding: 0;
+  width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow-x: auto;
 
   &::after {
     @media (max-width: $mobile-width) {
