@@ -88,22 +88,14 @@ body.lock {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  text-align: center;
   margin-top: 17px;
-  margin-bottom: 6px;
-  width: 1170px;
-  margin-left: auto;
-  margin-right: auto; }
-  @media (max-width: 1340px) {
-    .header__top {
-      width: 768px; } }
+  margin-bottom: 6px; }
   @media (max-width: 767px) {
     .header__top {
       margin-top: 0;
       margin-bottom: 0;
       height: 64px;
-      padding-left: 30px;
-      width: 100%; } }
+      padding-left: 30px; } }
 
 @media (max-width: 767px) {
   .header__top-logo img {
@@ -354,11 +346,7 @@ body.lock {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   list-style: none;
-  padding: 0;
-  width: 1170px;
-  margin-left: auto;
-  margin-right: auto;
-  overflow-x: auto; }
+  padding: 0; }
   @media (max-width: 767px) {
     .header__nav-list::after {
       position: absolute;
