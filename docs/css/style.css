@@ -997,7 +997,7 @@ body.lock {
   position: absolute;
   top: -355px;
   overflow-y: auto;
-  padding-top: 40px;
+  padding-top: 55px;
   padding-left: 5px;
   width: 100%;
   height: 99vh;
@@ -1815,7 +1815,8 @@ body.lock {
 .search__season-mark {
   position: relative;
   padding-left: 5px;
-  width: 100%; }
+  width: 100%;
+  margin-bottom: 30px; }
 
 .search__season-mark h3 {
   font-size: 16px;
@@ -2690,7 +2691,8 @@ body.lock {
       margin-left: -123px; } }
 
 .footer {
-  background: #f4f4f6; }
+  background: #f4f4f6;
+  overflow: hidden; }
   @media (max-width: 767px) {
     .footer {
       background: #f9f9fc; } }
@@ -2742,7 +2744,10 @@ body.lock {
 
 .footer__block1 {
   width: 292px;
-  margin-right: 205px; }
+  margin-right: 205px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: block; }
   @media (max-width: 1340px) {
     .footer__block1 {
       margin-right: 0;
@@ -2829,6 +2834,8 @@ body.lock {
       display: none; } }
 
 .footer__block2 {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2955,7 +2962,8 @@ body.lock {
       padding: 20px 0 20px 15%;
       line-height: 25px;
       cursor: pointer;
-      border-top: 1px solid #d6d6d6; } }
+      border-top: 1px solid #d6d6d6;
+      margin-right: 0; } }
   @media (max-width: 767px) {
     .footer__info {
       padding: 12px 0 12px 0;
@@ -2988,7 +2996,8 @@ body.lock {
       width: 100%;
       padding: 20px 0 20px 15%;
       cursor: pointer;
-      border-top: 1px solid #d6d6d6; } }
+      border-top: 1px solid #d6d6d6;
+      margin-right: 0; } }
   @media (max-width: 767px) {
     .footer__service {
       padding: 17px 0 14px 0;
